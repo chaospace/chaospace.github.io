@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>시작</title>
+      <link href="/2020/01/20/hello/"/>
+      <url>/2020/01/20/hello/</url>
+      
+        <content type="html"><![CDATA[<p>여유가 생겨 프론트관련 검색을 하던 중 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>란 것을 알게되어 블로그 만들어 보았다.<br>테마도 다양하게 제공되는데 난 조금 인터렉티브한 느낌이 있는 <a href="https://tridiamond.me/" target="_blank" rel="noopener">obsidian</a>을 적용했다.<br>생각해 보면 시간이 있을 때마다 블로그를 만들어 두고 꾸준히 관리한 적이 없는데<br>markdown도 익숙해지고 담담히 생각을 정리할 수 있는 기회가 되었으면 한다.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 잡담 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Test title monster hunter~!</title>
+      <link href="/2020/01/20/hello-world/"/>
+      <url>/2020/01/20/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>근데 왜 한글은?? <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Social-media-links"><a href="#Social-media-links" class="headerlink" title="Social media links"></a>Social media links</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> javascript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> test </tag>
+            
+            <tag> node </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
