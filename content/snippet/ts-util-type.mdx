@@ -1,0 +1,64 @@
+---
+title: 타입스크립트 유틸 
+date: 2023-08-08
+tags: [typescript, generic]
+draft: false
+summary: 타입스크립트 유틸 코드 모음
+---
+
+타입스크립트 시 자주 찾는 유틸 타입및 함수정리
+
+## ObjType
+
+any를 쓰기는 경고문구가 거슬리고 여러 속성을 가진 객체를 사용 시 애용하는 타입
+
+```typescript
+type ObjType = {
+  [key: string]: any;
+};
+
+type ObjType<T> = {
+  [Props in keyof T]: T[Props];
+};
+```
+
+## Pipe
+
+함수를 연속해서 사용하는 pipe를 generic을 이용해 표현하고 싶을 때 사용
+
+```typescript
+type TFunc = (args: any) => any;
+
+// K는 기호에 따라 제거가능
+const pipe = <T extends TFunc, K extends TFunc[], R extends TFunc>(
+  ...fns: [T, ...K, R]
+) => {
+  return (arg: any): ReturnType<R> => fns.reduce((fn, value) => fn(value), arg);
+};
+```
+
+## DeepPartial
+
+중첩객체의 모든 키를 옵셔널로 하고싶을 때
+
+```typescript
+type DeppPartial<T> = {
+  [P in keyof T]?: DeepPartial<T[P]>;
+};
+```
+
+## RequirelPartial
+
+특정 key만 필수로 만들고 싶을 때
+
+```typescript
+type RequirePartial<T, K extends keyof T> = Partial<T> & Pick<T, K>;
+```
+
+## Optinal
+
+특정 key만 옵셔널로 만들고 싶을 때
+
+```typescript
+type Optinal<T, K extends keyof T> = Partial<T> & Omit<T, K>;
+```

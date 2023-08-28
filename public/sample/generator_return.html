@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>제너레이터 중단 테스트</title>
+    <style>
+      .control-box {
+        position: relative;
+        display: flex;
+        gap: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="control-box">
+      <button onclick="pauseGen('start')">메시지A</button>
+      <button onclick="pauseGen('pause')">메시지B</button>
+    </div>
+    <script>
+      function workerRunner() {
+        let b = { done: false };
+        let g;
+        let loopID;
+        function sleep(subject, d = 500) {
+          const t = Date.now() + d;
+          while (Date.now() < t && !b.done) {}
+        }
+
+        function* generaterFoo() {
+          let count = 0;
+
+          while (!b.done) {
+            for (let i = 0; i < 10; i++) {
+              sleep();
+              yield i;
+            }
+            yield count;
+            count += 1;
+          }
+        }
+
+        const start = () => {
+          g = generaterFoo();
+          while (true) {
+            g.next();
+          }
+          /* loopID = setInterval(() => {
+            const { done, value } = g.next();
+            if (done) {
+              clearInterval(loopID);
+            }
+            console.log("value", value, done, "b.done", b.done);
+          }, 1000); */
+        };
+
+        self.onmessage = function (event) {
+          const { state } = event.data;
+          //console.log(state, event.data);
+          //   if (state === "callback") {
+          //     postMessage("send-message");
+          //   }
+          switch (state) {
+            case "pause":
+              console.log("중단메시지 수신", b);
+              g.return();
+              b.done = true;
+
+              break;
+            case "start":
+              start();
+              break;
+          }
+        };
+      }
+
+      /*  let b = { done: false };
+      function sleep(subject, d = 500) {
+        const t = Date.now() + d;
+        while (Date.now() < t && !b.done) {}
+      }
+
+      function* generaterFoo() {
+        let count = 0;
+
+        while (true) {
+          for (let i = 0; i < 10; i++) {
+            sleep(b);
+            console.log("i", i);
+          }
+          yield count;
+          count += 1;
+        }
+      }
+
+      const g = generaterFoo();
+      let loopID = setInterval(() => {
+        const { done, value } = g.next();
+        if (done) {
+          clearInterval(loopID);
+        }
+        console.log("value", value, done);
+      }, 1000);
+ */
+
+      const workerBlob = new Blob(
+        [workerRunner.toString().replace(/^function .+\{?|\}$/g, "")],
+        { type: "text/javascript" }
+      );
+      const workerBlobUrl = URL.createObjectURL(workerBlob);
+      console.log(workerBlobUrl);
+      const worker = new Worker(workerBlobUrl);
+      worker.onmessage = function (event) {
+        const { data } = event;
+        console.log("event", data);
+      };
+
+      function pauseGen(state) {
+        console.log("중단메시지 전달");
+        worker.postMessage({ state });
+      }
+    </script>
+  </body>
+</html>

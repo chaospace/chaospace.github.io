@@ -1,0 +1,177 @@
+---
+title: Next.js 블로그 제작( MDX serialize )
+subtitle: 
+date: 2023-08-06
+tags: [markdown, remark, rehype]
+draft: false
+summary: remark, rehype을 이용한 markdown 가공
+---
+
+mdx파일 변환 시 remark와 rehype플러그인을 사용하며 알게된 내용을 정리한다.
+
+## 개요
+- [unified](https://github.com/unifiedjs/unified) 구문트리(syntax tree)로 컨텐츠를 처리하기 위한 인터페이스  
+500개 이상의 프리 오픈소스 패키지 모음  
+관련 플러그인에 remark, rehype 포함
+
+```ascii
+| ........................ process ........................... |
+| .......... parse ... | ... run ... | ... stringify ..........|
+
+          +--------+                     +----------+
+Input ->- | Parser | ->- Syntax Tree ->- | Compiler | ->- Output
+          +--------+          |          +----------+
+                              X
+                              |
+                       +--------------+
+                       | Transformers |
+                       +--------------+ 
+```
+
+- [remark](https://github.com/remarkjs/remark) :
+  마크다운 구분분석[^1]과 직렬화[^2] 처리도구
+- [rehype](https://github.com/rehypejs) : HTML을 검사하고 변환할 수 있는 도구
+
+
+## 주요 플러그인
+
+mdx파일 <code>serialize</code>시 사용하는 플러그인으로 다양하게 제공되며 사용한 것만 정리한다.
+
+### remark-toc-headings 
+    헤더요소를 기반으로 Table of Contents 추출 오픈소스도 제공되지만 적용이 애매해 직접구현  
+```typescript 
+import { slug } from "github-slugger";
+import { toString } from "mdast-util-to-string";
+import { visit } from "unist-util-visit";
+
+function remarkTocHeadings(options: any) {
+    return (tree: any) => visit(tree, 'heading', (node, index, parent) => {
+        const textContent = toString(node);
+        options.exportRef.push({
+            value: textContent,
+            url: `#${slug(textContent)}`,
+            depth: node.depth
+        })
+    });
+}
+```
+
+### remark-gfm
+    
+    github마크다운 형식 footnotes<code>([^4])</code>, tables<code>(|cell|...)</code>, strikethrough<code>(\~\~stuff\~\~)</code>, tasklists<code>(* [x])</code>등을 지원  
+    [link](https://github.com/remarkjs/remark-gfm)
+
+
+### remark-code-titles  
+    syntaxhighlighting에 파일명 표시 기능 제공  
+    es6모듈은 제공되지 않아 직접 구현.
+
+```javascript:remark-code-titles.ts
+import { visit } from "unist-util-visit";
+
+function remarkCodeTitles() {
+  return (tree: any) =>
+    visit(tree, "code", (node, index, parent) => {
+      const nodeLang = node.lang || "";
+      let language = "";
+      let title = "";
+      if (nodeLang.includes(":")) {
+        language = nodeLang.slice(0, nodeLang.search(":"));
+        title = nodeLang.slice(nodeLang.search(":") + 1, nodeLang.length);
+      }
+      if (!title) {
+        return;
+      }
+
+      const className = "remark-code-title";
+
+      const titleNode = {
+        type: "mdxJsxFlowElement",
+        name: "div",
+        attributes: [
+          { type: "mdxJsxAttribute", name: "className", value: className },
+        ],
+        children: [{ type: "text", value: title }],
+        data: { _xdmExplicitJsx: true },
+      };
+      parent.children.splice(index, 0, titleNode);
+      node.lang = language;
+    });
+}
+
+export default remarkCodeTitles;
+
+```
+
+### rehype-slug  
+    헤더요소에 텍스트를 기반으로 id속성 추가  
+    [link](https://github.com/rehypejs/rehype-slug)  
+
+```html 
+//input
+<h1 id=some-id>Lorem ipsum</h1>
+<h2>Dolor sit amet 😪</h2>
+<h3>consectetur &amp; adipisicing</h3>
+<h4>elit</h4>
+<h5>elit</h5>
+
+//output
+<h1 id="some-id">Lorem ipsum</h1>
+<h2 id="dolor-sit-amet-">Dolor sit amet 😪</h2>
+<h3 id="consectetur--adipisicing">consectetur &#x26; adipisicing</h3>
+<h4 id="elit">elit</h4>
+<h5 id="elit-1">elit</h5>
+```
+### rehype-prism-plus
+    syntaxhighlighting기능 제공  
+    [link](https://github.com/timlrx/rehype-prism-plus)
+
+### rehype-autolink-headings 
+    rehype-slug와 하는 역할은 비슷한데 생성되는 anchor위치를 조정가능  
+    [link](https://github.com/rehypejs/rehype-autolink-headings)
+
+```html 
+//input
+<h1 id=some-id>Lorem ipsum</h1>
+<h2>Dolor sit amet 😪</h2>
+<h3>consectetur &amp; adipisicing</h3>
+<h4>elit</h4>
+<h5>elit</h5>
+
+//output
+<h1 id="some-id">
+  <a aria-hidden="true" tabindex="-1" href="#some-id">
+    <span class="icon icon-link"></span></a>
+  Lorem ipsum
+</h1>
+<h2 id="dolor-sit-amet-">
+  <a aria-hidden="true" tabindex="-1" href="#dolor-sit-amet-">
+    <span class="icon icon-link"></span></a>
+  Dolor sit amet 😪
+</h2>
+<h3 id="consectetur--adipisicing">
+  <a aria-hidden="true" tabindex="-1" href="#consectetur--adipisicing">
+    <span class="icon icon-link"></span></a>
+  consectetur &#x26; adipisicing
+</h3>
+<h4 id="elit">
+  <a aria-hidden="true" tabindex="-1" href="#elit">
+    <span class="icon icon-link"></span></a>
+    elit
+</h4>
+<h5 id="elit-1">
+  <a aria-hidden="true" tabindex="-1" href="#elit-1">
+    <span class="icon icon-link"></span>
+  </a>
+  elit
+</h5>
+```
+
+```typescript
+//적용 시 옵션 값을 통해 추가 속성 적용이 가능하다.
+[rehypeAutoLinkHeadings, { properties: { className: ['anchor']}}]
+```
+
+---
+[^1]: parsing : 문서의 내용을 토큰으로 분석하고, 문법적 의미와 구조를 반영한 parse tree를 생성하는 과정 
+[^2]: serializing : 데이터 구조나 객체를 다른 컴퓨터 환경에 저장(이를테면 파일이나 메모리 버퍼에서, 또는 네트워크 연결 링크 간 전송)하고 나중에 재구성할 수 있는 포맷으로 변환하는 과정.

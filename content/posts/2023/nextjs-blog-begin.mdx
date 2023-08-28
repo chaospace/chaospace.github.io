@@ -1,0 +1,152 @@
+---
+title: Next.js 블로그 제작( 프로젝트 환경설정 )
+date: 2023-08-04
+tags: [next.js, tailwindcss, mdx]
+draft: false
+summary: next.js 블로그 제작에 사용한 기본구성
+---
+
+일을 하며 알게된 정보나 지식을 프로젝트 폴더에 readme파일을 만들어 내용을 정리해 왔는데 보기 불편한 감이 있어  
+<code>정적 블로그</code>제작을 알아봤다.  
+
+<details> 
+<summary>요약</summary>  
+## TL:DR  
+next.js를 이용한 블로그 구성은 간단히 요약하면 아래와 같다.
+- <code>create next-app</code>명령을 이용해 기본 프로젝트 생성.
+- markdown 컨텐츠 모듈선택 ( __next-mdx-remote__ or __contentlayer__ )
+- 간단한 markdown페이지 제작 
+- 동작확인
+</details>
+
+## Framework선택
+
+- <a href="https://astro.build/" target="_blank">
+    astro
+  </a>
+- <a href="https://nextjs.org/" target="_blank">
+    next.js
+  </a>
+
+에서 고민하다 많이 사용하고 최근 추가된 ServerComponent, appRouter도 익힐 겸 `next.js`를 이용하기로 했다.
+
+`yarn create next-app`명령에서 프로젝트를 생성해 typescript, tailwindcss를 적용하기로 결정.
+
+```js:termial
+    yarn create next-app
+    What is your project named?  my-app
+    Would you like to use TypeScript?  No / Yes
+    Would you like to use ESLint?  No / Yes
+    Would you like to use Tailwind CSS?  No / Yes
+    Would you like to use `src/` directory?  No / Yes
+    Would you like to use App Router? (recommended)  No / Yes
+    Would you like to customize the default import alias?  No / Ye
+```
+
+## 정적페이지 구성을 위한 모듈 구성
+
+nextjs는 mdx파일을 이용한 페이지 구성을 위해 아래와 같이 3가지 모듈을 제공한다.  
+대체로 contentlayer 혹은 next-mdx-remote 중에서 선택하면 되고 contentlayer가 편의성이 우수하다.
+
+- @next/mdx
+- <a href="https://www.contentlayer.dev/" target="_blnak">
+    contentlayer
+  </a>
+- <a href="https://github.com/hashicorp/next-mdx-remote" target="_blank">
+    next-mdx-remote (적용한 모듈)
+  </a>
+
+### @next/mdx
+
+mdx파일을 이용한 페이지 구성에 사용할 수 있는 가장 손쉬운 방법으로 로컬파일로만 동작한다는 단점이 있다.
+자세한 내용은 <a href="https://nextjs.org/docs/pages/building-your-application/configuring/mdx#nextmdx" target="_blank">공식문서</a> 를 참고.
+
+### contentlayer
+
+간단한 설정파일을 통해 사용할 mdx파일을 외부에서 읽어오고 frontmatter정보를 손쉽게 가져와 사용할 수 있게 해주는 content SDK입니다. 아직
+베타 버전이지만 정적페이지 구성을 손쉽게 해주기 때문에 사용을 추천.  
+~~글쓰는 시점에 next.js 13.4.10버전과 충돌이 있어 난 사용하지 못함~~
+
+### next-mdx-remote
+
+![next-mdx-remote](https://raw.githubusercontent.com/hashicorp/next-mdx-remote/main/header.png)
+mdx파일이 getStatiProps 또는 getServerSideProps 내에서 로드되고 클라이언트에서 올바르게 hydrate될 수 있도록 하는 유틸리티로
+불러온 mdx파일을 플러그인 옵션과 함께 <code>serialize</code>를 통해 파싱하고 화면에 보여주는 <code>MDXRemote</code>컴포넌트를 제공한다.
+
+```planetext:terminal
+yarn add next-mdx-remote
+```
+
+## next-mdx-remote 주요 사용법
+
+장황한 설명대신 간단한 순서와 샘플코드만 정리해둔다.
+
+- 프로젝트 폴더에서 mdx파일 읽어오기
+- 불러온 mdx파일을 serialize로 파싱하기[^1]
+- 파싱된 결과를 <code>MDXRemote컴포넌트를 통해 보여주기</code>
+
+```javascript:markdown파일 읽기
+  import { serialize } from "next-mdx-remote/serialize"
+  import remarkGfm from 'remark-gfm';
+  import rehypePrismPlus from "rehype-prism-plus";
+
+  const source = readFileSync(mdx파일위치, 'utf-8');
+  // 파일을 serialize를 통해 react포맷으로 변경
+
+  const mdxSource: PostSerializeResult = await serialize(source, {
+    //옵션을 통해 플러그인 모듈적용 가능
+    mdxOptions:{
+      remarkPlugins:{
+        
+      },
+      rehypePlugins:{
+        
+      },
+      format:'mdx'      // 대상문서포맷
+    }
+  } );
+
+```
+
+serialize에 리턴 값을 RemoteMDX를 통해 보여줄 수 있다.
+
+```typescript:MDXViewer.ts
+  import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+
+  // markdown요소를 커스텀하고 싶은 경우 태그에 해당하는 컴포넌트를 지정해 사용가능.
+  const components = useMemo(() => {
+        return {
+            a: CustomLink,
+            pre: PrismCode,
+            TocInline
+        } as MDXComponents
+  }, []);
+
+  <MDXRemote { ...mdxSource } components={ components } />
+
+```
+serialize리턴 값 중 **scope**속성이 보이는데 이는 mdx에서 동적으로 사용하고 싶은 데이터를 설정하면 된다.  
+
+```tsx
+  // test.mdx에서 name에 동적인 값을 전달하고 싶은 경우 
+  `my name is {name}`
+
+  //mdx안에 컴포넌트에 동적 속성을 넘기는 것도 가능
+  <MyReactComponent name={props.name}> 
+
+  // scope속성에 해당 키에 정보를 동적으로 구성해서 넘기면 mdx파일에 적용된다.
+  scope:{{name: "Some name" }}
+````
+
+기본적인 사용코드는 [공식 예제](https://github.com/vercel/next.js/tree/canary/examples/with-mdx-remote)를 보면 좋다.
+
+## 느낀점 
+
+프론트 경험이 어느정도 있는 분이라면 npm, yarn을 이용해 기본프로젝트 생성 후 mdx모듈만 설치하면 나머지는 입맛대로 페이지를 꾸미는게 
+가능하고 맨땅에 헤딩하는게 어렵다면 공홈에서 맘에드는 [템플릿](https://vercel.com/templates/next.js)을 베이스로 하는 것도 방법일 거 같다.
+SPA[^2]에 익숙했던 나에겐 페이지 구성을 하며 서버&클라이언트 컴포넌트 분리 및 상태관리를 노하우를 알 수 있는 시간이 됐다.
+
+---
+
+[^1]: serialize단계에서 remark, rehype의 다양한 플러그인을 이용해 데이터가공이 가능하다.
+[^2]: 싱글 페이지 어플리케이션

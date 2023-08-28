@@ -1,0 +1,219 @@
+---
+title: 제목
+date: 2022-07-17
+tags: [test, sss]
+draft: false
+summary: In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.
+---
+
+오랫만에 캔버스를 이용한 이미지효과를 찾아보는 중 __델로네 삼각형__[^1]을 이용한 점묘화 기법이  
+인상깊어 만들어 봤다.
+
+
+![원본이미지](/images/experience/stippling/origin.jpg)
+이런 원본 이미지가 있다고 하면 점묘법을 통해 아래와 같은 이미지로 표현할 수 있다.
+
+| 밝은영역을 흰점으로 표현 | 어두운 영역을 검은점으로 표현 |
+|---|---|
+|![기본효과](/images/experience/stippling/normal.jpg)|![반전효과](/images/experience/stippling/invert.jpg)|
+
+
+## 개요
+
+캔버스를 이용한 이미지 조작을 제외하고 대략적인 구현방법을 정리하면 아래와 같다. 
+
+ 1. 대상 이미지에 컬러 가중치를 구한다.(그레이스케일 컬러 값을 말하며 글에서 `colorWeights`라 표현 )
+ 2. 이미지를 표현할 포인트 수를 정하고 랜덤한 위치에 포인트를 추가한다.
+    이때, colorWeights값을 이용해 특정 영역(평균보다 밝거나 어두운 곳)에 더 많은 포인트를 추가해 기본적인 밀도 적용가능
+ 3. d3-delaunay를 이용해 colorWeights에 따른 가중치를 포인트 위치값에 적용하며 밀도를 조정.
+ 4. 3번을 반복하며 포인트에 가중치를 적용해 나가면 포인트 밀도를 통해 이미지 형태가 표현됨.
+
+
+## 컬러가중치 구하기
+
+가중치에 사전적 정의는 아래와 같다.
+> 전체에서 가지는 중요성을 높이기 위하여 특정 부분이나 요소에 일정한 수치를 더한 것  
+
+이 효과에서는 이미지의 RGB컬러값에서 그레이스케일로 변환한 값을 가중치로 사용한다. 
+
+### rgbToGrayscale
+rgb값에서 grayscale값을 구하는 일반적인 방법은 아래와 같고 공식별로 조금씩 차이는 있지만 전문가가 아닌 나에겐 비슷해 보여서 그간 입맛대로 골라서 사용했던 것 같다.
+[YUV 표현방식](https://blog.ggaman.com/965)에 대한 내용이 궁금하신 분은 링크 내용을 참고하면 좋을거 같다. 
+
+```javascript:rgb_to_grayscale
+
+// 제일 간단한 방법 막눈으로는 잘 구분 
+const value = (R + G + B) / 3.33333
+
+// YUV 표현 방법
+cosnt value = 0.299 * R + 0.587 * G + 0.114 * B
+
+const value = 0.2126 * R + 0.7152 * G + 0.0722 * B
+
+```
+
+### sRGBToGrayScale
+
+컴퓨터가 사용하는 색 공간체계는 `sRGB`라 불리는 녀석이라 앞에서 다룬 공식을 이용하면 [영상](https://www.youtube.com/watch?v=LKnqECcg6Gw)에 나오는 것 처럼 믹스되는 컬러경계 주변이 정확하게 표현되지 않는 문제가 있어 `선형 색상공간`으로 변환 후에 사용하면 좋은데 이를 위한 코드는 아래에서 확인이 가능하다.  
+> 뭔가 색공간에 대한 지식이 필요한 부분인거 같아서 그냥 받아들이고 넘어갔다.
+
+```typescript:sRGBToLinear
+
+const tosRGBLinear = (rgba: ImageData) => {
+   const { width, height, data } = rgba;
+   const rgb = new Uint16Array(width * height * 3);
+   let max = 0;
+   let min = (256 ** 2 - 1) * 3;
+   for (let i = 0; i < width * height; i++) {
+      let idx = i << 2; // *4
+      let r = data[idx] + 1; // 1 ~ 256으로 조절
+      r = r * r - 1;         // 0**2 ~ 255**2 사이값으로 조정
+
+      let g = data[idx + 1] + 1;
+      g = g * g - 1;
+
+      let b = data[idx + 2] + 1;
+      b = b * b - 1;
+
+      idx = (i << 1) + i; // idx값을 3의 배수로 조정
+      rgb[idx] = r;
+      rgb[idx + 1] = g;
+      rgb[idx + 2] = b;
+      const sum = r + g + b;
+      if (sum > max) max = sum;
+      if (sum < min) min = sum;
+   }
+
+   return {
+      rgb,
+      min,
+      max
+   }
+}
+```
+위 코드를 이용해 일반값과 반전된 그레이컬러스케일 값을 구성할 수 있다.  
+
+```typescript:toLinearGrayColor
+
+const toLinearGrayColor = (rgba: ImageData) => {
+    const { rgb, max, min } = tosRGBLinear(rgba);
+    const { width, height } = rgba;
+
+    const invert = new Float32Array(width * height);
+    const normal = new Float32Array(width * height);
+
+    const ratio = 1 / (max - min);
+    for (let i = 0; i < invert.length; i++) {
+        let idx = (i << 1) + i; //3의 배수 처리
+        let color = rgb[idx] + rgb[idx + 1] + rgb[idx + 2];
+        normal[i] = (color - min) * ratio;
+        invert[i] = (max - color) * ratio;
+    }
+    
+    return {
+        normal, // 기본 그레이스케일 컬러값
+        invert  // 반전된 그레이스케일 컬러값
+    }
+}
+```
+sRGB컬러를 선형변환 후 사용한 것과 일반 그레이스케일 공식을 적용한 이미지를 보면 명암구분이 좀더 명확해 지는 것을 확인 할 수 있다.
+
+| sRGB선형변환적용 | 그레이스케일 |
+|---|---|
+|![선형변환방식적용](/images/experience/stippling/sRGB_linear.jpg)|![그레이스케일](/images/experience/stippling/grayscale.jpg)|
+
+## 이미지를 표현할 포인트 수 정하기
+
+이미지를 충분히 표현하기 위한 포인트 수를 지정하면 된다.  
+이미지 가로*세로의 값을 max 포인트라고 생각하고 여기서 적정 비율을 정해서 사용하면 된다.  
+퍼포먼스를 위한 별도 처리없이 노멀하게 사용할 경우 4000~5000정도면 무리없이 돌아가는 것 같다.
+
+```typescript:랜덤포인트_추출
+const output = new Float32Array(pointNum * 2);
+for (let i = 0; i < pointNum; i++) {
+   let x = 0;
+   let y = 0;
+   for (let j = 0, rejected = true; j < 100 && rejected; j++) {
+      x = Math.floor(randomFloat(width));
+      y = Math.floor(randomFloat(height));
+      //가중치 값을 기준으로 추가여부를 판단하며 러프한 밀도를 초기에 구성한다.
+      //가중치가 낮은 값일 수록 random한 값보다 작을 확률이 높기때문.
+      //random값이 아닌 특정 임계값을 설정하고 제외해도 된다.
+      let val = colorWeights[y * width + x];
+      rejected = Math.random() > val ** 2;
+   }
+   output[i * 2] = x;
+   output[i * 2 + 1] = y;
+}
+return output;
+```
+
+## 포인트에 컬러가중치 적용
+
+생성한 포인트에 컬러 가중치는 `d3-delaunay`를 이용하고 가중치를 반복 적용하면 점점 포인트에 밀도가 형성되는 것을 확인할 수 있다.
+
+| 최초 상태 | 가중치적용 4회 | 가중치적용 8회 |
+|---|---|---|
+|![최초형태](/images/experience/stippling/voronoi_first.jpg)|![4회 반복](/images/experience/stippling/voronoi_sec.jpg)|![8회 반복](/images/experience/stippling/voronoi_third.jpg)|
+
+
+```typescript:delaunay_컬러가중치_적용
+const weights = new Float32Array(pointNum);
+const weightedCoordinates = new Float32Array(pointNum * 2);
+
+const delaunay = new Delaunay(points);
+const voronoi = delaunay.voronoi([0, 0, width, height]);
+
+for (let iter = 0; iter < iteration; iter++) {
+
+   weights.fill(0);
+   weightedCoordinates.fill(0);
+
+   for (let y = 0, idx = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+         //인접셀을 찾아가며 전체 셀에 컬러 가중치 값을 계산.
+         idx = delaunay.find(x + .5, y + .5, idx);
+         const w = colorWeights[y * width + x];
+         if (w) {
+            weights[idx] += w;
+            weightedCoordinates[idx * 2] += w * (x + .5);
+            weightedCoordinates[idx * 2 + 1] += w * (y + .5);
+         }
+      }
+   }
+
+   //계산된 가중치 위치로 포인트 위치 조정
+   for (let i = 0; i < pointNum; i++) {
+      let x0 = points[i * 2];
+      let y0 = points[i * 2 + 1];
+      const w = weights[i];
+      if (w) {
+            x0 = lerp(x0, weightedCoordinates[i * 2] / w, .5214);
+            y0 = lerp(y0, weightedCoordinates[i * 2 + 1] / w, .5214);
+      }
+      points[i * 2] = x0;
+      points[i * 2 + 1] = y0;
+   }
+
+   voronoi.update();
+```
+
+## 후기
+기본적인 구현 후 퍼포먼스를 위해 Worker를 이용해 아래와 같은 리팩토링을 진행했다.
+
+ - OffScreenCanvas 이용해 imageData연산을 모두 메인쓰레드와 분리
+ - 제너레이터를 이용한 가중치 적용연산 개선
+ - 가중치에 따른 포인트 사이즈 적용
+ - `window.resize`시 context에 scale을 적용한 리사이즈 처리
+
+*들로네 삼각형에 컬러값을 적용해 표현*
+![보로노이삼각형을 이용한 표현](/images/experience/stippling/vonoroi_colorize.jpg)
+
+## 참고  
+ - [Delaunay image triangulation](https://www.esimov.com/2019/04/image-triangulation-in-go)
+ - [Stippling, Voronois And TSPs](https://openprocessing.org/sketch/1236886/)
+ - [Voronoi Stippling Experiments](https://observablehq.com/@jobleonard/untitled)
+
+---
+[^1]: [델로네 삼각분할](https://kr.mathworks.com/help/matlab/math/delaunay-triangulation.html) : 계산기하학에서 평면의 점 집합 P의 델로네 삼각분할 DT는 DT에 속하는 모든 삼각형의 외접원 내에 P에 속하는 어떤 점도 속하지 않도록 만든 삼각분할이다. 최대한 정삼각형의 모양과 가깝게 분할한다는 특징이 있다  
+

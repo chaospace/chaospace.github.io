@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        position: relative;
+      }
+
+      .content {
+        /* clip-path: inset(20px, 20px, round, 20px, 20px); */
+        clip-path: inset(20px 20px round 20px);
+        background-color: antiquewhite;
+      }
+
+      .overlay-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: beige;
+        height: 250px;
+        overflow: hidden;
+        overflow-y: auto;
+      }
+
+      .box {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background: linear-gradient(360deg, #ffcc00ff, #ffcc0000);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>마스크동작테스트</h1>
+
+    <div class="container">
+      <div class="content">
+        내용물<br />
+        내용물내용물내용물내용물내용물내용물내용물<br />
+        내용물내용물내용물내용물내용물내용물<br />
+        내용물내용물내용물내용물내용물내용물내용물<br />
+        내용물내용물내용물내용물<br />
+        내용물내용물<br />
+      </div>
+
+      <div class="overlay-container">
+        <p>
+          Donec libero neque, pharetra at pretium ut, congue eleifend mauris.
+          Aliquam erat volutpat. Nullam lobortis aliquet faucibus. Nullam vel
+          dui laoreet, imperdiet eros venenatis, semper mi. Aenean tincidunt
+          vitae dolor in consectetur. Proin imperdiet luctus urna vel finibus.
+          Vestibulum dui ex, rhoncus et accumsan sed, vestibulum efficitur leo.
+          In et congue nibh.
+        </p>
+        <p>
+          Donec libero neque, pharetra at pretium ut, congue eleifend mauris.
+          Aliquam erat volutpat. Nullam lobortis aliquet faucibus. Nullam vel
+          dui laoreet, imperdiet eros venenatis, semper mi. Aenean tincidunt
+          vitae dolor in consectetur. Proin imperdiet luctus urna vel finibus.
+          Vestibulum dui ex, rhoncus et accumsan sed, vestibulum efficitur leo.
+          In et congue nibh.
+        </p>
+        <div class="box">
+          <h3>메시지 박스</h3>
+        </div>
+        <p>
+          Donec libero neque, pharetra at pretium ut, congue eleifend mauris.
+          Aliquam erat volutpat. Nullam lobortis aliquet faucibus. Nullam vel
+          dui laoreet, imperdiet eros venenatis, semper mi. Aenean tincidunt
+          vitae dolor in consectetur. Proin imperdiet luctus urna vel finibus.
+          Vestibulum dui ex, rhoncus et accumsan sed, vestibulum efficitur leo.
+          In et congue nibh.
+        </p>
+        <p>
+          Donec libero neque, pharetra at pretium ut, congue eleifend mauris.
+          Aliquam erat volutpat. Nullam lobortis aliquet faucibus. Nullam vel
+          dui laoreet, imperdiet eros venenatis, semper mi. Aenean tincidunt
+          vitae dolor in consectetur. Proin imperdiet luctus urna vel finibus.
+          Vestibulum dui ex, rhoncus et accumsan sed, vestibulum efficitur leo.
+          In et congue nibh.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <canvas class="sample"></canvas>
+    </div>
+    <script>
+      const screen = document.querySelector(".sample");
+      const context = screen.getContext("2d");
+      screen.width = 400;
+      screen.height = 300;
+
+      /* // blur필터와 레이어모드를 이용한 feather효과
+      context.fillRect(0, 0, screen.width, screen.height);
+      context.globalCompositeOperation = "destination-in";
+      context.save();
+      context.beginPath();
+      context.filter = "blur(10px)";
+      context.arc(150, 75, 50, 0, Math.PI * 2);
+      context.fill();
+      context.closePath();
+      context.restore(); */
+
+      const guide = new OffscreenCanvas(300, 150);
+      const guideContext = guide.getContext("2d");
+      guideContext.save();
+
+      const radius = 20;
+      guideContext.translate(-guide.width, 0);
+      guideContext.shadowOffsetX = guide.width;
+      guideContext.shadowOffsetY = 0;
+      guideContext.shadowColor = "#000";
+      guideContext.shadowBlur = radius;
+      guideContext.beginPath();
+      guideContext.roundRect(
+        radius + 2,
+        radius + 2,
+        guide.width - (radius + 2) * 2,
+        guide.height - (radius + 2) * 2,
+        radius
+      );
+      guideContext.closePath();
+      guideContext.fill();
+      guideContext.restore();
+
+      context.beginPath();
+      context.fillStyle = "red";
+      context.fillRect(0, 0, screen.width, screen.height);
+      context.closePath();
+      context.save();
+      context.globalCompositeOperation = "destination-in";
+      context.drawImage(guide, 0, 0, screen.width, screen.height);
+      context.closePath();
+    </script>
+  </body>
+</html>

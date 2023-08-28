@@ -1,0 +1,108 @@
+---
+title: Next.js 블로그 제작 ( Toc 개선 )
+subtitle: 
+date: 2023-08-08
+tags: [ Next.js ]
+draft: false
+summary: 블로그 Table of Contents 개선
+---
+
+
+현재 Toc(Table of Contents)는 추출한 헤더목록의 id값을 <code>Link컴포넌트</code> **href**속성에 설정하고 클릭 시 anchor를 이용한 방식이라 아래와 같은 점이 아쉬웠다.
+- 클릭 시 스크롤이 부드럽지 않음.
+- 이동 간 location.hash 값이 변해 뒤로가기 시 페이지 변경없이 hash값만 변경.
+
+두 번째 이유는 당연한 현상인데 뭔가 anchor이동을 여러 번 사용할 경우 브라우저 뒤로가기 버튼이 동작하지 않는 버그처럼 느껴져 hash변경을 제거해 이전 페이지가 나오게 하고 싶었다.
+
+## TODO 
+
+- [ ] 목차 클릭 시 scroll을 부드럽게 하기
+- [ ] 목차 이동 시 location.hash 변경 제거
+
+현재 방식을 유지하며 개선사항을 수정할 수 없어 api를 알아보니 2가지 정도가 눈에 띄었다.
+
+- <code>window.scroll</code> : 문서 내 창을 특정 위치로 스크롤 처리 [doc](https://developer.mozilla.org/en-US/docs/Web/API/Element/scroll)
+- <code>element.scrollIntoView</code>  : 특정 엘리먼트를 기준으로 스크롤을 이동 시킴 [doc](https://developer.mozilla.org/ko/docs/Web/API/Element/scrollIntoView)
+
+### window.scroll
+
+```javascript:scroll.doc
+// 문서 내 창을 특정 위치로 스크롤합니다.
+/**
+ * @param x-coord: 왼쪽 상단에 표시하고 싶은 문서의 수평축에 따른 픽셀
+ * @param y-coord: 왼쪽 상단에 표시하고 싶은 문서의 수직축에 따른 픽셀
+ */
+scroll(x-coord, y-coord)
+// 적용예시
+window.scroll(100, 0);
+
+/**
+ * @param options : {
+ *  top:number,
+ *  left:number,
+ *  behavior:{
+ *      auto:string   // 기본동작 css스타일에 의해 제어
+ *      smooth:string // 스크롤이 부드럽게 작동
+ *  }
+ * }
+ */
+scroll(options)
+
+// 적용예시
+window.scroll({
+    top:0,   //y위치
+    left:0,  //x위치
+    behavior:'smooth' //easing적용
+})
+```
+
+### element.scrollIntoView
+
+```javascript:scrollIntoView
+//기본
+element.scrollIntoView();
+
+/**
+ 상단을 기준으로 스크롤 여부를 설정
+ @params alignToTop:boolean
+*/
+element.scrollIntoView(alignToTop);
+
+/**
+ * behavior : 전환 에니메이션 정의 (auto || smooth)
+ * block : 수직 정렬 (start || center || end || nearest)
+ * inline : 수평 정렬 (start || center || end || nearest)
+ */
+element.scrollIntoView(scrollIntoViewOptions); // Object parameter
+```
+이동 위치를 찾을 필요없는 <code>element.scrollIntoView</code>로 결정하고 <code>AnchorButton컴포넌트</code>[^1]를 만들어 적용.
+
+```typescript:AnchorButton.tsx
+function AnchorButton({children, anchor}:{ children:ReactNode, anchor: string }) {
+    const clickHandler = useMemo(() => {
+        return (e: MouseEvent<HTMLAnchorElement>) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const ele = document.querySelector(anchor);
+            ele?.scrollIntoView();
+        }
+    }, [anchor]);
+    return (
+        <a className="cursor-pointer" onClick={ clickHandler }>
+            { children }
+        </a>
+    )
+}
+```
+
+- [x] ~~목차 이동 시 scroll 부드럽게 적용~~
+- [x] ~~목차 이동 시 location.hash 변경 제거~~
+
+## 결과
+
+부드러운 스크롤과 hash변경이 없어 뒤로가기 클릭 시 이전페이지로 이동.  
+**rehype-autolink-headings**는 필요가 없어 제거.
+
+---
+[^1]: Next.js 기본컴포넌트는 서버컴포넌트로 동적인 스크립트를 사용하는 경우  
+클라이언트 컴포넌트를 제작해 격리하는게 좋다.

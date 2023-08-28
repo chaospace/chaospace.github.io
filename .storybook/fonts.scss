@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;700&family=Noto+Sans+KR:wght@100;400;700&display=swap");
+:root {
+  --font-fira-code: "Fira Code", monospace;
+  --font-noto-sans-kr: "Noto Sans KR", sans-serif;
+}
+
+.Fira_Code {
+  font-family: var(--font-fira-code);
+}
+
+.Noto_Sans_KR {
+  font-family: var(--font-noto-sans-kr);
+}

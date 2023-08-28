@@ -1,0 +1,301 @@
+---
+title: 제너레이터 활용
+subtitle: 
+date: 2023-08-09
+tags: [es6, yield, generator]
+draft: false
+summary: 제너레이터를 이용한 코드 체이닝
+---
+
+## 제너레이터의 특징 
+
+- 여러 개의 값을 필요에 따라 하나씩 반환(yield)할 수 있다 
+- 테이터 공급자와 소비자로 구분되며 크게 Iterator와 Observer 인터페이스로 구분
+- 공급과 소비를 모두 가진 객체로 둘 모두를 다룰 수 있게 인터페이스가 구성됨
+
+```typescript
+interface Iterator {
+    next():IteratorResult;
+    return?(value?:any):IteratorResult;
+}
+
+interface Observer {
+    next(value?any):void;
+    return(value?any):void;
+    throw(error):void;
+}
+
+interface Generator {
+    next(value?:any):IteratorResult;
+    throw(value?:any):IteratorResult;
+    return(value?:any):IteratorResult;
+}
+
+interface IteratorResult {
+    value:any;
+    done:boolean;
+}
+```
+
+
+### yield를 이용한 데이터 전달
+```typescript:yield를_이용한_데이터_전달
+function* sendValueGenerator(){
+    let a = 0;
+    for(let i=0; i<10; i++){
+        yield a+i;
+    }
+}
+
+//제너레이터를 반복하며 전달값은 확인
+const gen = sendValueGenerator();
+let result = gen.next();
+while(!result.done){
+    console.log('value', result.value);
+    result = gen.next();
+}
+```
+
+### yield를 이용한 데이터 수신
+
+```typescript:yield를_이용한_데이터_수신
+function *awaitGenerator(){
+    let value:string = yield;
+    return `Hello ${value}`; 
+}
+
+const gen = awaitGenerator();
+gen.next(); // yeild가 이는 곳으로 이동
+console.log( gen.next('chaospace')) // Hello chaospace
+
+```
+수신을 대기하는 제너레이터에 데이터 전달은 next 호출 시 파라미터를 통해 가능하다.
+
+
+### generatorRunner
+
+generator의 제어가 힘들다면 wrapping함수를 만들어 완료까지 반복처리를 대신할 수 있다.
+
+```typescript
+function generatorRunner( generatorFunc:any ) {
+
+    const callback = ({value, done}:IteratorResult<any>) => {
+        console.log('value', value);
+        if(done){
+            return value;
+        }
+        callback(generator.next(value) as any);
+    }
+    const generator = generatorFunc();
+    callback(generator.next());
+}
+
+
+// 수신없는 전달 확인
+generatorRunner( function *foo(){
+    yield 100;
+    yield 200;
+    yield 300;
+    yield 400;
+});
+
+// r변수를 이용한 송수신 동작 확인
+generatorRunner( function *foo(){
+    let r:number = yield 100;
+    r = yield 200 + r;
+    r = yield 300 + r;
+    r = yield 400 + r;
+    return r; // 마지막 리턴은 선택
+});
+```
+규칙적인 값 변경은 runnder와 같은 함수로 가능하지만 범용적인 사용을 위해서는 역할별로 제너레이터를 만드는 것이 구분하는 것이 좋음. 
+
+### 역할에 따른 제너레이터 함수구성
+
+yield를 이용해 데이터가 오기를 기다리는 제너레이터 구성
+```typescript:receiver
+// yield상태에서 데이터수신을 대기
+function* receiverUser(name: string) {
+    try {
+        while (true) {
+            // yield로 멈춘상태로 정보가 오기를 대기
+            let message: string = yield; 
+            console.log(`${name}-receive-message`, message);
+        }
+    } catch (error) {
+
+    } finally { 
+        // 제너레이터가 done상태 혹은 return이 발생하면 여기로 이동
+        console.log('done');
+    }
+}
+```
+
+수신을 기다리는 제너레이터를 서로 연결해 하는 Binder함수 추가
+
+```typescript:userBinder
+//receiver 사이를 연결해 데이터를 전달하는 역할
+function userBinder() {
+    let _users: Generator[] = [];
+    return {
+        append: (user: Generator) => {
+            if (!_users.includes(user)) {
+                _users.push(user);
+            }
+            return _users;
+        },
+        remove: (user: Generator) => {
+            if (_users.includes(user)) {
+                _users = _users.filter(u => user !== u);
+            }
+            return _users;
+        },
+        reset: () => {
+            // return을 통해 generator의 완료를 알린 후 초기화
+            for (let u of _users) {
+                u.return(null);
+            }
+            _users = [];
+        },
+        send: (user: Generator, message: string) => {
+            _users.forEach(u => {
+                if (user !== u) {
+                    u.next(message);
+                }
+            })
+        }
+    }
+}
+
+
+const userA = receiverUser('베지터');
+const userB = receiverUser('카카롯트');
+const userC = receiverUser('피코로');
+userA.next(); //yield위치로 이동
+userB.next();
+userC.next();
+
+const uBinder = userBinder();
+uBinder.append(userA);
+uBinder.append(userB);
+uBinder.append(userC);
+uBinder.send(userA, 'Hello~~');
+uBinder.send(userB, '안녕!~~');
+uBinder.send(userC, '나메크성 gogo!!~~');
+// 종료
+uBinder.reset();
+```
+## 수신 제너레이터 헬퍼함수 구성
+
+앞에서 사용한 제너레이터 함수의 공통요소를 중첩함수를 이용해 개선.
+
+```typescript
+// 수신 제너레이터 
+function generatorConsumer( func:GeneratorFunction ) {
+    return (...args:Paramerts<typeof func>) : ReturnType<typeof func> => {
+        const generator = func(...args);
+        generator.next(); // 최초 yield위치 이동
+        return generator;
+    }
+}
+
+// 제너레이터 연결 함수
+function generatorBinder( source:Generator, receiver:Generator, delay = 0 ) {
+    const toNext = () => {
+        const r = source.next();
+        if(!r.done){
+            receiver.next(r.value);
+            setTimeout( toNext , delay);
+        } else {
+            receiver.return(null); //종료
+        }
+    }
+    toNext();
+}
+```
+위 함수를 이용하면 역할별 제너레이터 함수를 구성해 체이닝을 이어갈 수 있다.
+
+```typescript
+const oneStep = generatorConsumer(function *(receiver:Generator){
+    try{
+        while(true){
+            let b = yield;
+            //다음 제너레이터에 전달.
+            receiver.next(Number(b)+1);
+        }
+    }finally{
+        console.log('done');
+    }
+} as GeneratorFunction);
+
+
+const nextStep = generatorConsumer(function* (){
+    while(true){
+        try{
+            let value = yield;
+            console.log('value', Number(value)*2);
+        } finally {
+            console.log('done');
+        }
+    }
+});
+
+// 최초 데이터 전달 역할을 하는 제너레이터
+function *fooValue(){
+    for(let i=0;i<5; i++){
+        yield i;
+    }
+}
+generatorBinder(fooValue(), oneStep(nextStep()));
+```
+
+## 비동기 제너레이터처리 
+
+제너레이터에서 비동기 처리가 필요한 경우를 고려해 아래와 같은 runner를 구성할 수 있다.  
+제네릭 타입 적용을 위해서는 조금 더 연구가 필요해 보인다.
+
+```typescript:ayncGeneratorRunner 
+
+function asyncGeneratorRunnder<T, TReturn, TNext>(generatorFunc: (...args: any) => Generator<T, TReturn, TNext>) {
+    return (...args:Parameters<typeof generatorFunc>) => {
+        let generator = generatorFunc.apply(null, [...args]);
+        const handle = (result: IteratorResult<T, TReturn>): Promise<TReturn> => {
+            //완료상태가 되면 반복을 종료한다.
+            if (result.done) return Promise.resolve(result.value);
+            //promise를 통해 resolve가 이루어지는 순간 순차적으로 다음 요청을 반복한다.
+            return Promise.resolve(result.value).then((res: any) => {
+                return handle(generator.next(res));
+            }, (error) => {
+                return handle(generator.throw(error));
+            });
+        }
+
+        try {
+            //최초 yield위치 이동을 위해 next를 호출하며 시작.
+            return handle(generator.next());
+        } catch (error) {
+            return Promise.reject(error);
+        }
+    }
+}
+
+function appendTen(input: number) {
+    return (input + 10);
+}
+
+function divHalf(input: number) {
+    return (input / 2);
+}
+
+
+const foo = asyncGeneratorRunnder(function* foo(start: number) {
+    let output: unknown = yield appendTen(start);
+    let r: unknown = yield divHalf(Number(output));
+    return r;
+});
+
+foo(10).then(res => {
+    console.log('result', res);
+});
+
+```

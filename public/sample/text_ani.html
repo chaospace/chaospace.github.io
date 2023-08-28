@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <!-- Minified UMD bundle -->
+    <script src="https://unpkg.com/split-type"></script>
+    <style>
+      html,
+      body {
+        background-color: darkgray;
+      }
+      p.sample {
+        font-size: 32px;
+        line-height: 50px;
+      }
+      .blue {
+        color: blueviolet;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="kill();">reset</button>
+    <button onclick="animateChars();">chars</button>
+    <button onclick="animateWords();">words</button>
+    <button onclick="animateLines();">chars, words, lines</button>
+    <p class="sample">
+      By default, <em class="blue">split-type</em> splits texts into lines,
+      words, and characters.<a href="https://www.greensock.com" target="_blank"
+        >No-problem</a
+      >. You can even <em>GO NUTS with EMOJI</em>🐳 🍔 ❤️
+    </p>
+    <script>
+      let ourText = SplitType.create("p.sample", {
+        types: "words, chars, lines",
+      });
+
+      gsap.set("p.sample", { perspective: 400 });
+      const textTimeline = gsap.timeline();
+      function kill() {
+        textTimeline.clear().time(0);
+        SplitType.revert("p.sample");
+      }
+
+      function animateChars() {
+        kill();
+        ourText = SplitType.create("p.sample", { types: "chars, words" });
+        textTimeline.from(ourText.chars, {
+          duration: 0.6,
+          scale: 4,
+          autoAlpha: 0,
+          rotationX: -180,
+          transformOrigin: "100% 50%",
+          ease: "back",
+          stagger: 0.02,
+        });
+      }
+
+      function animateWords() {
+        kill();
+        ourText = SplitType.create("p.sample", { types: "words" });
+        ourText.words.forEach((word, index) => {
+          textTimeline.from(
+            word,
+            { duration: 0.6, opacity: 0, force3D: true },
+            index * 0.01
+          );
+          textTimeline.from(
+            word,
+            { duration: 0.6, scale: index % 2 == 0 ? 0 : 2 },
+            index * 0.01
+          );
+        });
+      }
+
+      function animateLines() {
+        kill();
+        ourText = SplitType.create("p.sample", {
+          types: "words, chars, lines",
+        });
+        // console.log("lines", o);
+        textTimeline
+          .from(
+            ourText.chars,
+            {
+              duration: 0.2,
+              autoAlpha: 0,
+              scale: 4,
+              force3D: true,
+              stagger: 0.01,
+            },
+            0.5
+          )
+          .to(
+            ourText.words,
+            { duration: 0.1, color: "#8FE402", scale: 0.9, stagger: 0.1 },
+            "words"
+          )
+          .to(
+            ourText.words,
+            { duration: 0.2, color: "white", scale: 1, stagger: 0.1 },
+            "words+=0.1"
+          )
+          .to(ourText.lines, {
+            duration: 0.5,
+            x: 100,
+            autoAlpha: 0,
+            stagger: 0.2,
+          });
+      }
+    </script>
+  </body>
+</html>

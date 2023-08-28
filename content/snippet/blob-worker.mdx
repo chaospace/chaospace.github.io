@@ -1,0 +1,25 @@
+---
+title: blob을 이용한 Worker 
+subtitle: 
+date: 2023-08-24
+tags: [ worker, blob ]
+draft: false
+summary: blob을 이용해 별도 스크립트파일 없이 worker생성해 활용하기
+---
+
+간단한 워커를 이용할 때 별도 파일로 분리하기 애매한 경우 유용함.
+
+```javascript:blob을_이용한_worker생성
+const workerBlob = new Blob(
+    [workerRunner.toString().replace(/^function .+\{?|\}$/g, "")],
+    { type: "text/javascript" }
+);
+
+const workerBlobUrl = URL.createObjectURL(workerBlob);
+const worker = new Worker(workerBlobUrl);
+
+worker.onmessage = function (event) {
+    const { data } = event;
+    console.log("event", data);
+};
+```

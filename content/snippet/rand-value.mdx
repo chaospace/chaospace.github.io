@@ -1,0 +1,64 @@
+---
+title: MathUtil
+date: 2023-04-23
+tags: [lerp, range, invertLerp, mapValue]
+draft: false
+summary: 변경되는 값 혹은 범위조정에 자주 사용되는 코드모음
+---
+
+인터렉티브 UI를 구현하다 보면 동적인 값을 제어할 일이 많은데 **p5**, **processing**에서 사용되는 <code>map</code>함수를 보고 비슷한 코드를 util성으로 만들어 정리해 둔다.
+
+## range
+
+입력값 + ~ - \*0.5 범위에 해당하는 값을 반환
+
+```typescript:range
+const range = (v: number) => v * (Math.random() - .5);
+```
+
+## randomFloat
+
+입력값에 따른 랜덤 값 반환
+
+```typescript:randomFloat
+const randomFloat = (v: number) => Math.random() * v;
+```
+
+## spreadFloat
+
+min~max사이 랜덤 값 반환
+
+```typescript:spreadFloat
+const spreadFloat = (min: number, max: number) => min + (~~randomFloat(max + 1 - min));
+```
+
+## lerp
+
+from ~ to 범위 중 현재 비율에 값을 반환
+
+```typescript:lerp
+const lerp = (from:number, to:number, rate:number) => {
+    return from * ( 1 - rate ) + to * rate;
+}
+```
+
+## invertLerp
+
+from ~ to 범위값을 0~1로 반환
+
+```typescript:invertLerp
+const invertLerp = (value:number, from:number, to:number) => {
+    return (from === to ) ? 0 : ( value - frome )/( to - from )
+}
+```
+
+## reMap
+
+from ~ to 범위값을 새로운 범위 값으로 변환
+
+```typescript:reMap
+const reMap = (value:number, from:number, to:number, nFrom:number, nTo:number ) => {
+    const p =  invertLerp(value, from, to);
+    return lerp(nFrom, nTo, p);
+}
+```

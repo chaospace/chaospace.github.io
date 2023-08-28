@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const debouce = (callback, delay = 100) => {
+        let callbackID;
+        return (...args) => {
+          //console.log("디바운스 콜!!", callbackID);
+          if (callbackID) {
+            clearTimeout(callbackID);
+          }
+
+          callbackID = setTimeout(() => {
+            //console.log("호출");
+            clearTimeout(callbackID);
+            callbackID = undefined;
+            callback(...args);
+          }, delay);
+        };
+      };
+
+      window.addEventListener(
+        "resize",
+        debouce(() => {
+          console.log("debounce--resize!!!-");
+        })
+      );
+
+      window.addEventListener("resize", () => {
+        console.log("direct--resize!!!-");
+      });
+    </script>
+  </body>
+</html>

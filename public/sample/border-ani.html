@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background: none;
+        border: 0;
+        box-sizing: border-box;
+        margin: 1em;
+        padding: 1em 2em;
+
+        box-shadow: inset 0 0 0 2px red;
+        color: red;
+        font-size: inherit;
+        font-weight: 700;
+
+        position: relative;
+        vertical-align: middle;
+      }
+
+      button::before,
+      button::after {
+        box-sizing: inherit;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .draw-base {
+        transition: color 0.25s;
+      }
+
+      .draw-base:hover {
+        color: cyan;
+      }
+
+      .draw-base:hover::before,
+      .draw-base:hover::after {
+        width: 100%;
+        height: 100%;
+      }
+
+      .draw-base:hover::before {
+        border-top-color: cyan;
+        border-right-color: cyan;
+        transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+      }
+
+      .draw-base:hover::after {
+        border-bottom-color: cyan;
+        border-left-color: cyan;
+        transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+          height 0.25s ease-out 0.75s;
+      }
+
+      .draw-base::before,
+      .draw-base::after {
+        border: 2px solid;
+        width: 100%;
+        height: 100%;
+      }
+      .draw-base::before {
+        top: 0;
+        left: 0;
+      }
+
+      .draw-base::after {
+        bottom: 0;
+        right: 0;
+      }
+
+      .meet:hover {
+        color: yellow;
+      }
+
+      .meet:hover::before {
+        border-top-color: yellow;
+        border-right-color: yellow;
+      }
+
+      .meet:hover::after {
+        border-bottom-color: yellow;
+        border-left-color: yellow;
+        transition: height 0.25s ease-out 0.5, width 0.25s ease-out 0.75s;
+      }
+
+      .box {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        box-shadow: inset 0 0 0 2px transparent;
+        box-sizing: border-box;
+        border-radius: 12px;
+      }
+
+      .box::before,
+      .box::after {
+        position: absolute;
+        box-sizing: inherit;
+        content: "";
+        width: 0;
+        height: 0;
+        border-width: 2px;
+        border-style: solid;
+        border-color: transparent;
+        transition: border-color 0.15s ease-out 0.15s, width 0.15s ease-out,
+          height 0.15s ease-out;
+      }
+
+      .box::before {
+        top: 0;
+        left: 0;
+        border-right: none;
+        border-bottom: none;
+        border-top-left-radius: 8px;
+
+        width: 0;
+        height: 0;
+      }
+
+      .box::after {
+        bottom: 0;
+        right: 0;
+        border-bottom-right-radius: 8px;
+        border-top: none;
+        border-left: none;
+        width: 0;
+        height: 0;
+      }
+
+      .box:hover::before,
+      .box:hover::after {
+        width: 100%;
+        height: 100%;
+        border-color: greenyellow;
+
+        transition: border-color 0s ease-out, width 0.15s ease-out,
+          height 0.15s ease-out;
+      }
+
+      .content {
+        padding: 4px;
+        width: 100%;
+        height: 100%;
+      }
+
+      .tw-container {
+        position: relative;
+
+        transform-origin: center;
+        transition: transform 200ms ease-out;
+      }
+
+      .tw-container:hover {
+        transform: scale(1.2, 1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="content">aaa</div>
+    </div>
+
+    <button class="draw-base">Draw</button>
+
+    <button class="draw-base meet">Draw</button>
+
+    <div class="tw-container">
+      <h3>텍스트</h3>
+      <p>서브텍스트</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        background-color: black;
+        color: #eee;
+      }
+      .screen {
+        width: 400px;
+        height: 400px;
+      }
+
+      .controls {
+        position: relative;
+        padding: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="controls">
+      <label for="">
+        가로 :
+        <span class="txt-col"></span>
+      </label>
+      <label for="">
+        세로 :
+        <span class="txt-row"></span>
+      </label>
+      <label>
+        총 :
+        <span class="txt-total"></span>
+      </label>
+    </div>
+    <canvas id="screen"></canvas>
+    <script>
+      class Vector {
+        constructor(x, y) {
+          this.x = x || 0;
+          this.y = y || 0;
+        }
+        add(v) {
+          return new Vector(this.x + v.x, this.y + v.y);
+        }
+        addTo(v) {
+          this.x += v.x;
+          this.y += v.y;
+        }
+        sub(v) {
+          return new Vector(this.x - v.x, this.y - v.y);
+        }
+        subFrom(v) {
+          this.x -= v.x;
+          this.y -= v.y;
+        }
+
+        div(n) {
+          return new Vector(this.x / n, this.y / n);
+        }
+
+        setLength(n) {
+          const angle = this.getAngle();
+          this.x = Math.cos(angle) * n;
+          this.y = Math.sin(angle) * n;
+          return this;
+        }
+
+        getLength() {
+          return Math.hypot(this.x, this.y);
+        }
+
+        getLengthSq() {
+          return this.x ** 2 + this.y ** 2;
+        }
+
+        getAngle() {
+          return Math.atan2(this.y, this.x);
+        }
+
+        setAngle(rad) {
+          const len = this.getLength();
+          this.x = Math.cos(rad) * len;
+          this.y = Math.sin(rad) * len;
+          return this;
+        }
+
+        distanceTo(v) {
+          return this.sub(v).getLength();
+        }
+
+        copy() {
+          return new Vector(this.x, this.y);
+        }
+      }
+
+      const random = (min, max) => {
+        return min + (Math.random() * (max + 1) - min);
+      };
+
+      const getGridPos = (x, y) => {
+        return { x: ~~(x / size), y: ~~(y / size) };
+      };
+      const getGridIndex = (p, w) => {
+        const { x, y } = getGridPos(p);
+        return y * w + x;
+      };
+
+      const screen = document.querySelector("#screen");
+      const w = 400;
+      screen.height = screen.width = w;
+
+      let r = 80;
+      let size = ~~(r / Math.SQRT2);
+      const col = Math.floor(w / size);
+      const row = Math.floor(w / size);
+
+      document.querySelector(".txt-col").textContent = col;
+      document.querySelector(".txt-row").textContent = row;
+      document.querySelector(".txt-total").textContent = col * row;
+
+      const ctx = screen.getContext("2d", { willReadFrequently: true });
+
+      const grid = [];
+      for (let i = 0; i < col * row; i++) {
+        grid[i] = undefined;
+      }
+      const cx = Math.floor(w / 2);
+      const cy = Math.floor(w / 2);
+      const pos = new Vector(cx, cy);
+      grid[getGridIndex(pos, col)] = pos;
+      const active = [pos];
+      const ordered = [];
+      const k = 30; //테스트 시도 수
+
+      function render() {
+        // 25번 시도
+        for (let total = 0; total < 20; total++) {
+          if (active.length > 0) {
+            let rIndex = Math.floor(Math.random() * active.length);
+            let pos = active[rIndex];
+            let found = false;
+            for (let n = 0; n < k; n++) {
+              //추가되는 점 간격은 r ~ (2*r)
+              const m = random(r, 2 * r);
+              let sample = new Vector(Math.random() - 0.5, Math.random() - 0.5);
+              sample.setLength(m);
+              sample.addTo(pos);
+
+              let tempCol = ~~(sample.x / size);
+              let tempRow = ~~(sample.y / size);
+              if (
+                tempCol > -1 &&
+                tempRow > -1 &&
+                tempCol < col &&
+                tempRow < row &&
+                !grid[tempCol * row + tempRow]
+              ) {
+                let ok = true;
+                // 활성화된 점을 주변점과 비교.
+                for (let i = -1; i <= 1; i++) {
+                  for (let j = -1; j <= 1; j++) {
+                    let idx = (tempCol + i) * row + (tempRow + j);
+                    let neighbor = grid[idx];
+                    if (neighbor) {
+                      // 주변 점이 r보다 작은게 하나라도 있다면 추가하지 않음.
+                      let d = sample.distanceTo(neighbor);
+                      if (d < r) {
+                        ok = false;
+                      }
+                    }
+                  }
+                }
+                if (ok) {
+                  found = true;
+                  grid[tempCol * row + tempRow] = sample;
+                  active.push(sample);
+                  ordered.push(sample);
+                  break;
+                }
+              }
+            }
+            if (!found) {
+              active.splice(rIndex, 1);
+            }
+          }
+        }
+
+        //ctx.clearRect(0, 0, w, w);
+        while (ordered.length) {
+          const node = ordered.shift();
+          ctx.beginPath();
+          ctx.strokeStyle = `hsl(${node.x + node.y},80%,50%)`;
+          ctx.lineWidth = 2;
+          ctx.arc(node.x, node.y, size / 2, 0, Math.PI * 2);
+          ctx.stroke();
+          ctx.closePath();
+        }
+        for (let y = 0; y < col; y++) {
+          for (let x = 0; x < row; x++) {
+            ctx.beginPath();
+            ctx.rect(x * size, y * size, size, size);
+            ctx.stroke();
+            ctx.closePath();
+          }
+        }
+        if (active.length) {
+          requestAnimationFrame(render);
+        } else {
+          console.log("종료!!");
+        }
+      }
+      render();
+
+      //console.log(v.add(new Vector(10, 10)));
+    </script>
+  </body>
+</html>
