@@ -21,7 +21,7 @@ export async function generateStaticParams() {
     return posts.map(({ slug }) => ({ slug: slug.split('/') }));
 }
 
-export async function getData(slug: string[]) {
+async function getData(slug: string[]) {
     const mergePath = slug.join('/');
     const result = await getPostBySlug('posts', `${mergePath}.${POST_EXTENSION}`);
     return result[0] || undefined;

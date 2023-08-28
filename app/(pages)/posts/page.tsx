@@ -11,7 +11,7 @@ export const metadata = {
   title: '포스트 목록'
 }
 
-export async function getData() {
+async function getData() {
   const posts = await getAllPostFrontMatters('posts');
   return {
     posts,

@@ -31,7 +31,7 @@ function DynamicPostList({ posts, currentPage = 1, totalPages = 1, itemPerPage =
                 return content.includes(w);
             })
 
-    }, [searchWord, page, totalPages, itemPerPage]);
+    }, [posts, searchWord, page, totalPages, itemPerPage]);
 
     useEffect(() => {
         const io = new IntersectionObserver((entries, _) => {

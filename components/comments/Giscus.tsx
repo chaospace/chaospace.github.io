@@ -15,7 +15,7 @@ function Giscus() {
         scriptEle.src = 'https://giscus.app/client.js';
         scriptEle.crossOrigin = 'anonymous';
         scriptEle.dataset.loading = 'lazy';
-        scriptEle.dataset.theme = theme;
+        scriptEle.dataset.theme = 'preferred_color_scheme';
         scriptEle.dataset.inputPosition = 'bottom';
         scriptEle.dataset.emitMetadata = '0';
         scriptEle.dataset.strict = '0';

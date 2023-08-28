@@ -98,7 +98,7 @@ function OffScreenVisual({ className, children, url = '/images/santorini.jpg' }:
                 devicePixelRatio
             });
         }, 300);
-    }, []);
+    }, [updateCanvasSize]);
 
 
 
@@ -166,7 +166,7 @@ function OffScreenVisual({ className, children, url = '/images/santorini.jpg' }:
                 devicePixelRatio
             });
         }
-    }, [url]);
+    }, [url, updateCanvasSize]);
 
 
     useResizeHandler(sync);

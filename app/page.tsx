@@ -5,7 +5,8 @@ import PostList from "@/components/posts/PostList";
 import HLine from "@/components/elements/HLine";
 import OffScreenVisual from "@/components/visual/OffScreenVisual";
 
-export async function getData() {
+
+async function getData() {
   const posts = await getRecentPosts('posts', 3);
   const snippets = await getRecentPosts('snippet', 3);
   return {

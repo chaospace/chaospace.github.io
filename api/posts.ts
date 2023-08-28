@@ -3,7 +3,6 @@ import { serialize } from "next-mdx-remote/serialize"
 import remarkGfm from 'remark-gfm';
 import remarkCodeTitles from '@/libs/remark-code-titles';
 import rehypeSlug from "rehype-slug";
-import rehypeAutoLinkHeadings from "rehype-autolink-headings";
 import rehypePrismPlus from "rehype-prism-plus";
 import { clearMDXExtension, getContentPath, getFileList, joinPath } from '@/libs/files';
 import { FrontMatter, PostFrontMatter, TocHeading } from '@/types';

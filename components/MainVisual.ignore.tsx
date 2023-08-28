@@ -307,7 +307,7 @@ function MainVisual({ url, className, children }: { url?: string, className: str
                 redraw();
             }
         })
-    }, []);
+    }, [redraw]);
 
 
     useEffect(() => {
@@ -352,7 +352,7 @@ function MainVisual({ url, className, children }: { url?: string, className: str
             viewerInfo.current = { ...viewerInfo.current, ...initViewerInfo(img, ctx) };
             canvasSync();
         }
-    }, [ctx, img]);
+    }, [ctx, img, canvasSync]);
 
     useResizeHandler(canvasSync);
 
@@ -374,7 +374,7 @@ function MainVisual({ url, className, children }: { url?: string, className: str
             cancelAnimationFrame(animateID);
         }
 
-    }, [mixRatio, onlyInvert, onlyNormal]);
+    }, [mixRatio, onlyInvert, onlyNormal, mixWorkerImage]);
 
 
     return (

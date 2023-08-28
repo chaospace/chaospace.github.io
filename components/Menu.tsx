@@ -30,7 +30,7 @@ const lineVariants = {
 
 function Menu({ link, label, icon, target, title }: MenuProps) {
     const pathname = usePathname();
-    const isActive = useMemo(() => pathname === link, [pathname]);
+    const isActive = useMemo(() => pathname === link, [pathname, link]);
 
     return (
         <MotionLink className="block ml-4 my-2 leading-none" title={ title || label } initial="normal" whileHover="hover" animate={ isActive && 'hover' || '' } href={ link } target={ target }  >

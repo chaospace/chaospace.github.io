@@ -10,7 +10,8 @@ export const metadata = {
     title: '코드조각 목록'
 }
 
-export async function getData() {
+
+async function getData() {
     const posts = await getAllPostFrontMatters('snippet');
     return {
         posts,

@@ -102,6 +102,8 @@ const ResultItem = forwardRef(
     }
 );
 
+ResultItem.displayName = 'ResultItem';
+
 function RenderResults() {
     const { results, rootActionId } = useMatches();
     return (

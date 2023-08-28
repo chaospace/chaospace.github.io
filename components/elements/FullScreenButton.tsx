@@ -48,5 +48,7 @@ const FullScreenButton = forwardRef<FullScreenImperativeHandle, { className?: st
     )
 });
 
+FullScreenButton.displayName = 'FullScreenButton';
+
 export type { FullScreenImperativeHandle };
 export default FullScreenButton;

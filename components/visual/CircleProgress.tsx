@@ -2,7 +2,7 @@
 
 import useIsomorphicEffect from "@/libs/hooks/useIsomorphicEffect";
 import { gsap } from "gsap";
-import { ForwardRefExoticComponent, PropsWithoutRef, RefAttributes, forwardRef, useImperativeHandle, useMemo, useRef } from "react";
+import { forwardRef, useImperativeHandle, useRef } from "react";
 import SplitType from "split-type";
 import { ProgressState } from "@/const";
 
@@ -402,5 +402,5 @@ const CircleProgress = forwardRef<ProgressImperativeHandler, ProgressProps>(({ p
 });
 
 // const CircleProgress = forwardRef(CompImp);
-
+CircleProgress.displayName = 'CircleProgress';
 export default CircleProgress;
