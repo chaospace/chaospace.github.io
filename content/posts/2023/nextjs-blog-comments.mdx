@@ -1,0 +1,94 @@
+---
+title: Giscus를 이용한 블로그 코멘트 기능
+subtitle: 
+date: 2023-08-28
+tags: [giscus]
+draft: false
+summary: giscus를 이용한 댓글 기능 제공
+---
+
+`giscus`를 이용한 코멘트처리 내용정리.  
+[저장소](https://giscus.app/ko)에 핵심만 잘 정리되어 있어 그것만 봐도 충분한다.
+
+## Giscus 
+> github Discussions로 작동하는 댓글 시스템    
+ [utterances](https://github.com/utterance/utterances)에 큰 영감을 받아서 제작   
+ [여러 언어](https://github.com/giscus/giscus/blob/main/CONTRIBUTING.md#adding-localizations)를 제공  
+ 자동으로 GitHub에서 새로운 코멘트와 수정사항을 반영  
+
+
+## 적용순서 
+ - giscus에 연결할 `public 저장소 생성`
+ - 생성 저장소 setting에 들어가 Discussions기능 활성화 
+ - [giscus앱](https://github.com/apps/giscus)을 설치 후 위에서 생성한 저장소 선택 
+ - [giscus 매뉴얼](https://giscus.app/ko)순서에 따라 연결방식 및 옵션 적용 후 추가할 스크립트 파일 생성
+ - 생성된 스크립트 파일을 이용해 사용 환경에 따른 컴포넌트 구성 
+
+
+```typescript:giscus사용_스크립트_템플릿
+<script src="https://giscus.app/client.js"
+        data-repo="[ENTER REPO HERE]"
+        data-repo-id="[ENTER REPO ID HERE]"
+        data-category="[ENTER CATEGORY NAME HERE]"
+        data-category-id="[ENTER CATEGORY ID HERE]"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="ko"
+        crossorigin="anonymous"
+        async>
+</script>
+
+``` 
+
+### react컴포넌트 적용방법
+
+위에서 생성된 스크립트 추가역할만 해주면 된다.  
+코드에 `[]`부분은 [giscus 매뉴얼](https://giscus.app/ko)에서 스크립트를 생성하면 자동으로 결정된다.
+
+```tsx:Giscus.tsx
+
+    const ref = useRef<HTMLElement>(null!);
+
+    useEffect(() => {
+        if (!ref.current || ref.current.hasChildNodes()) return;
+        const scriptEle = document.createElement("script");
+        scriptEle.src = 'https://giscus.app/client.js';
+        scriptEle.crossOrigin = 'anonymous';
+        scriptEle.dataset.loading = 'lazy';
+        scriptEle.dataset.theme = 'preferred_color_scheme';
+        scriptEle.dataset.inputPosition = 'bottom';
+        scriptEle.dataset.emitMetadata = '0';
+        scriptEle.dataset.strict = '0';
+        scriptEle.dataset.mapping = '[맵핑방법]';
+        scriptEle.dataset.category = '[적용카테고리]';
+        scriptEle.dataset.categoryId = '[적용 카테고리 ID]';
+        scriptEle.dataset.repo = "[생성 저장소]";
+        scriptEle.dataset.repoId = "[생성 저장소 ID]";
+        // 이모지 사용여부 0, 1
+        scriptEle.dataset.reactionsEnabled = "1";
+        scriptEle.dataset.lang = "ko";
+        ref.current.appendChild(scriptEle);
+    }, []);
+
+    return (
+        <section ref={ ref } />
+    )
+```
+
+### 테마적용 시
+
+ 테마적용을 위해서는 iframe에 postMessage를 통해 현재 테마정보를 넘겨주면 된다.
+
+```typescript
+
+//테마 변경 시  메시지 전송.
+useEffect(() => {
+    const iframe = document.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
+    iframe?.contentWindow?.postMessage({ giscus: { setConfig: { theme } } }, 'https://giscus.app');
+}, [theme])
+
+```
