@@ -37,7 +37,7 @@ function Giscus() {
 
 
     return (
-        <section ref={ ref } />
+        <section ref={ ref } className="mt-20" />
     )
 }
 

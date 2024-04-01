@@ -17,7 +17,7 @@ function TocList({ className, toc, exclude = 'TL:DR' }: { className?: string, to
                 {
                     tocList?.map((vo, idx) => (
                         <li key={ `${vo.value}_${idx}` } className={ `flex items-center ml-${rootDepth === vo.depth ? 2 : 4} text-sm` }>
-                            { <FontAwesomeIcon icon={ rootDepth === vo.depth ? faCircleDot : faMinus } size={ rootDepth === vo.depth ? 'xs' : '2xs' } className="mr-2" /> }
+                            <FontAwesomeIcon icon={ rootDepth === vo.depth ? faCircleDot : faMinus } size={ rootDepth === vo.depth ? 'xs' : '2xs' } className="mr-2" />
                             <AnchorButton anchor={ vo.url }>
                                 { vo.value }
                             </AnchorButton>
