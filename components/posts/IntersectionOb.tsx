@@ -5,23 +5,21 @@ import useIsomorphicEffect from "@/libs/hooks/useIsomorphicEffect";
 import { TocHeading } from "@/types";
 
 function IntersectionOb({ toc }: { toc: TocHeading[] }) {
-    const initialize = useInitialized();
+
     useIsomorphicEffect(() => {
-        if (initialize) return;
+
         let eleList: Element[] = Array.from(toc, () => null!);
         const targetList = new WeakMap<Element, HTMLAnchorElement>();
         const contentMargin = -100;
-
+        console.log('eleList', eleList);
         const changeItem = (entries: IntersectionObserverEntry[], _: IntersectionObserver) => {
             entries.forEach(o => {
                 const t = targetList.get(o.target);
                 if (o.isIntersecting) {
-                    console.log('등장', t?.dataset);
                     t?.parentElement?.classList.remove('opacity-60');
                 } else {
 
                     if (document.documentElement.clientHeight + contentMargin < o.boundingClientRect.y) {
-                        console.log('퇴장', t?.dataset);
                         t?.parentElement?.classList.add('opacity-60');
                     }
                 }
@@ -34,6 +32,7 @@ function IntersectionOb({ toc }: { toc: TocHeading[] }) {
 
         const registObserverTarget = () => {
             eleList = toc.map(v => document.querySelector(v.url)).filter(v => !!v) as Element[];
+
             if (toc.length === eleList.length) {
                 //성공
                 /* const scrollY = document.documentElement.scrollTop;
@@ -52,7 +51,6 @@ function IntersectionOb({ toc }: { toc: TocHeading[] }) {
                 eleList.forEach((vo) => {
                     if (vo) {
                         targetList.set(vo, document.querySelector(`a[data-anchor="#${vo.id}"]`)!)
-                        console.log('옵저버 등록!', vo);
                         io.observe(vo);
                     }
 
@@ -72,7 +70,7 @@ function IntersectionOb({ toc }: { toc: TocHeading[] }) {
 
         }
 
-    }, []);
+    }, [toc]);
 
 
     return (null);
