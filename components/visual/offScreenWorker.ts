@@ -59,7 +59,7 @@ class SharedInstance {
             // gsapContext.kill(false);
             const { width, height } = image;
             const pixelRatio = this._devicePixelRatio;
-            const ratio = Math.min(stage.width / width, stage.height / height);
+            const ratio = Math.max(stage.width / width, stage.height / height);
             const scale = ratio * pixelRatio;
             //스케일 변경 전 현재화면 캡쳐
             this.context.save();
@@ -83,6 +83,16 @@ class SharedInstance {
             this.context.scale(scale, scale);
 
         }
+    }
+
+    clear() {
+        this.context.save();
+        this.context.fillStyle = 'white';
+        this.context.beginPath();
+        this.context.rect(0, 0, this.context.canvas.width, this.context.canvas.height);
+        this.context.fill();
+        this.context.closePath();
+        this.context.restore();
     }
 
     static getInstance() {
@@ -328,23 +338,24 @@ const draw = (ctx: OffscreenCanvasRenderingContext2D, points: Float32Array, weig
     // 2씩 증가시키며 포인트 위치를 파악.
     const { width, height, imgData: data } = image!;//;sharedInstance.getImageInfo();
     const delaunay = new Delaunay(points);
-    const opacity = Math.max(0.05, points.length / origin.length);
+    const opacity = Math.max(0.1, points.length / origin.length);
     ctx.save();
-    // ctx.globalAlpha = opacity;
+    ctx.globalAlpha = opacity;
     for (let polygons of delaunay.trianglePolygons()) {
         ctx.beginPath();
         ctx.moveTo(polygons[0][0], polygons[0][1]);
         const [cx, cy] = getPolygonCentroid(polygons);
         const idx = (Math.floor(cy) * width + Math.floor(cx)) * 4;
-        const color = `rgba(${data.data[idx]},${data.data[idx + 1]},${data.data[idx + 2]}, ${opacity})`;
+        //, ${opacity}
+        const color = `rgb(${data.data[idx]},${data.data[idx + 1]},${data.data[idx + 2]})`;
         for (let i = 1; i < polygons.length; i++) {
             ctx.lineTo(polygons[i][0], polygons[i][1]);
         }
         ctx.fillStyle = color;
-        ctx.strokeStyle = color;
-        ctx.lineWidth = 1;
+        // ctx.strokeStyle = color;
+        // ctx.lineWidth = 1;
         ctx.fill();
-        ctx.stroke();
+        // ctx.stroke();
     }
     /* ctx.restore();
     ctx.save();
@@ -629,7 +640,7 @@ const createTask = async <T extends DrawTask>({ url, stage }: OffScreenWorkerReq
         const bitmap = await createImageBitmap(fileBlob);
         const imageProps = await createImageParams(bitmap) as ImageProps;
         const { width, height, imgData } = imageProps;
-        const pointNum = (width * height) / (4 * 4);
+        const pointNum = (width * height) / (4);
         const grayData = toLinearGrayColor(imgData);
         setViewImageData(imageProps, grayData.invert);
         const iteration = 80;
@@ -693,6 +704,7 @@ const reDraw = (task: DrawTask) => {
     if (!hasTask) {
         workTaks.push(task);
         postMessage({ state: WORKER_MESSAGE.WORK_PROGRESS_BEFORE, progress: 0 });
+        // sharedInstance.clear();
         startTask(task);
     } else if (task.abort) {
         // 현재화면 캡쳐!; 애니메이션 완료 후 원본에 적용한 이미지 캡쳐가 필요.
