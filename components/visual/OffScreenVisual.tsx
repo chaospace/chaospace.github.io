@@ -1,6 +1,6 @@
 "use client";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import useImageLoad from "@/libs/hooks/useImageLoad";
+// import useImageLoad from "@/libs/hooks/useImageLoad";
 import { WORKER_MESSAGE } from "@/const";
 import useResizeHandler from "@/libs/hooks/useResizeHandler";
 import { deBounce } from "@/libs/utils";
@@ -8,7 +8,6 @@ import { OffScreenWorkerResponseParams } from "@/types";
 import { ProgressState } from "./ProgressBar";
 import classNames from "classnames";
 import CircleProgress from "./CircleProgress";
-import useIsomorphicEffect from "@/libs/hooks/useIsomorphicEffect";
 
 
 const setter = (current: { progress: number, state: ProgressState }, state: ProgressState, progress: number) => {
@@ -18,16 +17,12 @@ const setter = (current: { progress: number, state: ProgressState }, state: Prog
 function OffScreenVisual({ className, children, url = '/images/santorini.jpg' }: { className?: string, children?: React.ReactNode, url?: string }) {
 
 
-    const [selectImage, setSelectImage] = useState(url);
+    // const [selectImage, setSelectImage] = useState(url);
 
     const ref = useRef<HTMLCanvasElement>(null!);
     const offScreenRef = useRef<OffscreenCanvas>(null!);
 
-    const refHandler = useCallback((element: HTMLCanvasElement) => {
-        if (element && ref.current === null) {
-            ref.current = element;
-        }
-    }, []);
+
 
     const workerRef = useRef<Worker>(null!);
     // const img = useImageLoad(url);
@@ -38,7 +33,6 @@ function OffScreenVisual({ className, children, url = '/images/santorini.jpg' }:
 
 
     const onMessageHandler = useMemo(() => {
-
         return ({ data }: MessageEvent<OffScreenWorkerResponseParams>) => {
             const { state, progress } = data;
             if (state === WORKER_MESSAGE.WORK_PROGRESS_BEFORE) {
@@ -49,7 +43,25 @@ function OffScreenVisual({ className, children, url = '/images/santorini.jpg' }:
                 setProgressState(prev => setter(prev, ProgressState.COMPLETE, progress));
             }
         }
-    }, [])
+    }, []);
+
+    const refHandler = useCallback((element: HTMLCanvasElement) => {
+        if (element && offScreenRef.current === null) {
+            ref.current = element;
+            offScreenRef.current = element.transferControlToOffscreen();
+            workerRef.current = new Worker(new URL('./offScreenWorker', import.meta.url));
+            workerRef.current.onmessage = onMessageHandler;
+            workerRef.current.onerror = (e: ErrorEvent) => {
+                console.log('e', e);
+            };
+            workerRef.current.postMessage({
+                state: WORKER_MESSAGE.INITIALIZE,
+                canvas: offScreenRef.current,
+                devicePixelRatio
+            }, [offScreenRef.current]);
+        }
+
+    }, [onMessageHandler]);
 
     const updateCanvasSize = useCallback(() => {
         const cw = ref.current.parentElement!.clientWidth;
@@ -75,30 +87,33 @@ function OffScreenVisual({ className, children, url = '/images/santorini.jpg' }:
 
 
 
-    useIsomorphicEffect(() => {
-        console.log('import.meta.url', import.meta.url);
-        workerRef.current = new Worker(new URL('./offScreenWorker', import.meta.url));
-        workerRef.current.onmessage = onMessageHandler;
-        workerRef.current.onerror = (e: ErrorEvent) => {
-            console.log('e', e);
-        };
+    // useIsomorphicEffect(() => {
+    //     console.log('import.meta.url', import.meta.url);
+    //     workerRef.current = new Worker(new URL('./offScreenWorker', import.meta.url));
+    //     workerRef.current.onmessage = onMessageHandler;
+    //     workerRef.current.onerror = (e: ErrorEvent) => {
+    //         console.log('e', e);
+    //     };
 
-        /* 
-         strictMode와 transferControlToOffscreen 충돌방지 처리를 위해 초기는 offScreen에 참조를 설정하고
-         이후 호출에서 postMessage로 초기설정 */
-        if (!offScreenRef.current) {
-            offScreenRef.current = ref.current.transferControlToOffscreen();
-        }
-        workerRef.current.postMessage({
-            state: WORKER_MESSAGE.INITIALIZE,
-            canvas: offScreenRef.current,
-            devicePixelRatio
-        }, [offScreenRef.current]);
+    //     /* 
+    //      strictMode와 transferControlToOffscreen 충돌방지 처리를 위해 초기는 offScreen에 참조를 설정하고
+    //      이후 호출에서 postMessage로 초기설정 */
+    //     // if (!offScreenRef.current && ref.current) {
+    //     //     offScreenRef.current = ref.current.transferControlToOffscreen();
+    //     // }
+    //     if (offScreenRef.current) {
+    //         workerRef.current.postMessage({
+    //             state: WORKER_MESSAGE.INITIALIZE,
+    //             canvas: offScreenRef.current,
+    //             devicePixelRatio
+    //         }, [offScreenRef.current]);
+    //     }
 
-        return () => {
-            workerRef.current.terminate();
-        }
-    }, [onMessageHandler]);
+
+    //     return () => {
+    //         workerRef.current.terminate();
+    //     }
+    // }, [onMessageHandler]);
 
     // url변경 시 worker에 알리고 워커에서 이미지를 로드해 관련 정보를 설정한다.
     useEffect(() => {
