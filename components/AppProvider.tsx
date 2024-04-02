@@ -159,12 +159,12 @@ const KBarProviderWrapper = ({ children }: { children: React.ReactNode }) => {
             }
         },
         {
-            id: 'projects',
-            name: "project",
-            keywords: "project",
-            shortcut: ['Control+p'],
+            id: 'experience',
+            name: "experience",
+            keywords: "experience",
+            shortcut: ['Control+e'],
             perform: () => {
-                router.push('/projects');
+                router.push('/experience');
             }
         },
         {

@@ -9,7 +9,7 @@ import OffScreenVisual from "@/components/visual/OffScreenVisual";
 async function getData() {
   const posts = await getRecentPosts('posts', 3);
   const snippets = await getRecentPosts('snippet', 3);
-  const projects = await getRecentPosts('projects', 3);
+  const projects = await getRecentPosts('experience', 3);
   return {
     posts,
     snippets,
