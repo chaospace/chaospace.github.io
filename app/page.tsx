@@ -9,15 +9,17 @@ import OffScreenVisual from "@/components/visual/OffScreenVisual";
 async function getData() {
   const posts = await getRecentPosts('posts', 3);
   const snippets = await getRecentPosts('snippet', 3);
+  const projects = await getRecentPosts('projects', 3);
   return {
     posts,
-    snippets
+    snippets,
+    projects
   }
 }
 
 
 async function Home() {
-  const { posts, snippets } = await getData();
+  const { posts, snippets, projects } = await getData();
   return (
     <>
 
@@ -34,8 +36,12 @@ async function Home() {
           <HLine />
         </div>
         <PostList className="lg:grid-cols-3" posts={ snippets } prefix="snippet" />
+        <div className="space-y-3">
+          <H2>Latest Project</H2>
+          <HLine />
+        </div>
+        <PostList className="lg:grid-cols-3" posts={ projects } prefix="projects" />
       </div>
-
     </>
   )
 }

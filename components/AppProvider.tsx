@@ -159,6 +159,15 @@ const KBarProviderWrapper = ({ children }: { children: React.ReactNode }) => {
             }
         },
         {
+            id: 'projects',
+            name: "project",
+            keywords: "project",
+            shortcut: ['Control+p'],
+            perform: () => {
+                router.push('/projects');
+            }
+        },
+        {
             id: "theme",
             name: 'Change theme...',
             section: 'Preferences',
