@@ -1,0 +1,2521 @@
+1:HL["/_next/static/media/122c360d7fe6d395-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/media/a15f2fce4b98b461-s.p.woff2",{"as":"font","type":"font/woff2"}]
+3:HL["/_next/static/css/513fe6d1da0f3f41.css",{"as":"style"}]
+4:HL["/_next/static/css/bc95ac79a310f5fe.css",{"as":"style"}]
+0:["KTmOAbpToE8QLnSqzheiN",[[["",{"children":["(pages)",{"children":["posts",{"children":[["slug","2023/nextjs-blog-plugin","c"],{"children":["__PAGE__?{\"slug\":[\"2023\",\"nextjs-blog-plugin\"]}",{}]}]}]}]},"$undefined","$undefined",true],"$L5",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/513fe6d1da0f3f41.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/bc95ac79a310f5fe.css","precedence":"next"}]],"$L6"]]]]
+7:I{"id":9588,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+8:I{"id":196,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+9:I{"id":2568,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+a:I{"id":3466,"chunks":["272:static/chunks/webpack-b74668436ee6b2a0.js","253:static/chunks/bce60fc1-0247e260c1ca1b9c.js","961:static/chunks/961-90edfa57f01894b3.js"],"name":"default","async":false}
+b:I{"id":372,"chunks":["272:static/chunks/webpack-b74668436ee6b2a0.js","253:static/chunks/bce60fc1-0247e260c1ca1b9c.js","961:static/chunks/961-90edfa57f01894b3.js"],"name":"default","async":false}
+d:I{"id":3245,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+5:[["$","html",null,{"className":"__variable_21dd0c","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L7",null,{"children":[["$","$L8",null,{"id":"main-content","className":"relative flex flex-col border-l-gray-200 dark:border-l-gray-800","children":[["$","$L9",null,{"id":"content-header","className":"sticky z-10 flex flex-col top-0"}],["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[["$","section",null,{"className":"relative mx-auto w-full max-w-7xl px-5 sm:px-10 mb-20","children":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children","posts","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children","posts","children",["slug","2023/nextjs-blog-plugin","c"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$Lc",null],"segment":"__PAGE__?{\"slug\":[\"2023\",\"nextjs-blog-plugin\"]}"},"styles":[]}],"segment":["slug","2023/nextjs-blog-plugin","c"]},"styles":[]}],"segment":"posts"},"styles":[]}]}],null],"segment":"(pages)"},"styles":[]}],["$","hr",null,{"className":"border-none h-px bg-gray-200 dark:bg-gray-800"}],["$","footer",null,{"className":"w-full px-10 py-8 text-center","children":[["$","p",null,{"className":"text-xs","children":"chaospace • © 2023 All rights reserved • Next.js Blog"}],["$","p",null,{"className":"text-xs","children":["Source code available on ",["$","a",null,{"className":"underline","children":"GitHub"}]]}]]}]]}],["$","$Ld",null,{}]]}]}]}],null]
+6:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Next.js 블로그 제작( MDX serialize ) | chaospace's Blog"}],["$","meta","2",{"name":"description","content":"틈틈이 기억나는 내용을 정리하는 공간"}],["$","meta","3",{"name":"keywords","content":"markdown,remark,rehype"}],["$","meta","4",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","5",{"name":"creator","content":"chaospace"}],["$","link","6",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"any"}],["$","meta","7",{"name":"next-size-adjust"}]]
+e:I{"id":9378,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+10:I{"id":2375,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+11:I{"id":3781,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+12:I{"id":2092,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+f:T179e6,/*@jsxRuntime automatic @jsxImportSource react*/
+const {Fragment: _Fragment, jsx: _jsx, jsxs: _jsxs} = arguments[0];
+const {useMDXComponents: _provideComponents} = arguments[0];
+function _createMdxContent(props) {
+  const _components = Object.assign({
+    p: "p",
+    h2: "h2",
+    ul: "ul",
+    li: "li",
+    a: "a",
+    br: "br",
+    pre: "pre",
+    code: "code",
+    span: "span",
+    sup: "sup",
+    h3: "h3",
+    div: "div",
+    hr: "hr",
+    section: "section",
+    ol: "ol"
+  }, _provideComponents(), props.components);
+  return _jsxs(_Fragment, {
+    children: [_jsx(_components.p, {
+      children: "mdx파일 변환 시 remark와 rehype플러그인을 사용하며 알게된 내용을 정리한다."
+    }), "\n", _jsx(_components.h2, {
+      id: "개요",
+      children: "개요"
+    }), "\n", _jsxs(_components.ul, {
+      children: ["\n", _jsxs(_components.li, {
+        children: [_jsx(_components.a, {
+          href: "https://github.com/unifiedjs/unified",
+          children: "unified"
+        }), " 구문트리(syntax tree)로 컨텐츠를 처리하기 위한 인터페이스", _jsx(_components.br, {}), "\n", "500개 이상의 프리 오픈소스 패키지 모음", _jsx(_components.br, {}), "\n", "관련 플러그인에 remark, rehype 포함"]
+      }), "\n"]
+    }), "\n", _jsx(_components.pre, {
+      children: _jsxs(_components.code, {
+        className: "language-ascii code-highlight",
+        children: [_jsx(_components.span, {
+          className: "code-line",
+          children: "| ........................ process ........................... |\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "| .......... parse ... | ... run ... | ... stringify ..........|\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "          +--------+                     +----------+\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "Input ->- | Parser | ->- Syntax Tree ->- | Compiler | ->- Output\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "          +--------+          |          +----------+\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "                              X\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "                              |\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "                       +--------------+\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "                       | Transformers |\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "                       +--------------+ \n"
+        })]
+      })
+    }), "\n", _jsxs(_components.ul, {
+      children: ["\n", _jsxs(_components.li, {
+        children: [_jsx(_components.a, {
+          href: "https://github.com/remarkjs/remark",
+          children: "remark"
+        }), " :\n마크다운 구분분석", _jsx(_components.sup, {
+          children: _jsx(_components.a, {
+            href: "#user-content-fn-1",
+            id: "user-content-fnref-1",
+            "data-footnote-ref": true,
+            "aria-describedby": "footnote-label",
+            children: "1"
+          })
+        }), "과 직렬화", _jsx(_components.sup, {
+          children: _jsx(_components.a, {
+            href: "#user-content-fn-2",
+            id: "user-content-fnref-2",
+            "data-footnote-ref": true,
+            "aria-describedby": "footnote-label",
+            children: "2"
+          })
+        }), " 처리도구"]
+      }), "\n", _jsxs(_components.li, {
+        children: [_jsx(_components.a, {
+          href: "https://github.com/rehypejs",
+          children: "rehype"
+        }), " : HTML을 검사하고 변환할 수 있는 도구"]
+      }), "\n"]
+    }), "\n", _jsx(_components.h2, {
+      id: "주요-플러그인",
+      children: "주요 플러그인"
+    }), "\n", _jsxs(_components.p, {
+      children: ["mdx파일 ", _jsx("code", {
+        children: "serialize"
+      }), "시 사용하는 플러그인으로 다양하게 제공되며 사용한 것만 정리한다."]
+    }), "\n", _jsx(_components.h3, {
+      id: "remark-toc-headings",
+      children: "remark-toc-headings"
+    }), "\n", _jsx(_components.p, {
+      children: "헤더요소를 기반으로 Table of Contents 추출 오픈소스도 제공되지만 적용이 애매해 직접구현"
+    }), "\n", _jsx(_components.pre, {
+      className: "language-typescript",
+      children: _jsxs(_components.code, {
+        className: "language-typescript code-highlight",
+        children: [_jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token keyword",
+            children: "import"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " slug ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), " ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "from"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"github-slugger\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token keyword",
+            children: "import"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " toString ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), " ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "from"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"mdast-util-to-string\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token keyword",
+            children: "import"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " visit ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), " ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "from"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"unist-util-visit\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token keyword",
+            children: "function"
+          }), " ", _jsx(_components.span, {
+            className: "token function",
+            children: "remarkTocHeadings"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "options", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token builtin",
+            children: "any"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "return"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "tree", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token builtin",
+            children: "any"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "=>"
+          }), " ", _jsx(_components.span, {
+            className: "token function",
+            children: "visit"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "tree", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "'heading'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "node", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " index", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " parent", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "=>"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "const"
+          }), " textContent ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token function",
+            children: "toString"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "node", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        options", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), "exportRef", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token function",
+            children: "push"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["            value", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " textContent", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["            url", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsxs(_components.span, {
+            className: "token template-string",
+            children: [_jsx(_components.span, {
+              className: "token template-punctuation string",
+              children: "`"
+            }), _jsx(_components.span, {
+              className: "token string",
+              children: "#"
+            }), _jsxs(_components.span, {
+              className: "token interpolation",
+              children: [_jsx(_components.span, {
+                className: "token interpolation-punctuation punctuation",
+                children: "${"
+              }), _jsx(_components.span, {
+                className: "token function",
+                children: "slug"
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "("
+              }), "textContent", _jsx(_components.span, {
+                className: "token punctuation",
+                children: ")"
+              }), _jsx(_components.span, {
+                className: "token interpolation-punctuation punctuation",
+                children: "}"
+              })]
+            }), _jsx(_components.span, {
+              className: "token template-punctuation string",
+              children: "`"
+            })]
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["            depth", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " node", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), "depth\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), "\n"]
+        })]
+      })
+    }), "\n", _jsx(_components.h3, {
+      id: "remark-gfm",
+      children: "remark-gfm"
+    }), "\n", _jsxs(_components.p, {
+      children: ["github마크다운 형식 footnotes", _jsx("code", {
+        children: "([^4])"
+      }), ", tables", _jsx("code", {
+        children: "(|cell|...)"
+      }), ", strikethrough", _jsx("code", {
+        children: "(~~stuff~~)"
+      }), ", tasklists", _jsx("code", {
+        children: "(* [x])"
+      }), "등을 지원", _jsx(_components.br, {}), "\n", _jsx(_components.a, {
+        href: "https://github.com/remarkjs/remark-gfm",
+        children: "link"
+      })]
+    }), "\n", _jsx(_components.h3, {
+      id: "remark-code-titles",
+      children: "remark-code-titles"
+    }), "\n", _jsxs(_components.p, {
+      children: ["syntaxhighlighting에 파일명 표시 기능 제공", _jsx(_components.br, {}), "\n", "es6모듈은 제공되지 않아 직접 구현."]
+    }), "\n", _jsx(_components.div, {
+      className: "remark-code-title",
+      children: "remark-code-titles.ts"
+    }), "\n", _jsx(_components.pre, {
+      className: "language-javascript",
+      children: _jsxs(_components.code, {
+        className: "language-javascript code-highlight",
+        children: [_jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token keyword module",
+            children: "import"
+          }), " ", _jsxs(_components.span, {
+            className: "token imports",
+            children: [_jsx(_components.span, {
+              className: "token punctuation",
+              children: "{"
+            }), " visit ", _jsx(_components.span, {
+              className: "token punctuation",
+              children: "}"
+            })]
+          }), " ", _jsx(_components.span, {
+            className: "token keyword module",
+            children: "from"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"unist-util-visit\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token keyword",
+            children: "function"
+          }), " ", _jsx(_components.span, {
+            className: "token function",
+            children: "remarkCodeTitles"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token keyword control-flow",
+            children: "return"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsxs(_components.span, {
+            className: "token parameter",
+            children: [_jsx(_components.span, {
+              className: "token literal-property property",
+              children: "tree"
+            }), _jsx(_components.span, {
+              className: "token operator",
+              children: ":"
+            }), " any"]
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token arrow operator",
+            children: "=>"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token function",
+            children: "visit"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "tree", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"code\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsxs(_components.span, {
+            className: "token parameter",
+            children: ["node", _jsx(_components.span, {
+              className: "token punctuation",
+              children: ","
+            }), " index", _jsx(_components.span, {
+              className: "token punctuation",
+              children: ","
+            }), " parent"]
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token arrow operator",
+            children: "=>"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "const"
+          }), " nodeLang ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " node", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "lang"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "||"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "let"
+          }), " language ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "let"
+          }), " title ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token keyword control-flow",
+            children: "if"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "nodeLang", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token method function property-access",
+            children: "includes"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\":\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        language ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " nodeLang", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token method function property-access",
+            children: "slice"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token number",
+            children: "0"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " nodeLang", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token method function property-access",
+            children: "search"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\":\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        title ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " nodeLang", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token method function property-access",
+            children: "slice"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "nodeLang", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token method function property-access",
+            children: "search"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\":\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "+"
+          }), " ", _jsx(_components.span, {
+            className: "token number",
+            children: "1"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " nodeLang", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "length"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token keyword control-flow",
+            children: "if"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: "!"
+          }), "title", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token keyword control-flow",
+            children: "return"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "const"
+          }), " className ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"remark-code-title\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "const"
+          }), " titleNode ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "type"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"mdxJsxFlowElement\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "name"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"div\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "attributes"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "["
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["          ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "type"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"mdxJsxAttribute\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "name"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"className\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "value"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " className ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "]"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "children"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "["
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "type"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"text\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "value"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " title ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "]"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "data"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "_xdmExplicitJsx"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token boolean",
+            children: "true"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      parent", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "children"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token method function property-access",
+            children: "splice"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "index", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token number",
+            children: "0"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " titleNode", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      node", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "lang"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " language", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token keyword module",
+            children: "export"
+          }), " ", _jsx(_components.span, {
+            className: "token keyword module",
+            children: "default"
+          }), " remarkCodeTitles", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        })]
+      })
+    }), "\n", _jsx(_components.h3, {
+      id: "rehype-slug",
+      children: "rehype-slug"
+    }), "\n", _jsxs(_components.p, {
+      children: ["헤더요소에 텍스트를 기반으로 id속성 추가", _jsx(_components.br, {}), "\n", _jsx(_components.a, {
+        href: "https://github.com/rehypejs/rehype-slug",
+        children: "link"
+      })]
+    }), "\n", _jsx(_components.pre, {
+      className: "language-html",
+      children: _jsxs(_components.code, {
+        className: "language-html code-highlight",
+        children: [_jsx(_components.span, {
+          className: "code-line",
+          children: "//input\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h1"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "id"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), "some-id"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "Lorem ipsum", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h1"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h2"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "Dolor sit amet 😪", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h2"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h3"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "consectetur ", _jsx(_components.span, {
+            className: "token entity named-entity",
+            title: "&",
+            children: "&amp;"
+          }), " adipisicing", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h3"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h4"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "elit", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h4"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h5"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "elit", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h5"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "//output\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h1"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "id"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "some-id", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "Lorem ipsum", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h1"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h2"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "id"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "dolor-sit-amet-", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "Dolor sit amet 😪", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h2"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h3"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "id"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "consectetur--adipisicing", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "consectetur ", _jsx(_components.span, {
+            className: "token entity",
+            title: "&",
+            children: "&#x26;"
+          }), " adipisicing", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h3"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h4"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "id"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "elit", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "elit", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h4"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h5"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "id"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "elit-1", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "elit", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h5"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        })]
+      })
+    }), "\n", _jsx(_components.h3, {
+      id: "rehype-prism-plus",
+      children: "rehype-prism-plus"
+    }), "\n", _jsxs(_components.p, {
+      children: ["syntaxhighlighting기능 제공", _jsx(_components.br, {}), "\n", _jsx(_components.a, {
+        href: "https://github.com/timlrx/rehype-prism-plus",
+        children: "link"
+      })]
+    }), "\n", _jsx(_components.h3, {
+      id: "rehype-autolink-headings",
+      children: "rehype-autolink-headings"
+    }), "\n", _jsxs(_components.p, {
+      children: ["rehype-slug와 하는 역할은 비슷한데 생성되는 anchor위치를 조정가능", _jsx(_components.br, {}), "\n", _jsx(_components.a, {
+        href: "https://github.com/rehypejs/rehype-autolink-headings",
+        children: "link"
+      })]
+    }), "\n", _jsx(_components.pre, {
+      className: "language-html",
+      children: _jsxs(_components.code, {
+        className: "language-html code-highlight",
+        children: [_jsx(_components.span, {
+          className: "code-line",
+          children: "//input\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h1"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "id"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), "some-id"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "Lorem ipsum", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h1"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h2"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "Dolor sit amet 😪", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h2"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h3"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "consectetur ", _jsx(_components.span, {
+            className: "token entity named-entity",
+            title: "&",
+            children: "&amp;"
+          }), " adipisicing", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h3"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h4"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "elit", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h4"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h5"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "elit", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h5"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "//output\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h1"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "id"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "some-id", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "a"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "aria-hidden"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "true", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "tabindex"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "-1", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "href"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "#some-id", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "span"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "class"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "icon icon-link", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "span"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "a"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "  Lorem ipsum\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h1"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h2"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "id"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "dolor-sit-amet-", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "a"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "aria-hidden"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "true", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "tabindex"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "-1", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "href"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "#dolor-sit-amet-", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "span"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "class"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "icon icon-link", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "span"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "a"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "  Dolor sit amet 😪\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h2"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h3"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "id"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "consectetur--adipisicing", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "a"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "aria-hidden"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "true", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "tabindex"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "-1", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "href"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "#consectetur--adipisicing", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "span"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "class"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "icon icon-link", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "span"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "a"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  consectetur ", _jsx(_components.span, {
+            className: "token entity",
+            title: "&",
+            children: "&#x26;"
+          }), " adipisicing\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h3"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h4"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "id"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "elit", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "a"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "aria-hidden"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "true", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "tabindex"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "-1", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "href"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "#elit", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "span"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "class"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "icon icon-link", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "span"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "a"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "    elit\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h4"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "h5"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "id"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "elit-1", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "a"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "aria-hidden"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "true", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "tabindex"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "-1", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "href"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "#elit-1", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "span"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "class"
+            }), _jsxs(_components.span, {
+              className: "token attr-value",
+              children: [_jsx(_components.span, {
+                className: "token punctuation attr-equals",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              }), "icon icon-link", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "\""
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "span"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "a"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "  elit\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "</"
+              }), "h5"]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), "\n"]
+        })]
+      })
+    }), "\n", _jsx(_components.pre, {
+      className: "language-typescript",
+      children: _jsxs(_components.code, {
+        className: "language-typescript code-highlight",
+        children: [_jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token comment",
+            children: "//적용 시 옵션 값을 통해 추가 속성 적용이 가능하다."
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token punctuation",
+            children: "["
+          }), "rehypeAutoLinkHeadings", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " properties", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " className", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "["
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "'anchor'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "]"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "]"
+          }), "\n"]
+        })]
+      })
+    }), "\n", _jsx(_components.hr, {}), "\n", _jsxs(_components.section, {
+      "data-footnotes": true,
+      className: "footnotes",
+      children: [_jsx(_components.h2, {
+        className: "sr-only",
+        id: "footnote-label",
+        children: "Footnotes"
+      }), "\n", _jsxs(_components.ol, {
+        children: ["\n", _jsxs(_components.li, {
+          id: "user-content-fn-1",
+          children: ["\n", _jsxs(_components.p, {
+            children: ["parsing : 문서의 내용을 토큰으로 분석하고, 문법적 의미와 구조를 반영한 parse tree를 생성하는 과정 ", _jsx(_components.a, {
+              href: "#user-content-fnref-1",
+              "data-footnote-backref": true,
+              className: "data-footnote-backref",
+              "aria-label": "Back to content",
+              children: "↩"
+            })]
+          }), "\n"]
+        }), "\n", _jsxs(_components.li, {
+          id: "user-content-fn-2",
+          children: ["\n", _jsxs(_components.p, {
+            children: ["serializing : 데이터 구조나 객체를 다른 컴퓨터 환경에 저장(이를테면 파일이나 메모리 버퍼에서, 또는 네트워크 연결 링크 간 전송)하고 나중에 재구성할 수 있는 포맷으로 변환하는 과정. ", _jsx(_components.a, {
+              href: "#user-content-fnref-2",
+              "data-footnote-backref": true,
+              className: "data-footnote-backref",
+              "aria-label": "Back to content",
+              children: "↩"
+            })]
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = Object.assign({}, _provideComponents(), props.components);
+  return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {
+    children: _jsx(_createMdxContent, props)
+  })) : _createMdxContent(props);
+}
+return {
+  default: MDXContent
+};
+c:[["$","article",null,{"children":[["$","h1",null,{"className":"font-bold text-3xl","children":"Next.js 블로그 제작( MDX serialize )"}],["$","p",null,{"className":"my-1","children":"remark, rehype을 이용한 markdown 가공"}],["$","span",null,{"className":"flex flex-wrap gap-2 items-center text-xs","children":[["$","span",null,{"className":"inline-flex items-center basis-24 flex-grow-0","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"far","data-icon":"calendar","className":"svg-inline--fa fa-calendar fa-xs ","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 448 512","style":{},"children":["$","path",null,{"fill":"currentColor","d":"M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z","style":{}}]}],["$","time",null,{"className":"pl-1","dateTime":"2023-08-06","children":"2023-08-06"}]]}],["$","span",null,{"className":"inline-flex items-center basis-24 flex-grow-0","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"far","data-icon":"clock","className":"svg-inline--fa fa-clock fa-xs ","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 512 512","style":{},"children":["$","path",null,{"fill":"currentColor","d":"M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z","style":{}}]}],["$","span",null,{"className":"pl-1","children":"4 minutes"}]]}]]}],["$","hr",null,{"className":"border-none h-px bg-gray-200 dark:bg-gray-800 my-10"}]]}],["$","div",null,{"className":"lg:grid lg:grid-cols-[1fr_260px] lg:gap-8","children":[["$","div",null,{"data-content":"post-area","className":"prose max-w-[796px] dark:prose-dark","children":[["$","$Le",null,{"compiledSource":"$f","frontmatter":{"title":"Next.js 블로그 제작( MDX serialize )","subtitle":null,"date":"$D2023-08-06T00:00:00.000Z","tags":["markdown","remark","rehype"],"draft":false,"summary":"remark, rehype을 이용한 markdown 가공","readTime":3.835},"scope":{"toc":[{"value":"개요","url":"#개요","depth":2},{"value":"주요 플러그인","url":"#주요-플러그인","depth":2},{"value":"remark-toc-headings","url":"#remark-toc-headings","depth":3},{"value":"remark-gfm","url":"#remark-gfm","depth":3},{"value":"remark-code-titles","url":"#remark-code-titles","depth":3},{"value":"rehype-slug","url":"#rehype-slug","depth":3},{"value":"rehype-prism-plus","url":"#rehype-prism-plus","depth":3},{"value":"rehype-autolink-headings","url":"#rehype-autolink-headings","depth":3}]},"toc":[{"value":"개요","url":"#개요","depth":2},{"value":"주요 플러그인","url":"#주요-플러그인","depth":2},{"value":"remark-toc-headings","url":"#remark-toc-headings","depth":3},{"value":"remark-gfm","url":"#remark-gfm","depth":3},{"value":"remark-code-titles","url":"#remark-code-titles","depth":3},{"value":"rehype-slug","url":"#rehype-slug","depth":3},{"value":"rehype-prism-plus","url":"#rehype-prism-plus","depth":3},{"value":"rehype-autolink-headings","url":"#rehype-autolink-headings","depth":3}]}],["$","$L10",null,{}]]}],["$","$L11",null,{"className":"hidden lg:block","toc":[{"value":"개요","url":"#개요","depth":2},{"value":"주요 플러그인","url":"#주요-플러그인","depth":2},{"value":"remark-toc-headings","url":"#remark-toc-headings","depth":3},{"value":"remark-gfm","url":"#remark-gfm","depth":3},{"value":"remark-code-titles","url":"#remark-code-titles","depth":3},{"value":"rehype-slug","url":"#rehype-slug","depth":3},{"value":"rehype-prism-plus","url":"#rehype-prism-plus","depth":3},{"value":"rehype-autolink-headings","url":"#rehype-autolink-headings","depth":3}]}],["$","$L12",null,{"toc":[{"value":"개요","url":"#개요","depth":2},{"value":"주요 플러그인","url":"#주요-플러그인","depth":2},{"value":"remark-toc-headings","url":"#remark-toc-headings","depth":3},{"value":"remark-gfm","url":"#remark-gfm","depth":3},{"value":"remark-code-titles","url":"#remark-code-titles","depth":3},{"value":"rehype-slug","url":"#rehype-slug","depth":3},{"value":"rehype-prism-plus","url":"#rehype-prism-plus","depth":3},{"value":"rehype-autolink-headings","url":"#rehype-autolink-headings","depth":3}]}]]}]]

@@ -1,0 +1,958 @@
+1:HL["/_next/static/media/122c360d7fe6d395-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/media/a15f2fce4b98b461-s.p.woff2",{"as":"font","type":"font/woff2"}]
+3:HL["/_next/static/css/513fe6d1da0f3f41.css",{"as":"style"}]
+4:HL["/_next/static/css/bc95ac79a310f5fe.css",{"as":"style"}]
+0:["KTmOAbpToE8QLnSqzheiN",[[["",{"children":["(pages)",{"children":["posts",{"children":[["slug","2023/nextjs-blog-begin","c"],{"children":["__PAGE__?{\"slug\":[\"2023\",\"nextjs-blog-begin\"]}",{}]}]}]}]},"$undefined","$undefined",true],"$L5",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/513fe6d1da0f3f41.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/bc95ac79a310f5fe.css","precedence":"next"}]],"$L6"]]]]
+7:I{"id":9588,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+8:I{"id":196,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+9:I{"id":2568,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+a:I{"id":3466,"chunks":["272:static/chunks/webpack-b74668436ee6b2a0.js","253:static/chunks/bce60fc1-0247e260c1ca1b9c.js","961:static/chunks/961-90edfa57f01894b3.js"],"name":"default","async":false}
+b:I{"id":372,"chunks":["272:static/chunks/webpack-b74668436ee6b2a0.js","253:static/chunks/bce60fc1-0247e260c1ca1b9c.js","961:static/chunks/961-90edfa57f01894b3.js"],"name":"default","async":false}
+d:I{"id":3245,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+5:[["$","html",null,{"className":"__variable_21dd0c","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L7",null,{"children":[["$","$L8",null,{"id":"main-content","className":"relative flex flex-col border-l-gray-200 dark:border-l-gray-800","children":[["$","$L9",null,{"id":"content-header","className":"sticky z-10 flex flex-col top-0"}],["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[["$","section",null,{"className":"relative mx-auto w-full max-w-7xl px-5 sm:px-10 mb-20","children":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children","posts","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children","posts","children",["slug","2023/nextjs-blog-begin","c"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$Lc",null],"segment":"__PAGE__?{\"slug\":[\"2023\",\"nextjs-blog-begin\"]}"},"styles":[]}],"segment":["slug","2023/nextjs-blog-begin","c"]},"styles":[]}],"segment":"posts"},"styles":[]}]}],null],"segment":"(pages)"},"styles":[]}],["$","hr",null,{"className":"border-none h-px bg-gray-200 dark:bg-gray-800"}],["$","footer",null,{"className":"w-full px-10 py-8 text-center","children":[["$","p",null,{"className":"text-xs","children":"chaospace • © 2023 All rights reserved • Next.js Blog"}],["$","p",null,{"className":"text-xs","children":["Source code available on ",["$","a",null,{"className":"underline","children":"GitHub"}]]}]]}]]}],["$","$Ld",null,{}]]}]}]}],null]
+6:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Next.js 블로그 제작( 프로젝트 환경설정 ) | chaospace's Blog"}],["$","meta","2",{"name":"description","content":"틈틈이 기억나는 내용을 정리하는 공간"}],["$","meta","3",{"name":"keywords","content":"next.js,tailwindcss,mdx"}],["$","meta","4",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","5",{"name":"creator","content":"chaospace"}],["$","link","6",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"any"}],["$","meta","7",{"name":"next-size-adjust"}]]
+e:I{"id":9378,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+10:I{"id":2375,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+11:I{"id":3781,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+12:I{"id":2092,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+f:T9392,/*@jsxRuntime automatic @jsxImportSource react*/
+const {Fragment: _Fragment, jsx: _jsx, jsxs: _jsxs} = arguments[0];
+const {useMDXComponents: _provideComponents} = arguments[0];
+function _createMdxContent(props) {
+  const _components = Object.assign({
+    p: "p",
+    br: "br",
+    h2: "h2",
+    ul: "ul",
+    li: "li",
+    strong: "strong",
+    code: "code",
+    div: "div",
+    pre: "pre",
+    span: "span",
+    h3: "h3",
+    del: "del",
+    img: "img",
+    sup: "sup",
+    a: "a",
+    hr: "hr",
+    section: "section",
+    ol: "ol"
+  }, _provideComponents(), props.components);
+  return _jsxs(_Fragment, {
+    children: [_jsxs(_components.p, {
+      children: ["일을 하며 알게된 정보나 지식을 프로젝트 폴더에 readme파일을 만들어 내용을 정리해 왔는데 보기 불편한 감이 있어", _jsx(_components.br, {}), "\n", _jsx("code", {
+        children: "정적 블로그"
+      }), "제작을 알아봤다."]
+    }), "\n", _jsxs("details", {
+      children: [_jsx("summary", {
+        children: "요약"
+      }), _jsx(_components.h2, {
+        id: "tldr",
+        children: "TL:DR"
+      }), _jsx(_components.p, {
+        children: "next.js를 이용한 블로그 구성은 간단히 요약하면 아래와 같다."
+      }), _jsxs(_components.ul, {
+        children: ["\n", _jsxs(_components.li, {
+          children: [_jsx("code", {
+            children: "create next-app"
+          }), "명령을 이용해 기본 프로젝트 생성."]
+        }), "\n", _jsxs(_components.li, {
+          children: ["markdown 컨텐츠 모듈선택 ( ", _jsx(_components.strong, {
+            children: "next-mdx-remote"
+          }), " or ", _jsx(_components.strong, {
+            children: "contentlayer"
+          }), " )"]
+        }), "\n", _jsx(_components.li, {
+          children: "간단한 markdown페이지 제작"
+        }), "\n", _jsx(_components.li, {
+          children: "동작확인"
+        }), "\n"]
+      })]
+    }), "\n", _jsx(_components.h2, {
+      id: "framework선택",
+      children: "Framework선택"
+    }), "\n", _jsxs(_components.ul, {
+      children: ["\n", _jsxs(_components.li, {
+        children: ["\n", _jsx("a", {
+          href: "https://astro.build/",
+          target: "_blank",
+          children: _jsx(_components.p, {
+            children: "astro"
+          })
+        }), "\n"]
+      }), "\n", _jsxs(_components.li, {
+        children: ["\n", _jsx("a", {
+          href: "https://nextjs.org/",
+          target: "_blank",
+          children: _jsx(_components.p, {
+            children: "next.js"
+          })
+        }), "\n"]
+      }), "\n"]
+    }), "\n", _jsxs(_components.p, {
+      children: ["에서 고민하다 많이 사용하고 최근 추가된 ServerComponent, appRouter도 익힐 겸 ", _jsx(_components.code, {
+        children: "next.js"
+      }), "를 이용하기로 했다."]
+    }), "\n", _jsxs(_components.p, {
+      children: [_jsx(_components.code, {
+        children: "yarn create next-app"
+      }), "명령에서 프로젝트를 생성해 typescript, tailwindcss를 적용하기로 결정."]
+    }), "\n", _jsx(_components.div, {
+      className: "remark-code-title",
+      children: "termial"
+    }), "\n", _jsx(_components.pre, {
+      className: "language-js",
+      children: _jsxs(_components.code, {
+        className: "language-js code-highlight",
+        children: [_jsxs(_components.span, {
+          className: "code-line",
+          children: ["    yarn create next", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "app\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "What"
+          }), " is your project named", _jsx(_components.span, {
+            className: "token operator",
+            children: "?"
+          }), "  my", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "app\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Would"
+          }), " you like to use ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "TypeScript"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: "?"
+          }), "  ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "No"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "/"
+          }), " ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Yes"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Would"
+          }), " you like to use ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "ESLint"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: "?"
+          }), "  ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "No"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "/"
+          }), " ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Yes"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Would"
+          }), " you like to use ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Tailwind"
+          }), " ", _jsx(_components.span, {
+            className: "token constant",
+            children: "CSS"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: "?"
+          }), "  ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "No"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "/"
+          }), " ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Yes"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Would"
+          }), " you like to use ", _jsxs(_components.span, {
+            className: "token template-string",
+            children: [_jsx(_components.span, {
+              className: "token template-punctuation string",
+              children: "`"
+            }), _jsx(_components.span, {
+              className: "token string",
+              children: "src/"
+            }), _jsx(_components.span, {
+              className: "token template-punctuation string",
+              children: "`"
+            })]
+          }), " directory", _jsx(_components.span, {
+            className: "token operator",
+            children: "?"
+          }), "  ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "No"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "/"
+          }), " ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Yes"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Would"
+          }), " you like to use ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "App"
+          }), " ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Router"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: "?"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "recommended", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), "  ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "No"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "/"
+          }), " ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Yes"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Would"
+          }), " you like to customize the ", _jsx(_components.span, {
+            className: "token keyword module",
+            children: "default"
+          }), " ", _jsx(_components.span, {
+            className: "token keyword module",
+            children: "import"
+          }), " alias", _jsx(_components.span, {
+            className: "token operator",
+            children: "?"
+          }), "  ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "No"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "/"
+          }), " ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Ye"
+          }), "\n"]
+        })]
+      })
+    }), "\n", _jsx(_components.h2, {
+      id: "정적페이지-구성을-위한-모듈-구성",
+      children: "정적페이지 구성을 위한 모듈 구성"
+    }), "\n", _jsxs(_components.p, {
+      children: ["nextjs는 mdx파일을 이용한 페이지 구성을 위해 아래와 같이 3가지 모듈을 제공한다.", _jsx(_components.br, {}), "\n", "대체로 contentlayer 혹은 next-mdx-remote 중에서 선택하면 되고 contentlayer가 편의성이 우수하다."]
+    }), "\n", _jsxs(_components.ul, {
+      children: ["\n", _jsx(_components.li, {
+        children: "@next/mdx"
+      }), "\n", _jsxs(_components.li, {
+        children: ["\n", _jsx("a", {
+          href: "https://www.contentlayer.dev/",
+          target: "_blnak",
+          children: _jsx(_components.p, {
+            children: "contentlayer"
+          })
+        }), "\n"]
+      }), "\n", _jsxs(_components.li, {
+        children: ["\n", _jsx("a", {
+          href: "https://github.com/hashicorp/next-mdx-remote",
+          target: "_blank",
+          children: _jsx(_components.p, {
+            children: "next-mdx-remote (적용한 모듈)"
+          })
+        }), "\n"]
+      }), "\n"]
+    }), "\n", _jsx(_components.h3, {
+      id: "nextmdx",
+      children: "@next/mdx"
+    }), "\n", _jsxs(_components.p, {
+      children: ["mdx파일을 이용한 페이지 구성에 사용할 수 있는 가장 손쉬운 방법으로 로컬파일로만 동작한다는 단점이 있다.\n자세한 내용은 ", _jsx("a", {
+        href: "https://nextjs.org/docs/pages/building-your-application/configuring/mdx#nextmdx",
+        target: "_blank",
+        children: "공식문서"
+      }), " 를 참고."]
+    }), "\n", _jsx(_components.h3, {
+      id: "contentlayer",
+      children: "contentlayer"
+    }), "\n", _jsxs(_components.p, {
+      children: ["간단한 설정파일을 통해 사용할 mdx파일을 외부에서 읽어오고 frontmatter정보를 손쉽게 가져와 사용할 수 있게 해주는 content SDK입니다. 아직\n베타 버전이지만 정적페이지 구성을 손쉽게 해주기 때문에 사용을 추천.", _jsx(_components.br, {}), "\n", _jsx(_components.del, {
+        children: "글쓰는 시점에 next.js 13.4.10버전과 충돌이 있어 난 사용하지 못함"
+      })]
+    }), "\n", _jsx(_components.h3, {
+      id: "next-mdx-remote",
+      children: "next-mdx-remote"
+    }), "\n", _jsxs(_components.p, {
+      children: [_jsx(_components.img, {
+        src: "https://raw.githubusercontent.com/hashicorp/next-mdx-remote/main/header.png",
+        alt: "next-mdx-remote"
+      }), "\nmdx파일이 getStatiProps 또는 getServerSideProps 내에서 로드되고 클라이언트에서 올바르게 hydrate될 수 있도록 하는 유틸리티로\n불러온 mdx파일을 플러그인 옵션과 함께 ", _jsx("code", {
+        children: "serialize"
+      }), "를 통해 파싱하고 화면에 보여주는 ", _jsx("code", {
+        children: "MDXRemote"
+      }), "컴포넌트를 제공한다."]
+    }), "\n", _jsx(_components.div, {
+      className: "remark-code-title",
+      children: "terminal"
+    }), "\n", _jsx(_components.pre, {
+      children: _jsx(_components.code, {
+        className: "language-planetext code-highlight",
+        children: _jsx(_components.span, {
+          className: "code-line",
+          children: "yarn add next-mdx-remote\n"
+        })
+      })
+    }), "\n", _jsx(_components.h2, {
+      id: "next-mdx-remote-주요-사용법",
+      children: "next-mdx-remote 주요 사용법"
+    }), "\n", _jsx(_components.p, {
+      children: "장황한 설명대신 간단한 순서와 샘플코드만 정리해둔다."
+    }), "\n", _jsxs(_components.ul, {
+      children: ["\n", _jsx(_components.li, {
+        children: "프로젝트 폴더에서 mdx파일 읽어오기"
+      }), "\n", _jsxs(_components.li, {
+        children: ["불러온 mdx파일을 serialize로 파싱하기", _jsx(_components.sup, {
+          children: _jsx(_components.a, {
+            href: "#user-content-fn-1",
+            id: "user-content-fnref-1",
+            "data-footnote-ref": true,
+            "aria-describedby": "footnote-label",
+            children: "1"
+          })
+        })]
+      }), "\n", _jsxs(_components.li, {
+        children: ["파싱된 결과를 ", _jsx("code", {
+          children: "MDXRemote컴포넌트를 통해 보여주기"
+        })]
+      }), "\n"]
+    }), "\n", _jsx(_components.div, {
+      className: "remark-code-title",
+      children: "markdown파일"
+    }), "\n", _jsx(_components.pre, {
+      className: "language-javascript",
+      children: _jsxs(_components.code, {
+        className: "language-javascript code-highlight",
+        children: [_jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token keyword module",
+            children: "import"
+          }), " ", _jsxs(_components.span, {
+            className: "token imports",
+            children: [_jsx(_components.span, {
+              className: "token punctuation",
+              children: "{"
+            }), " serialize ", _jsx(_components.span, {
+              className: "token punctuation",
+              children: "}"
+            })]
+          }), " ", _jsx(_components.span, {
+            className: "token keyword module",
+            children: "from"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"next-mdx-remote/serialize\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token keyword module",
+            children: "import"
+          }), " ", _jsx(_components.span, {
+            className: "token imports",
+            children: "remarkGfm"
+          }), " ", _jsx(_components.span, {
+            className: "token keyword module",
+            children: "from"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "'remark-gfm'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token keyword module",
+            children: "import"
+          }), " ", _jsx(_components.span, {
+            className: "token imports",
+            children: "rehypePrismPlus"
+          }), " ", _jsx(_components.span, {
+            className: "token keyword module",
+            children: "from"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"rehype-prism-plus\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "const"
+          }), " source ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token function",
+            children: "readFileSync"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "mdx파일위치", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "'utf-8'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token comment",
+            children: "// 파일을 serialize를 통해 react포맷으로 변경"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "const"
+          }), " ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "mdxSource"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "PostSerializeResult"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token keyword control-flow",
+            children: "await"
+          }), " ", _jsx(_components.span, {
+            className: "token function",
+            children: "serialize"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "source", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token comment",
+            children: "//옵션을 통해 플러그인 모듈적용 가능"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "mdxOptions"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "remarkPlugins"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "        \n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "rehypePlugins"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "        \n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "format"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "'mdx'"
+          }), "      ", _jsx(_components.span, {
+            className: "token comment",
+            children: "// 대상문서포맷"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        })]
+      })
+    }), "\n", _jsx(_components.p, {
+      children: "serialize에 리턴 값을 RemoteMDX를 통해 보여줄 수 있다."
+    }), "\n", _jsx(_components.div, {
+      className: "remark-code-title",
+      children: "MDXViewer.ts"
+    }), "\n", _jsx(_components.pre, {
+      className: "language-typescript",
+      children: _jsxs(_components.code, {
+        className: "language-typescript code-highlight",
+        children: [_jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "import"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " MDXRemote", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " MDXRemoteSerializeResult ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), " ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "from"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"next-mdx-remote\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token comment",
+            children: "// markdown요소를 커스텀하고 싶은 경우 태그에 해당하는 컴포넌트를 지정해 사용가능."
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "const"
+          }), " components ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token function",
+            children: "useMemo"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "=>"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "return"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["            a", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " CustomLink", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["            pre", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " PrismCode", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "            TocInline\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), " ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "as"
+          }), " MDXComponents\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "["
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "]"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token operator",
+            children: "<"
+          }), "MDXRemote ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "..."
+          }), "mdxSource ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), " components", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " components ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "/"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ">"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        })]
+      })
+    }), "\n", _jsxs(_components.p, {
+      children: ["serialize리턴 값 중 ", _jsx(_components.strong, {
+        children: "scope"
+      }), "속성이 보이는데 이는 mdx에서 동적으로 사용하고 싶은 데이터를 설정하면 된다."]
+    }), "\n", _jsx(_components.pre, {
+      className: "language-tsx",
+      children: _jsxs(_components.code, {
+        className: "language-tsx code-highlight",
+        children: [_jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token comment",
+            children: "// test.mdx에서 name에 동적인 값을 전달하고 싶은 경우 "
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsxs(_components.span, {
+            className: "token template-string",
+            children: [_jsx(_components.span, {
+              className: "token template-punctuation string",
+              children: "`"
+            }), _jsx(_components.span, {
+              className: "token string",
+              children: "my name is {name}"
+            }), _jsx(_components.span, {
+              className: "token template-punctuation string",
+              children: "`"
+            })]
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token comment",
+            children: "//mdx안에 컴포넌트에 동적 속성을 넘기는 것도 가능"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), _jsx(_components.span, {
+                className: "token class-name",
+                children: "MyReactComponent"
+              })]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "name"
+            }), _jsxs(_components.span, {
+              className: "token script language-javascript",
+              children: [_jsx(_components.span, {
+                className: "token script-punctuation punctuation",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "{"
+              }), "props", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "."
+              }), _jsx(_components.span, {
+                className: "token property-access",
+                children: "name"
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "}"
+              })]
+            }), _jsx(_components.span, {
+              className: "token punctuation",
+              children: ">"
+            })]
+          }), _jsx(_components.span, {
+            className: "token plain-text",
+            children: " \n"
+          })]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token plain-text",
+            children: "\n"
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token plain-text",
+            children: "  // scope속성에 해당 키에 정보를 동적으로 구성해서 넘기면 mdx파일에 적용된다.\n"
+          })
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token plain-text",
+            children: "  scope:"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "name", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"Some name\""
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token plain-text",
+            children: "\n"
+          })]
+        })]
+      })
+    }), "\n", _jsxs(_components.p, {
+      children: ["기본적인 사용코드는 ", _jsx(_components.a, {
+        href: "https://github.com/vercel/next.js/tree/canary/examples/with-mdx-remote",
+        children: "공식 예제"
+      }), "를 보면 좋다."]
+    }), "\n", _jsx(_components.h2, {
+      id: "느낀점",
+      children: "느낀점"
+    }), "\n", _jsxs(_components.p, {
+      children: ["프론트 경험이 어느정도 있는 분이라면 npm, yarn을 이용해 기본프로젝트 생성 후 mdx모듈만 설치하면 나머지는 입맛대로 페이지를 꾸미는게\n가능하고 맨땅에 헤딩하는게 어렵다면 공홈에서 맘에드는 ", _jsx(_components.a, {
+        href: "https://vercel.com/templates/next.js",
+        children: "템플릿"
+      }), "을 베이스로 하는 것도 방법일 거 같다.\nSPA", _jsx(_components.sup, {
+        children: _jsx(_components.a, {
+          href: "#user-content-fn-2",
+          id: "user-content-fnref-2",
+          "data-footnote-ref": true,
+          "aria-describedby": "footnote-label",
+          children: "2"
+        })
+      }), "에 익숙했던 나에겐 페이지 구성을 하며 서버&클라이언트 컴포넌트 분리 및 상태관리를 노하우를 알 수 있는 시간이 됐다."]
+    }), "\n", _jsx(_components.hr, {}), "\n", _jsxs(_components.section, {
+      "data-footnotes": true,
+      className: "footnotes",
+      children: [_jsx(_components.h2, {
+        className: "sr-only",
+        id: "footnote-label",
+        children: "Footnotes"
+      }), "\n", _jsxs(_components.ol, {
+        children: ["\n", _jsxs(_components.li, {
+          id: "user-content-fn-1",
+          children: ["\n", _jsxs(_components.p, {
+            children: ["serialize단계에서 remark, rehype의 다양한 플러그인을 이용해 데이터가공이 가능하다. ", _jsx(_components.a, {
+              href: "#user-content-fnref-1",
+              "data-footnote-backref": true,
+              className: "data-footnote-backref",
+              "aria-label": "Back to content",
+              children: "↩"
+            })]
+          }), "\n"]
+        }), "\n", _jsxs(_components.li, {
+          id: "user-content-fn-2",
+          children: ["\n", _jsxs(_components.p, {
+            children: ["싱글 페이지 어플리케이션 ", _jsx(_components.a, {
+              href: "#user-content-fnref-2",
+              "data-footnote-backref": true,
+              className: "data-footnote-backref",
+              "aria-label": "Back to content",
+              children: "↩"
+            })]
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = Object.assign({}, _provideComponents(), props.components);
+  return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {
+    children: _jsx(_createMdxContent, props)
+  })) : _createMdxContent(props);
+}
+return {
+  default: MDXContent
+};
+c:[["$","article",null,{"children":[["$","h1",null,{"className":"font-bold text-3xl","children":"Next.js 블로그 제작( 프로젝트 환경설정 )"}],["$","p",null,{"className":"my-1","children":"next.js 블로그 제작에 사용한 기본구성"}],["$","span",null,{"className":"flex flex-wrap gap-2 items-center text-xs","children":[["$","span",null,{"className":"inline-flex items-center basis-24 flex-grow-0","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"far","data-icon":"calendar","className":"svg-inline--fa fa-calendar fa-xs ","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 448 512","style":{},"children":["$","path",null,{"fill":"currentColor","d":"M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z","style":{}}]}],["$","time",null,{"className":"pl-1","dateTime":"2023-08-04","children":"2023-08-04"}]]}],["$","span",null,{"className":"inline-flex items-center basis-24 flex-grow-0","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"far","data-icon":"clock","className":"svg-inline--fa fa-clock fa-xs ","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 512 512","style":{},"children":["$","path",null,{"fill":"currentColor","d":"M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z","style":{}}]}],["$","span",null,{"className":"pl-1","children":"7 minutes"}]]}]]}],["$","hr",null,{"className":"border-none h-px bg-gray-200 dark:bg-gray-800 my-10"}]]}],["$","div",null,{"className":"lg:grid lg:grid-cols-[1fr_260px] lg:gap-8","children":[["$","div",null,{"data-content":"post-area","className":"prose max-w-[796px] dark:prose-dark","children":[["$","$Le",null,{"compiledSource":"$f","frontmatter":{"title":"Next.js 블로그 제작( 프로젝트 환경설정 )","date":"$D2023-08-04T00:00:00.000Z","tags":["next.js","tailwindcss","mdx"],"draft":false,"summary":"next.js 블로그 제작에 사용한 기본구성","readTime":6.17},"scope":{"toc":[{"value":"TL:DR","url":"#tldr","depth":2},{"value":"Framework선택","url":"#framework선택","depth":2},{"value":"정적페이지 구성을 위한 모듈 구성","url":"#정적페이지-구성을-위한-모듈-구성","depth":2},{"value":"@next/mdx","url":"#nextmdx","depth":3},{"value":"contentlayer","url":"#contentlayer","depth":3},{"value":"next-mdx-remote","url":"#next-mdx-remote","depth":3},{"value":"next-mdx-remote 주요 사용법","url":"#next-mdx-remote-주요-사용법","depth":2},{"value":"느낀점","url":"#느낀점","depth":2}]},"toc":[{"value":"TL:DR","url":"#tldr","depth":2},{"value":"Framework선택","url":"#framework선택","depth":2},{"value":"정적페이지 구성을 위한 모듈 구성","url":"#정적페이지-구성을-위한-모듈-구성","depth":2},{"value":"@next/mdx","url":"#nextmdx","depth":3},{"value":"contentlayer","url":"#contentlayer","depth":3},{"value":"next-mdx-remote","url":"#next-mdx-remote","depth":3},{"value":"next-mdx-remote 주요 사용법","url":"#next-mdx-remote-주요-사용법","depth":2},{"value":"느낀점","url":"#느낀점","depth":2}]}],["$","$L10",null,{}]]}],["$","$L11",null,{"className":"hidden lg:block","toc":[{"value":"TL:DR","url":"#tldr","depth":2},{"value":"Framework선택","url":"#framework선택","depth":2},{"value":"정적페이지 구성을 위한 모듈 구성","url":"#정적페이지-구성을-위한-모듈-구성","depth":2},{"value":"@next/mdx","url":"#nextmdx","depth":3},{"value":"contentlayer","url":"#contentlayer","depth":3},{"value":"next-mdx-remote","url":"#next-mdx-remote","depth":3},{"value":"next-mdx-remote 주요 사용법","url":"#next-mdx-remote-주요-사용법","depth":2},{"value":"느낀점","url":"#느낀점","depth":2}]}],["$","$L12",null,{"toc":[{"value":"TL:DR","url":"#tldr","depth":2},{"value":"Framework선택","url":"#framework선택","depth":2},{"value":"정적페이지 구성을 위한 모듈 구성","url":"#정적페이지-구성을-위한-모듈-구성","depth":2},{"value":"@next/mdx","url":"#nextmdx","depth":3},{"value":"contentlayer","url":"#contentlayer","depth":3},{"value":"next-mdx-remote","url":"#next-mdx-remote","depth":3},{"value":"next-mdx-remote 주요 사용법","url":"#next-mdx-remote-주요-사용법","depth":2},{"value":"느낀점","url":"#느낀점","depth":2}]}]]}]]

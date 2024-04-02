@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/GSDevTools3.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <title>progress</title>
+    <style>
+      .box {
+        position: relative;
+        display: flex;
+        aspect-ratio: 16/9;
+        align-items: center;
+        justify-content: center;
+      }
+      .circle {
+        width: 16em;
+        height: 16em;
+        border-radius: 50%;
+        background: linear-gradient(36deg, #272b66 42.34%, transparent 42.34%) 0
+          0;
+        background-repeat: no-repeat;
+        background-size: 50% 50%;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+
+      .progress-box {
+        position: relative;
+      }
+      .my-progress {
+        width: 80px;
+        height: 80px;
+      }
+
+      p.start,
+      p.middle,
+      p.end {
+        position: absolute;
+        top: 19px;
+        left: 0;
+        margin: 0;
+      }
+
+      .state-box {
+        position: relative;
+        overflow: hidden;
+        height: 52px;
+        background-color: antiquewhite;
+      }
+
+      .text-box {
+        position: relative;
+        padding: 20px 0px;
+        background-color: plum;
+        text-align: center;
+      }
+
+      .progress-label {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle"></div>
+    <!-- <div class="box">
+      <svg viewBox="-8 -8 16 16">
+        <circle
+          cx="0"
+          cy="0"
+          r="4"
+          transform="rotate(200)"
+          stroke-width="8"
+          stroke-dasharray="4, 26"
+          stroke="green"
+          fill="none"
+        />
+      </svg>
+    </div> -->
+    <canvas class="cvs"></canvas>
+    <input
+      id="ipt-r"
+      type="range"
+      min="0.4"
+      max="1"
+      step="0.1"
+      value="0.4"
+      oninput="onCircleRadius(event)"
+    />
+    <input
+      id="ipt-p"
+      type="range"
+      min="0"
+      max="1"
+      step="0.01"
+      value="0.5"
+      oninput="onInputValue(event)"
+    />
+
+    <svg id="svg" width="200" height="200"></svg>
+
+    <div>
+      <div class="progress-box">
+        <svg
+          class="my-progress"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="100%"
+          height="100%"
+          viewBox="0 0 100 100"
+        >
+          <path fill="#ffcc00" />
+        </svg>
+        <div class="state-box">
+          <p class="start">image data analyze...</p>
+          <p class="middle">point generate..</p>
+          <p class="end">color wieghts calculate..</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-box">
+      <p class="progress-label">Santorini</p>
+    </div>
+
+    <button onclick="nextMessage()">클릭</button>
+    <script>
+      const canvas = document.querySelector(".cvs");
+      const ctx = canvas.getContext("2d");
+      canvas.width = canvas.height = 200;
+
+      const progressEle = document.querySelector(".my-progress>path");
+
+      function getProgressPath(cx, cy, radius, progress) {
+        let d = "";
+        const startAngle = Math.PI / 2;
+        const PI = Math.PI * 2;
+        const angle = -1 * startAngle + PI * (progress % 1);
+        let x = cx + Math.cos(angle) * radius;
+        let y = cy + Math.sin(angle) * radius;
+        let dir = angle >= startAngle ? 1 : 0;
+
+        if (progress % 1 === 0 && progress > 0) {
+          dir = 1;
+        }
+
+        return [
+          `M ${cx},${cy}`,
+          `L ${cx},${cy - radius}`,
+          `A ${radius},${radius} 0 ${dir}, 1 ${x - 0.01},${y}`,
+          `Z`,
+        ];
+      }
+
+      function drawArc(settings) {
+        let d = "";
+        const firstCircumferenceX = settings.centreX;
+        const firstCircumferenceY = settings.centreY;
+        const angle = settings.startAngleRadians + settings.sweepAngleRadians;
+        const dir = angle >= Math.PI / 2 ? 1 : 0;
+        const secondCircumferenceX =
+          settings.centreX + settings.radius * Math.cos(angle);
+        const secondCircumferenceY =
+          settings.centreY + settings.radius * Math.sin(angle);
+
+        // move to first point
+        d += `M ${firstCircumferenceX},${firstCircumferenceY} `;
+
+        d += `L ${firstCircumferenceX},${
+          settings.centreY - firstCircumferenceY
+        } `;
+
+        // arc
+        // Radius X, Radius Y, X Axis Rotation, Large Arc Flag, Sweep Flag, End X, End Y;
+        d += `A ${settings.radius},${settings.radius} 0 ${dir}, 1 ${secondCircumferenceX},${secondCircumferenceY}`;
+        d += "Z";
+        const arc = document.createElementNS(
+          "http://www.w3.org/2000/svg",
+          "path"
+        );
+
+        arc.setAttributeNS(null, "d", d);
+        arc.setAttributeNS(null, "fill", settings.fillColor);
+        arc.setAttributeNS(null, "fill-opacity", settings.fillOpacity);
+        arc.setAttributeNS(
+          null,
+          "style",
+          "stroke:" + settings.strokeColour + ";"
+        );
+
+        document.getElementById(settings.id).appendChild(arc);
+      }
+
+      const s = Math.PI;
+
+      const PI = Math.PI * 2;
+
+      const rInput = document.querySelector("#ipt-r");
+      const pInput = document.querySelector("#ipt-p");
+      let circleRadius = 40 * rInput.value;
+      let circleProgress = pInput.value;
+      function updateProgressSVG() {
+        circleProgress = pInput.value;
+        circleRadius = 40 * rInput.value;
+        progressEle.setAttribute(
+          "d",
+          getProgressPath(50, 50, circleRadius, circleProgress).join(" ")
+        );
+      }
+      function onCircleRadius(event) {
+        updateProgressSVG();
+      }
+
+      function onInputValue(event) {
+        // document.querySelector("#svg").innerHTML = "";
+        // ctx.clearRect(0, 0, 200, 200);
+        // ctx.save();
+        // ctx.beginPath();
+        // ctx.translate(100, 100);
+        // const r = 80;
+        // const cx = 100;
+        // ctx.moveTo(0, 0);
+        // ctx.fillStyle = "#ffcc00";
+        // const START = 0; //-Math.PI / 2;
+        // const rate = event.target.value;
+        // const max = 180 * rate;
+        // const step = (PI * event.target.value) / max;
+        // for (let i = 0; i <= max; i++) {
+        //   const x = Math.cos(START + step * i) * r;
+        //   const y = Math.sin(START + step * i) * r;
+        //   ctx.lineTo(x, y);
+        // }
+        // ctx.closePath();
+        // ctx.stroke();
+        // ctx.fill();
+        // ctx.restore();
+
+        updateProgressSVG();
+      }
+
+      const sleep = (time) => {
+        const max = Date.now() + time;
+        while (Date.now() < max) {}
+      };
+
+      const getTextSwapAnimation = (g, text) => {
+        g.to(
+          text.chars,
+          {
+            keyframes: {
+              y: [-5, 0],
+              autoAlpha: [0, 1],
+            },
+            duration: 0.6,
+            stagger: 0.02,
+          },
+          "<+=0.1"
+        ).to(text.chars, {
+          duration: 0.6,
+          stagger: 0.02,
+          autoAlpha: 0,
+          y: -5,
+          ease: "back",
+        });
+        return g;
+      };
+
+      // 동적인 텍스트 변경없이 엘리먼트 제어를 통한 처리
+      const splitStart = SplitType.create("p.start", { types: "words, chars" });
+      const splitMiddle = SplitType.create("p.middle", {
+        types: "words, chars",
+      });
+      const splitEnd = SplitType.create("p.end", { types: "words, chars" });
+      gsap.set("p.start", { perspective: 400 });
+      gsap.set("p.middle", { perspective: 400 });
+      gsap.set("p.end", { perspective: 400 });
+      gsap.set(splitMiddle.chars, { autoAlpha: 0 });
+      gsap.set(splitEnd.chars, { autoAlpha: 0 });
+      const tw = gsap.timeline();
+      tw.from(splitStart.chars, {
+        duration: 0.6,
+        autoAlpha: 0,
+        scale: 2,
+        rotationY: -180,
+        ease: "back",
+        stagger: 0.02,
+      })
+        .to(splitStart.chars, {
+          duration: 0.6,
+          stagger: 0.02,
+          autoAlpha: 0,
+          ease: "back",
+          y: -5,
+        })
+        .add(getTextSwapAnimation(tw, splitMiddle))
+        .add(getTextSwapAnimation(tw, splitEnd));
+
+      const santoriniText = SplitType.create("p.progress-label", {
+        types: "words, chars",
+      });
+
+      gsap.set("p.progress-label", { perspective: 400 });
+      const santoriniTween = gsap.timeline();
+      santoriniTween
+        .from(santoriniText.chars, {
+          duration: 0.6,
+          stagger: 0.1,
+          scale: 0,
+          autoAlpha: 0,
+          rotationX: -360,
+          transformOrigin: "50% 50%",
+          ease: "power1",
+        })
+        .to(santoriniText.chars, {
+          duration: 0.6,
+          keyframes: {
+            y: [0, -5, 0],
+            color: ["white", "black", "white"],
+          },
+          repeat: -1,
+
+          stagger: 0.05,
+          ease: "power2",
+        });
+    </script>
+  </body>
+</html>

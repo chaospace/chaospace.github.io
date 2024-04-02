@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas width="300" height="300"></canvas>
+    <script>
+      const canvas = document.querySelector("canvas");
+      const ctx = canvas.getContext("2d");
+      const dpr = devicePixelRatio;
+      const size = 400;
+      const thickness = 8;
+      canvas.width = size * dpr;
+      canvas.height = size * dpr;
+      canvas.style.width = `${size}px`;
+      canvas.style.height = `${size}px`;
+      ctx.scale(dpr, dpr);
+      ctx.lineWidth = thickness;
+
+      let white = "#f2f5f1";
+      let colors = ["#D40920", "#1356A2", "#F7D842"];
+
+      let squares = [
+        {
+          x: 0,
+          y: 0,
+          width: size,
+          height: size,
+        },
+      ];
+
+      function splitSquaresWith(coordinate) {
+        const { x, y } = coordinate;
+        for (let i = squares.length - 1; i >= 0; i--) {
+          const square = squares[i];
+          if (x && x > square.x && x < square.x + square.width) {
+            if (Math.random() > 0.5) {
+              squares.splice(i, 1);
+              splitOnX(square, x);
+            }
+          }
+
+          if (y && y > square.y && y < square.y + square.height) {
+            if (Math.random() > 0.5) {
+              squares.splice(i, 1);
+              splitOnY(square, y);
+            }
+          }
+        }
+      }
+
+      function splitOnX(square, splitAt) {
+        const width = square.width - splitAt + square.x;
+        const height = square.height;
+        const squareA = {
+          x: square.x,
+          y: square.y,
+          width: square.width - width,
+          height,
+        };
+
+        const squareB = {
+          x: splitAt,
+          y: square.y,
+          width,
+          height,
+        };
+
+        squares.push(squareA);
+        squares.push(squareB);
+      }
+
+      function splitOnY(square, splitAt) {
+        const width = square.width;
+        const height = square.height - splitAt + square.y;
+        const squareA = {
+          x: square.x,
+          y: square.y,
+          width,
+          height: square.height - height,
+        };
+
+        const squareB = {
+          x: square.x,
+          y: splitAt,
+          width,
+          height,
+        };
+
+        squares.push(squareA);
+        squares.push(squareB);
+      }
+
+      function draw() {
+        for (let i = 0; i < colors.length; i++) {
+          squares[Math.floor(Math.random() * squares.length)].color = colors[i];
+        }
+        for (let i = 0; i < squares.length; i++) {
+          ctx.beginPath();
+          ctx.rect(
+            squares[i].x,
+            squares[i].y,
+            squares[i].width,
+            squares[i].height
+          );
+          ctx.fillStyle = squares[i].color ? squares[i].color : white;
+          ctx.fill();
+          ctx.stroke();
+          //ctx.closePath();
+        }
+      }
+      //splitSquaresWith({ x: 200 });
+      //splitSquaresWith({ y: 200 });
+      const step = size / 10;
+      for (let i = 0; i < size; i += step) {
+        //console.log("size", i);
+        splitSquaresWith({ y: i });
+        splitSquaresWith({ x: i });
+      }
+      draw();
+    </script>
+  </body>
+</html>

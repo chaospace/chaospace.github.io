@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="screen"></canvas>
+    <script>
+      const screen = document.querySelector("#screen");
+      const off = screen.transferControlToOffscreen();
+      console.log(off);
+      const scripts = `
+      self.onmessage= ({data}) => {
+
+        const {canvas} = data;
+        const ctx = canvas.getContext('2d');
+
+        ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height/2);
+
+      }
+      `;
+      const blob = new Blob([scripts], { type: "text/javascript" });
+      const worker = new Worker(URL.createObjectURL(blob));
+      worker.onmessage = (e) => {
+        console.log("e", e);
+      };
+      worker.postMessage({ canvas: off }, [off]);
+      //const ctx = screen.getContext("2d", { willReadFrequently: true });
+    </script>
+  </body>
+</html>

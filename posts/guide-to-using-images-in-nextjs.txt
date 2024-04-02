@@ -1,0 +1,444 @@
+1:HL["/_next/static/media/122c360d7fe6d395-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/media/a15f2fce4b98b461-s.p.woff2",{"as":"font","type":"font/woff2"}]
+3:HL["/_next/static/css/513fe6d1da0f3f41.css",{"as":"style"}]
+4:HL["/_next/static/css/bc95ac79a310f5fe.css",{"as":"style"}]
+0:["KTmOAbpToE8QLnSqzheiN",[[["",{"children":["(pages)",{"children":["posts",{"children":[["slug","guide-to-using-images-in-nextjs","c"],{"children":["__PAGE__?{\"slug\":[\"guide-to-using-images-in-nextjs\"]}",{}]}]}]}]},"$undefined","$undefined",true],"$L5",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/513fe6d1da0f3f41.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/bc95ac79a310f5fe.css","precedence":"next"}]],"$L6"]]]]
+7:I{"id":9588,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+8:I{"id":196,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+9:I{"id":2568,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+a:I{"id":3466,"chunks":["272:static/chunks/webpack-b74668436ee6b2a0.js","253:static/chunks/bce60fc1-0247e260c1ca1b9c.js","961:static/chunks/961-90edfa57f01894b3.js"],"name":"default","async":false}
+b:I{"id":372,"chunks":["272:static/chunks/webpack-b74668436ee6b2a0.js","253:static/chunks/bce60fc1-0247e260c1ca1b9c.js","961:static/chunks/961-90edfa57f01894b3.js"],"name":"default","async":false}
+d:I{"id":3245,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+5:[["$","html",null,{"className":"__variable_21dd0c","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L7",null,{"children":[["$","$L8",null,{"id":"main-content","className":"relative flex flex-col border-l-gray-200 dark:border-l-gray-800","children":[["$","$L9",null,{"id":"content-header","className":"sticky z-10 flex flex-col top-0"}],["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[["$","section",null,{"className":"relative mx-auto w-full max-w-7xl px-5 sm:px-10 mb-20","children":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children","posts","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children","posts","children",["slug","guide-to-using-images-in-nextjs","c"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$Lc",null],"segment":"__PAGE__?{\"slug\":[\"guide-to-using-images-in-nextjs\"]}"},"styles":[]}],"segment":["slug","guide-to-using-images-in-nextjs","c"]},"styles":[]}],"segment":"posts"},"styles":[]}]}],null],"segment":"(pages)"},"styles":[]}],["$","hr",null,{"className":"border-none h-px bg-gray-200 dark:bg-gray-800"}],["$","footer",null,{"className":"w-full px-10 py-8 text-center","children":[["$","p",null,{"className":"text-xs","children":"chaospace • © 2023 All rights reserved • Next.js Blog"}],["$","p",null,{"className":"text-xs","children":["Source code available on ",["$","a",null,{"className":"underline","children":"GitHub"}]]}]]}]]}],["$","$Ld",null,{}]]}]}]}],null]
+6:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Images in Next.js | chaospace's Blog"}],["$","meta","2",{"name":"description","content":"틈틈이 기억나는 내용을 정리하는 공간"}],["$","meta","3",{"name":"keywords","content":"next js,guide"}],["$","meta","4",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","5",{"name":"creator","content":"chaospace"}],["$","link","6",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"any"}],["$","meta","7",{"name":"next-size-adjust"}]]
+e:I{"id":9378,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+10:I{"id":2375,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+11:I{"id":3781,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+12:I{"id":2092,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+f:T41ff,/*@jsxRuntime automatic @jsxImportSource react*/
+const {Fragment: _Fragment, jsx: _jsx, jsxs: _jsxs} = arguments[0];
+const {useMDXComponents: _provideComponents} = arguments[0];
+function _createMdxContent(props) {
+  const _components = Object.assign({
+    h1: "h1",
+    p: "p",
+    a: "a",
+    pre: "pre",
+    code: "code",
+    span: "span",
+    em: "em",
+    img: "img",
+    ul: "ul",
+    li: "li"
+  }, _provideComponents(), props.components);
+  return _jsxs(_Fragment, {
+    children: [_jsx(_components.h1, {
+      id: "introduction",
+      children: "Introduction"
+    }), "\n", _jsxs(_components.p, {
+      children: ["The tailwind starter blog has out of the box support for ", _jsx(_components.a, {
+        href: "https://nextjs.org/docs/api-reference/next/image",
+        children: "Next.js's built-in image component"
+      }), " and automatically swaps out default image tags in markdown or mdx documents to use the Image component provided."]
+    }), "\n", _jsx(_components.h1, {
+      id: "usage",
+      children: "Usage"
+    }), "\n", _jsx(_components.p, {
+      children: "To use in a new page route / javascript file, simply import the image component and call it e.g."
+    }), "\n", _jsx(_components.pre, {
+      className: "language-js",
+      children: _jsxs(_components.code, {
+        className: "language-js code-highlight",
+        children: [_jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token keyword module",
+            children: "import"
+          }), " ", _jsx(_components.span, {
+            className: "token imports",
+            children: _jsx(_components.span, {
+              className: "token maybe-class-name",
+              children: "Image"
+            })
+          }), " ", _jsx(_components.span, {
+            className: "token keyword module",
+            children: "from"
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"next/image\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token keyword",
+            children: "function"
+          }), " ", _jsx(_components.span, {
+            className: "token function",
+            children: _jsx(_components.span, {
+              className: "token maybe-class-name",
+              children: "Home"
+            })
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token keyword control-flow",
+            children: "return"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token operator",
+            children: "<"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ">"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token operator",
+            children: "<"
+          }), "h1", _jsx(_components.span, {
+            className: "token operator",
+            children: ">"
+          }), _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "My"
+          }), " ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Homepage"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: "<"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: "/"
+          }), "h1", _jsx(_components.span, {
+            className: "token operator",
+            children: ">"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token operator",
+            children: "<"
+          }), _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Image"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        src", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"/me.png\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        alt", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"Picture of the author\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        width", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), _jsx(_components.span, {
+            className: "token number",
+            children: "500"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        height", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), _jsx(_components.span, {
+            className: "token number",
+            children: "500"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token operator",
+            children: "/"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ">"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["      ", _jsx(_components.span, {
+            className: "token operator",
+            children: "<"
+          }), "p", _jsx(_components.span, {
+            className: "token operator",
+            children: ">"
+          }), _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Welcome"
+          }), " to my homepage", _jsx(_components.span, {
+            className: "token operator",
+            children: "!"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: "<"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: "/"
+          }), "p", _jsx(_components.span, {
+            className: "token operator",
+            children: ">"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token operator",
+            children: "<"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: "/"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ">"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["  ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token keyword module",
+            children: "export"
+          }), " ", _jsx(_components.span, {
+            className: "token keyword module",
+            children: "default"
+          }), " ", _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Home"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        })]
+      })
+    }), "\n", _jsxs(_components.p, {
+      children: ["For a markdown file, the default image tag can be used and the default ", _jsx(_components.code, {
+        children: "img"
+      }), " tag gets replaced by the ", _jsx(_components.code, {
+        children: "Image"
+      }), " component in the build process."]
+    }), "\n", _jsxs(_components.p, {
+      children: ["Assuming we have a file called ", _jsx(_components.code, {
+        children: "ocean.jpg"
+      }), " in ", _jsx(_components.code, {
+        children: "data/img/ocean.jpg"
+      }), ", the following line of code would generate the optimized image."]
+    }), "\n", _jsx(_components.pre, {
+      children: _jsx(_components.code, {
+        className: "code-highlight",
+        children: _jsx(_components.span, {
+          className: "code-line",
+          children: "![ocean](/static/images/ocean.jpg)\n"
+        })
+      })
+    }), "\n", _jsxs(_components.p, {
+      children: ["Alternatively, since we are using mdx, we can just use the image component directly! Note, that you would have to provide a fixed width and height. The ", _jsx(_components.code, {
+        children: "img"
+      }), " tag method parses the dimension automatically."]
+    }), "\n", _jsx(_components.pre, {
+      className: "language-js",
+      children: _jsx(_components.code, {
+        className: "language-js code-highlight",
+        children: _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token operator",
+            children: "<"
+          }), _jsx(_components.span, {
+            className: "token maybe-class-name",
+            children: "Image"
+          }), " alt", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"ocean\""
+          }), " src", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"/static/images/ocean.jpg\""
+          }), " width", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), _jsx(_components.span, {
+            className: "token number",
+            children: "256"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), " height", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), _jsx(_components.span, {
+            className: "token number",
+            children: "128"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "/"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ">"
+          }), "\n"]
+        })
+      })
+    }), "\n", _jsxs(_components.p, {
+      children: [_jsx(_components.em, {
+        children: "Note"
+      }), ": If you try to save the image, it is in webp format, if your browser supports it!"]
+    }), "\n", _jsx(_components.p, {
+      children: _jsx(_components.img, {
+        src: "/static/images/ocean.jpeg",
+        alt: "ocean"
+      })
+    }), "\n", _jsxs(_components.p, {
+      children: ["Photo by ", _jsx(_components.a, {
+        href: "https://unsplash.com/@yucar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+        children: "YUCAR\nFotoGrafik"
+      }), "\non\n", _jsx(_components.a, {
+        href: "https://unsplash.com/s/photos/sea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+        children: "Unsplash"
+      })]
+    }), "\n", _jsx(_components.h1, {
+      id: "benefits",
+      children: "Benefits"
+    }), "\n", _jsxs(_components.ul, {
+      children: ["\n", _jsx(_components.li, {
+        children: "Smaller image size with Webp (~30% smaller than jpeg)"
+      }), "\n", _jsx(_components.li, {
+        children: "Responsive images - the correct image size is served based on the user's viewport"
+      }), "\n", _jsx(_components.li, {
+        children: "Lazy loading - images load as they are scrolled to the viewport"
+      }), "\n", _jsxs(_components.li, {
+        children: ["Avoids ", _jsx(_components.a, {
+          href: "https://web.dev/cls/",
+          children: "Cumulative Layout Shift"
+        })]
+      }), "\n", _jsx(_components.li, {
+        children: "Optimization on demand instead of build-time - no increase in build time!"
+      }), "\n"]
+    }), "\n", _jsx(_components.h1, {
+      id: "limitations",
+      children: "Limitations"
+    }), "\n", _jsxs(_components.ul, {
+      children: ["\n", _jsxs(_components.li, {
+        children: ["\n", _jsxs(_components.p, {
+          children: ["Due to the reliance on ", _jsx(_components.code, {
+            children: "next/image"
+          }), ", unless you are using an external image CDN like Cloudinary or Imgix, it is practically required to use Vercel for hosting. This is because the component acts like a serverless function that calls a highly optimized image CDN."]
+        }), "\n", _jsxs(_components.p, {
+          children: ["If you do not want to be tied to Vercel, you can remove ", _jsx(_components.code, {
+            children: "imgToJsx"
+          }), " in ", _jsx(_components.code, {
+            children: "remarkPlugins"
+          }), " in ", _jsx(_components.code, {
+            children: "lib/mdx.js"
+          }), ". This would avoid substituting the default ", _jsx(_components.code, {
+            children: "img"
+          }), " tag."]
+        }), "\n", _jsxs(_components.p, {
+          children: ["Alternatively, one could wait for image optimization at build time to be supported. A different library, ", _jsx(_components.a, {
+            href: "https://github.com/cyrilwanner/next-optimized-images",
+            children: "next-optimized-images"
+          }), " does that, although it requires transforming the images through webpack which is not done here."]
+        }), "\n"]
+      }), "\n", _jsxs(_components.li, {
+        children: ["\n", _jsxs(_components.p, {
+          children: ["Images from external links are not passed through ", _jsx(_components.code, {
+            children: "next/image"
+          })]
+        }), "\n"]
+      }), "\n", _jsxs(_components.li, {
+        children: ["\n", _jsxs(_components.p, {
+          children: ["All images have to be stored in the ", _jsx(_components.code, {
+            children: "public"
+          }), " folder e.g ", _jsx(_components.code, {
+            children: "/static/images/ocean.jpeg"
+          })]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = Object.assign({}, _provideComponents(), props.components);
+  return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {
+    children: _jsx(_createMdxContent, props)
+  })) : _createMdxContent(props);
+}
+return {
+  default: MDXContent
+};
+c:[["$","article",null,{"children":[["$","h1",null,{"className":"font-bold text-3xl","children":"Images in Next.js"}],["$","p",null,{"className":"my-1","children":"In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component."}],["$","span",null,{"className":"flex flex-wrap gap-2 items-center text-xs","children":[["$","span",null,{"className":"inline-flex items-center basis-24 flex-grow-0","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"far","data-icon":"calendar","className":"svg-inline--fa fa-calendar fa-xs ","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 448 512","style":{},"children":["$","path",null,{"fill":"currentColor","d":"M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z","style":{}}]}],["$","time",null,{"className":"pl-1","dateTime":"2020-11-11","children":"2020-11-11"}]]}],["$","span",null,{"className":"inline-flex items-center basis-24 flex-grow-0","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"far","data-icon":"clock","className":"svg-inline--fa fa-clock fa-xs ","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 512 512","style":{},"children":["$","path",null,{"fill":"currentColor","d":"M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z","style":{}}]}],["$","span",null,{"className":"pl-1","children":"3 minutes"}]]}]]}],["$","hr",null,{"className":"border-none h-px bg-gray-200 dark:bg-gray-800 my-10"}]]}],["$","div",null,{"className":"lg:grid lg:grid-cols-[1fr_260px] lg:gap-8","children":[["$","div",null,{"data-content":"post-area","className":"prose max-w-[796px] dark:prose-dark","children":[["$","$Le",null,{"compiledSource":"$f","frontmatter":{"title":"Images in Next.js","date":"$D2020-11-11T00:00:00.000Z","tags":["next js","guide"],"draft":false,"summary":"In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.","authors":["sparrowhawk"],"readTime":2.14},"scope":{"toc":[{"value":"Introduction","url":"#introduction","depth":1},{"value":"Usage","url":"#usage","depth":1},{"value":"Benefits","url":"#benefits","depth":1},{"value":"Limitations","url":"#limitations","depth":1}]},"toc":[{"value":"Introduction","url":"#introduction","depth":1},{"value":"Usage","url":"#usage","depth":1},{"value":"Benefits","url":"#benefits","depth":1},{"value":"Limitations","url":"#limitations","depth":1}]}],["$","$L10",null,{}]]}],["$","$L11",null,{"className":"hidden lg:block","toc":[{"value":"Introduction","url":"#introduction","depth":1},{"value":"Usage","url":"#usage","depth":1},{"value":"Benefits","url":"#benefits","depth":1},{"value":"Limitations","url":"#limitations","depth":1}]}],["$","$L12",null,{"toc":[{"value":"Introduction","url":"#introduction","depth":1},{"value":"Usage","url":"#usage","depth":1},{"value":"Benefits","url":"#benefits","depth":1},{"value":"Limitations","url":"#limitations","depth":1}]}]]}]]

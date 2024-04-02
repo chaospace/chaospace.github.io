@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        margin: 20px 0px;
+      }
+      .container {
+        position: relative;
+        overflow-y: auto;
+        max-height: 600px;
+      }
+
+      .status-board {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: white;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="status-board"></div>
+    <div class="container">
+      <h1 class="header">헤더-1</h1>
+      <div class="box">box-1</div>
+      <div class="box">box-2</div>
+      <h1 class="header">헤더-2</h1>
+      <div class="box">box-3</div>
+      <div class="box">box-4</div>
+      <h1 class="header">헤더-3</h1>
+      <div class="box" data-anchor="test">box-5</div>
+    </div>
+    <script>
+      const board = document.querySelector(".status-board");
+      let activeList = [];
+      const ob = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((o) => {
+            if (o.isIntersecting) {
+              if (!activeList.includes(o.target.textContent)) {
+                activeList.push(o.target.textContent);
+              }
+              o.target.style.backgroundColor = "#ffcc00";
+            } else {
+              o.target.style.backgroundColor = "white";
+              activeList = activeList.filter((v) => v !== o.target.textContent);
+            }
+          });
+          board.innerHTML = activeList.join("<br/>");
+        },
+        {
+          root: document.querySelector(".container"),
+        }
+      );
+
+      const boxes = document.querySelectorAll(".header");
+      boxes.forEach((b) => {
+        const scrollY = document.documentElement.scrollTop;
+        const boxY = b.getBoundingClientRect().y;
+        console.log("boxY", boxY, "scrollY", scrollY, "sum", boxY + scrollY);
+      });
+      const boxArea = Array.from(boxes.length, (_) => 0);
+      for (let i = 1; i < boxes.length; i++) {
+        const sy = boxes[i - 1].getBoundingClientRect().y;
+        const h = boxes[i].getBoundingClientRect().y - sy;
+        boxArea[i - 1] = sy + h;
+        if (i === boxes.length - 1) {
+          console.log(boxes[i].getBoundingClientRect());
+          boxArea[i] =
+            boxes[i].getBoundingClientRect().y +
+            (document.documentElement.scrollHeight -
+              boxes[i].getBoundingClientRect().y);
+        }
+      }
+      console.log(boxArea);
+      boxes.forEach((ele) => {
+        ob.observe(ele);
+      });
+    </script>
+  </body>
+</html>

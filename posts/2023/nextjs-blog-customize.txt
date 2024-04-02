@@ -1,0 +1,870 @@
+1:HL["/_next/static/media/122c360d7fe6d395-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/media/a15f2fce4b98b461-s.p.woff2",{"as":"font","type":"font/woff2"}]
+3:HL["/_next/static/css/513fe6d1da0f3f41.css",{"as":"style"}]
+4:HL["/_next/static/css/bc95ac79a310f5fe.css",{"as":"style"}]
+0:["KTmOAbpToE8QLnSqzheiN",[[["",{"children":["(pages)",{"children":["posts",{"children":[["slug","2023/nextjs-blog-customize","c"],{"children":["__PAGE__?{\"slug\":[\"2023\",\"nextjs-blog-customize\"]}",{}]}]}]}]},"$undefined","$undefined",true],"$L5",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/513fe6d1da0f3f41.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/bc95ac79a310f5fe.css","precedence":"next"}]],"$L6"]]]]
+7:I{"id":9588,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+8:I{"id":196,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+9:I{"id":2568,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+a:I{"id":3466,"chunks":["272:static/chunks/webpack-b74668436ee6b2a0.js","253:static/chunks/bce60fc1-0247e260c1ca1b9c.js","961:static/chunks/961-90edfa57f01894b3.js"],"name":"default","async":false}
+b:I{"id":372,"chunks":["272:static/chunks/webpack-b74668436ee6b2a0.js","253:static/chunks/bce60fc1-0247e260c1ca1b9c.js","961:static/chunks/961-90edfa57f01894b3.js"],"name":"default","async":false}
+d:I{"id":3245,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+5:[["$","html",null,{"className":"__variable_21dd0c","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L7",null,{"children":[["$","$L8",null,{"id":"main-content","className":"relative flex flex-col border-l-gray-200 dark:border-l-gray-800","children":[["$","$L9",null,{"id":"content-header","className":"sticky z-10 flex flex-col top-0"}],["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[["$","section",null,{"className":"relative mx-auto w-full max-w-7xl px-5 sm:px-10 mb-20","children":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children","posts","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children","posts","children",["slug","2023/nextjs-blog-customize","c"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$Lc",null],"segment":"__PAGE__?{\"slug\":[\"2023\",\"nextjs-blog-customize\"]}"},"styles":[]}],"segment":["slug","2023/nextjs-blog-customize","c"]},"styles":[]}],"segment":"posts"},"styles":[]}]}],null],"segment":"(pages)"},"styles":[]}],["$","hr",null,{"className":"border-none h-px bg-gray-200 dark:bg-gray-800"}],["$","footer",null,{"className":"w-full px-10 py-8 text-center","children":[["$","p",null,{"className":"text-xs","children":"chaospace • © 2023 All rights reserved • Next.js Blog"}],["$","p",null,{"className":"text-xs","children":["Source code available on ",["$","a",null,{"className":"underline","children":"GitHub"}]]}]]}]]}],["$","$Ld",null,{}]]}]}]}],null]
+6:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Next.js 블로그 제작 ( Toc 개선 ) | chaospace's Blog"}],["$","meta","2",{"name":"description","content":"틈틈이 기억나는 내용을 정리하는 공간"}],["$","meta","3",{"name":"keywords","content":"Next.js"}],["$","meta","4",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","5",{"name":"creator","content":"chaospace"}],["$","link","6",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"any"}],["$","meta","7",{"name":"next-size-adjust"}]]
+e:I{"id":9378,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+10:I{"id":2375,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+11:I{"id":3781,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+12:I{"id":2092,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+f:T7fc2,/*@jsxRuntime automatic @jsxImportSource react*/
+const {Fragment: _Fragment, jsx: _jsx, jsxs: _jsxs} = arguments[0];
+const {useMDXComponents: _provideComponents} = arguments[0];
+function _createMdxContent(props) {
+  const _components = Object.assign({
+    p: "p",
+    strong: "strong",
+    ul: "ul",
+    li: "li",
+    h2: "h2",
+    input: "input",
+    a: "a",
+    h3: "h3",
+    div: "div",
+    pre: "pre",
+    code: "code",
+    span: "span",
+    sup: "sup",
+    del: "del",
+    br: "br",
+    hr: "hr",
+    section: "section",
+    ol: "ol"
+  }, _provideComponents(), props.components);
+  return _jsxs(_Fragment, {
+    children: [_jsxs(_components.p, {
+      children: ["현재 Toc(Table of Contents)는 추출한 헤더목록의 id값을 ", _jsx("code", {
+        children: "Link컴포넌트"
+      }), " ", _jsx(_components.strong, {
+        children: "href"
+      }), "속성에 설정하고 클릭 시 anchor를 이용한 방식이라 아래와 같은 점이 아쉬웠다."]
+    }), "\n", _jsxs(_components.ul, {
+      children: ["\n", _jsx(_components.li, {
+        children: "클릭 시 스크롤이 부드럽지 않음."
+      }), "\n", _jsx(_components.li, {
+        children: "이동 간 location.hash 값이 변해 뒤로가기 시 페이지 변경없이 hash값만 변경."
+      }), "\n"]
+    }), "\n", _jsx(_components.p, {
+      children: "두 번째 이유는 당연한 현상인데 뭔가 anchor이동을 여러 번 사용할 경우 브라우저 뒤로가기 버튼이 동작하지 않는 버그처럼 느껴져 hash변경을 제거해 이전 페이지가 나오게 하고 싶었다."
+    }), "\n", _jsx(_components.h2, {
+      id: "todo",
+      children: "TODO"
+    }), "\n", _jsxs(_components.ul, {
+      className: "contains-task-list",
+      children: ["\n", _jsxs(_components.li, {
+        className: "task-list-item",
+        children: [_jsx(_components.input, {
+          type: "checkbox",
+          disabled: true
+        }), " ", "목차 클릭 시 scroll을 부드럽게 하기"]
+      }), "\n", _jsxs(_components.li, {
+        className: "task-list-item",
+        children: [_jsx(_components.input, {
+          type: "checkbox",
+          disabled: true
+        }), " ", "목차 이동 시 location.hash 변경 제거"]
+      }), "\n"]
+    }), "\n", _jsx(_components.p, {
+      children: "현재 방식을 유지하며 개선사항을 수정할 수 없어 api를 알아보니 2가지 정도가 눈에 띄었다."
+    }), "\n", _jsxs(_components.ul, {
+      children: ["\n", _jsxs(_components.li, {
+        children: [_jsx("code", {
+          children: "window.scroll"
+        }), " : 문서 내 창을 특정 위치로 스크롤 처리 ", _jsx(_components.a, {
+          href: "https://developer.mozilla.org/en-US/docs/Web/API/Element/scroll",
+          children: "doc"
+        })]
+      }), "\n", _jsxs(_components.li, {
+        children: [_jsx("code", {
+          children: "element.scrollIntoView"
+        }), "  : 특정 엘리먼트를 기준으로 스크롤을 이동 시킴 ", _jsx(_components.a, {
+          href: "https://developer.mozilla.org/ko/docs/Web/API/Element/scrollIntoView",
+          children: "doc"
+        })]
+      }), "\n"]
+    }), "\n", _jsx(_components.h3, {
+      id: "windowscroll",
+      children: "window.scroll"
+    }), "\n", _jsx(_components.div, {
+      className: "remark-code-title",
+      children: "scroll.doc"
+    }), "\n", _jsx(_components.pre, {
+      className: "language-javascript",
+      children: _jsxs(_components.code, {
+        className: "language-javascript code-highlight",
+        children: [_jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token comment",
+            children: "// 문서 내 창을 특정 위치로 스크롤합니다."
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: "/**\n"
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsxs(_components.span, {
+            className: "token doc-comment comment",
+            children: [" * ", _jsx(_components.span, {
+              className: "token keyword",
+              children: "@param"
+            }), " x-coord: 왼쪽 상단에 표시하고 싶은 문서의 수평축에 따른 픽셀\n"]
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsxs(_components.span, {
+            className: "token doc-comment comment",
+            children: [" * ", _jsx(_components.span, {
+              className: "token keyword",
+              children: "@param"
+            }), " y-coord: 왼쪽 상단에 표시하고 싶은 문서의 수직축에 따른 픽셀\n"]
+          })
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: " */"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token function",
+            children: "scroll"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "x", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "coord", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " y", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "coord", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token comment",
+            children: "// 적용예시"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token dom variable",
+            children: "window"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token method function property-access",
+            children: "scroll"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token number",
+            children: "100"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token number",
+            children: "0"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: "/**\n"
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsxs(_components.span, {
+            className: "token doc-comment comment",
+            children: [" * ", _jsx(_components.span, {
+              className: "token keyword",
+              children: "@param"
+            }), " ", _jsx(_components.span, {
+              className: "token parameter",
+              children: "options"
+            }), " : ", _jsx(_components.span, {
+              className: "token punctuation",
+              children: "{"
+            }), "\n"]
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: " *  top:number,\n"
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: " *  left:number,\n"
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsxs(_components.span, {
+            className: "token doc-comment comment",
+            children: [" *  behavior:", _jsx(_components.span, {
+              className: "token punctuation",
+              children: "{"
+            }), "\n"]
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: " *      auto:string   // 기본동작 css스타일에 의해 제어\n"
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: " *      smooth:string // 스크롤이 부드럽게 작동\n"
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsxs(_components.span, {
+            className: "token doc-comment comment",
+            children: [" *  ", _jsx(_components.span, {
+              className: "token punctuation",
+              children: "}"
+            }), "\n"]
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsxs(_components.span, {
+            className: "token doc-comment comment",
+            children: [" * ", _jsx(_components.span, {
+              className: "token punctuation",
+              children: "}"
+            }), "\n"]
+          })
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: " */"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token function",
+            children: "scroll"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "options", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token comment",
+            children: "// 적용예시"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token dom variable",
+            children: "window"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token method function property-access",
+            children: "scroll"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "top"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), _jsx(_components.span, {
+            className: "token number",
+            children: "0"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), "   ", _jsx(_components.span, {
+            className: "token comment",
+            children: "//y위치"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "left"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), _jsx(_components.span, {
+            className: "token number",
+            children: "0"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), "  ", _jsx(_components.span, {
+            className: "token comment",
+            children: "//x위치"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token literal-property property",
+            children: "behavior"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "'smooth'"
+          }), " ", _jsx(_components.span, {
+            className: "token comment",
+            children: "//easing적용"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), "\n"]
+        })]
+      })
+    }), "\n", _jsx(_components.h3, {
+      id: "elementscrollintoview",
+      children: "element.scrollIntoView"
+    }), "\n", _jsx(_components.div, {
+      className: "remark-code-title",
+      children: "scrollIntoView"
+    }), "\n", _jsx(_components.pre, {
+      className: "language-javascript",
+      children: _jsxs(_components.code, {
+        className: "language-javascript code-highlight",
+        children: [_jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token comment",
+            children: "//기본"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["element", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token method function property-access",
+            children: "scrollIntoView"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: "/**\n"
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: " 상단을 기준으로 스크롤 여부를 설정\n"
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: " @params alignToTop:boolean\n"
+          })
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: "*/"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["element", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token method function property-access",
+            children: "scrollIntoView"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "alignToTop", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: "/**\n"
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: " * behavior : 전환 에니메이션 정의 (auto || smooth)\n"
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: " * block : 수직 정렬 (start || center || end || nearest)\n"
+          })
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: _jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: " * inline : 수평 정렬 (start || center || end || nearest)\n"
+          })
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token doc-comment comment",
+            children: " */"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["element", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token method function property-access",
+            children: "scrollIntoView"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "scrollIntoViewOptions", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), " ", _jsx(_components.span, {
+            className: "token comment",
+            children: "// Object parameter"
+          }), "\n"]
+        })]
+      })
+    }), "\n", _jsxs(_components.p, {
+      children: ["이동 위치를 찾을 필요없는 ", _jsx("code", {
+        children: "element.scrollIntoView"
+      }), "로 결정하고 ", _jsx("code", {
+        children: "AnchorButton컴포넌트"
+      }), _jsx(_components.sup, {
+        children: _jsx(_components.a, {
+          href: "#user-content-fn-1",
+          id: "user-content-fnref-1",
+          "data-footnote-ref": true,
+          "aria-describedby": "footnote-label",
+          children: "1"
+        })
+      }), "를 만들어 적용."]
+    }), "\n", _jsx(_components.div, {
+      className: "remark-code-title",
+      children: "AnchorButton.tsx"
+    }), "\n", _jsx(_components.pre, {
+      className: "language-typescript",
+      children: _jsxs(_components.code, {
+        className: "language-typescript code-highlight",
+        children: [_jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token keyword",
+            children: "function"
+          }), " ", _jsx(_components.span, {
+            className: "token function",
+            children: "AnchorButton"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "children", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " anchor", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " children", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), "ReactNode", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " anchor", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token builtin",
+            children: "string"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "const"
+          }), " clickHandler ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token function",
+            children: "useMemo"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "=>"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "return"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "e", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " MouseEvent", _jsx(_components.span, {
+            className: "token operator",
+            children: "<"
+          }), "HTMLAnchorElement", _jsx(_components.span, {
+            className: "token operator",
+            children: ">"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "=>"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["            e", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token function",
+            children: "preventDefault"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["            e", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token function",
+            children: "stopPropagation"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["            ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "const"
+          }), " ele ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " document", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token function",
+            children: "querySelector"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "anchor", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["            ele", _jsx(_components.span, {
+            className: "token operator",
+            children: "?."
+          }), _jsx(_components.span, {
+            className: "token function",
+            children: "scrollIntoView"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "["
+          }), "anchor", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "]"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "return"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token operator",
+            children: "<"
+          }), "a className", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"cursor-pointer\""
+          }), " onClick", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " clickHandler ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: ">"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["            ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " children ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token operator",
+            children: "<"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: "/"
+          }), "a", _jsx(_components.span, {
+            className: "token operator",
+            children: ">"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), "\n"]
+        })]
+      })
+    }), "\n", _jsxs(_components.ul, {
+      className: "contains-task-list",
+      children: ["\n", _jsxs(_components.li, {
+        className: "task-list-item",
+        children: [_jsx(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", _jsx(_components.del, {
+          children: "목차 이동 시 scroll 부드럽게 적용"
+        })]
+      }), "\n", _jsxs(_components.li, {
+        className: "task-list-item",
+        children: [_jsx(_components.input, {
+          type: "checkbox",
+          checked: true,
+          disabled: true
+        }), " ", _jsx(_components.del, {
+          children: "목차 이동 시 location.hash 변경 제거"
+        })]
+      }), "\n"]
+    }), "\n", _jsx(_components.h2, {
+      id: "결과",
+      children: "결과"
+    }), "\n", _jsxs(_components.p, {
+      children: ["부드러운 스크롤과 hash변경이 없어 뒤로가기 클릭 시 이전페이지로 이동.", _jsx(_components.br, {}), "\n", _jsx(_components.strong, {
+        children: "rehype-autolink-headings"
+      }), "는 필요가 없어 제거."]
+    }), "\n", _jsx(_components.hr, {}), "\n", _jsxs(_components.section, {
+      "data-footnotes": true,
+      className: "footnotes",
+      children: [_jsx(_components.h2, {
+        className: "sr-only",
+        id: "footnote-label",
+        children: "Footnotes"
+      }), "\n", _jsxs(_components.ol, {
+        children: ["\n", _jsxs(_components.li, {
+          id: "user-content-fn-1",
+          children: ["\n", _jsxs(_components.p, {
+            children: ["Next.js 기본컴포넌트는 서버컴포넌트로 동적인 스크립트를 사용하는 경우", _jsx(_components.br, {}), "\n", "클라이언트 컴포넌트를 제작해 격리하는게 좋다. ", _jsx(_components.a, {
+              href: "#user-content-fnref-1",
+              "data-footnote-backref": true,
+              className: "data-footnote-backref",
+              "aria-label": "Back to content",
+              children: "↩"
+            })]
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = Object.assign({}, _provideComponents(), props.components);
+  return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {
+    children: _jsx(_createMdxContent, props)
+  })) : _createMdxContent(props);
+}
+return {
+  default: MDXContent
+};
+c:[["$","article",null,{"children":[["$","h1",null,{"className":"font-bold text-3xl","children":"Next.js 블로그 제작 ( Toc 개선 )"}],["$","p",null,{"className":"my-1","children":"블로그 Table of Contents 개선"}],["$","span",null,{"className":"flex flex-wrap gap-2 items-center text-xs","children":[["$","span",null,{"className":"inline-flex items-center basis-24 flex-grow-0","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"far","data-icon":"calendar","className":"svg-inline--fa fa-calendar fa-xs ","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 448 512","style":{},"children":["$","path",null,{"fill":"currentColor","d":"M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z","style":{}}]}],["$","time",null,{"className":"pl-1","dateTime":"2023-08-08","children":"2023-08-08"}]]}],["$","span",null,{"className":"inline-flex items-center basis-24 flex-grow-0","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"far","data-icon":"clock","className":"svg-inline--fa fa-clock fa-xs ","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 512 512","style":{},"children":["$","path",null,{"fill":"currentColor","d":"M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z","style":{}}]}],["$","span",null,{"className":"pl-1","children":"4 minutes"}]]}]]}],["$","hr",null,{"className":"border-none h-px bg-gray-200 dark:bg-gray-800 my-10"}]]}],["$","div",null,{"className":"lg:grid lg:grid-cols-[1fr_260px] lg:gap-8","children":[["$","div",null,{"data-content":"post-area","className":"prose max-w-[796px] dark:prose-dark","children":[["$","$Le",null,{"compiledSource":"$f","frontmatter":{"title":"Next.js 블로그 제작 ( Toc 개선 )","subtitle":null,"date":"$D2023-08-08T00:00:00.000Z","tags":["Next.js"],"draft":false,"summary":"블로그 Table of Contents 개선","readTime":3.5},"scope":{"toc":[{"value":"TODO","url":"#todo","depth":2},{"value":"window.scroll","url":"#windowscroll","depth":3},{"value":"element.scrollIntoView","url":"#elementscrollintoview","depth":3},{"value":"결과","url":"#결과","depth":2}]},"toc":[{"value":"TODO","url":"#todo","depth":2},{"value":"window.scroll","url":"#windowscroll","depth":3},{"value":"element.scrollIntoView","url":"#elementscrollintoview","depth":3},{"value":"결과","url":"#결과","depth":2}]}],["$","$L10",null,{}]]}],["$","$L11",null,{"className":"hidden lg:block","toc":[{"value":"TODO","url":"#todo","depth":2},{"value":"window.scroll","url":"#windowscroll","depth":3},{"value":"element.scrollIntoView","url":"#elementscrollintoview","depth":3},{"value":"결과","url":"#결과","depth":2}]}],["$","$L12",null,{"toc":[{"value":"TODO","url":"#todo","depth":2},{"value":"window.scroll","url":"#windowscroll","depth":3},{"value":"element.scrollIntoView","url":"#elementscrollintoview","depth":3},{"value":"결과","url":"#결과","depth":2}]}]]}]]

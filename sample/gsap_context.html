@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/GSDevTools3.min.js"></script>
+    <style>
+      .box {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: purple;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contorls">
+      <button onclick="rollBackStep1()">step1 롤백</button>
+      <button onclick="rollBackStep2()">step2 롤백</button>
+      <button onclick="goStep1()">step1 진행</button>
+      <button onclick="goStep2()">step2 진행</button>
+    </div>
+
+    <div class="box"></div>
+    <script>
+      const box = document.querySelector(".box");
+      const ctx = gsap.context(() => {}, [box]);
+      const ani = gsap.timeline({ paused: true });
+
+      ani.addLabel("step1");
+      ani.to(box, {
+        duration: 1,
+        rotation: 240,
+        backgroundColor: "#ffcc00",
+      });
+
+      ani.addLabel("step2");
+      ani.to(box, {
+        duration: 1,
+        x: 240,
+        backgroundColor: "purple",
+      });
+      //ani.addLabel("step3");
+      ani.addPause("step1");
+      ani.addPause("step2");
+
+      ctx.add("step1", () => {
+        return gsap.to(box, {
+          id: "step1",
+          duration: 1,
+          rotation: 240,
+          backgroundColor: "#ffcc00",
+        });
+      });
+
+      ctx.add("step2", () => {
+        return gsap.to(box, {
+          id: "step2",
+          duration: 1,
+          x: 240,
+          backgroundColor: "purple",
+        });
+      });
+
+      function rollBackStep1() {
+        // ctx.getTweens().forEach((t) => {
+        //   if (t.vars.id === "step1") {
+        //     t.reversed(true);
+        //   }
+        // });
+        ani.tweenTo("step1");
+      }
+      function rollBackStep2() {
+        // ctx.getTweens().forEach((t) => {
+        //   if (t.vars.id === "step2") {
+        //     t.reversed(true);
+        //   }
+        // });
+        ani.tweenTo("step2");
+      }
+      function goStep1() {
+        //ctx.step1();
+        ani.tweenTo("step2");
+      }
+      function goStep2() {
+        //ctx.step2();
+        ani.tweenTo("step3");
+      }
+    </script>
+  </body>
+</html>

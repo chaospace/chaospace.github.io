@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>canvas-drawImage-test</title>
+    <style>
+      .sample {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="resize()">사이즈변경</button>
+    <img src="../images/ai-generated.jpg" class="sample" />
+    <canvas class="view" width="300" height="300"></canvas>
+
+    <script>
+      const canvas = document.querySelector(".view");
+      const ctx = canvas.getContext("2d", { willReadFrequently: true });
+      const img = document.querySelector(".sample");
+      const backupCanvas = new OffscreenCanvas(300, 300);
+      const backupCtx = backupCanvas.getContext("2d");
+      ctx.save();
+      ctx.fillStyle = "red";
+      ctx.fillRect(10, 10, 40, 40);
+      ctx.fillStyle = "#ffcc00";
+      ctx.arc(100, 100, 10, 0, Math.PI);
+      ctx.fill();
+      ctx.restore();
+      //ctx.globalAlpha = 0.4;
+      img.onload = () => {
+        ctx.scale(2, 2);
+        ctx.translate(10, 10);
+        //backupCtx.drawImage(img, 0, 0);
+        ctx.drawImage(img, 0, 0);
+      };
+
+      function resize() {
+        //현재화면 캡쳐
+        const matrix = ctx.getTransform();
+        ctx.save();
+        ctx.resetTransform();
+        console.log(
+          "after",
+          ctx.getTransform(),
+          ctx.canvas.width,
+          ctx.canvas.height
+        );
+        backupCtx.clearRect(
+          0,
+          0,
+          backupCtx.canvas.width,
+          backupCtx.canvas.height
+        );
+        backupCtx.drawImage(ctx.canvas, 0, 0);
+        ctx.restore();
+        console.log("restore", ctx.getTransform());
+        ctx.canvas.width *= 1.1;
+        ctx.canvas.height *= 1.1;
+        ctx.drawImage(backupCanvas, 0, 0);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="onStart();">시작</button>
+    <button onclick="onStop();">중지</button>
+    <script>
+      function animateFPS(callback, fps = 4) {
+        let _info = { runningID: undefined };
+        const fpsRate = 1000 / fps;
+        let latest = undefined;
+        const animate = () => {
+          const current = performance.now();
+          if (latest === undefined || current - latest > fpsRate) {
+            console.log("fire!!", _info.runningID);
+            latest = current;
+          }
+
+          if (_info.runningID) {
+            _info.runningID = requestAnimationFrame(animate);
+          }
+        };
+        _info.runningID = requestAnimationFrame(animate);
+        return _info;
+      }
+
+      let animateInfo;
+      function onStart() {
+        if (animateInfo) {
+          cancelAnimationFrame(animateInfo.runningID);
+          animateInfo.runningID = undefined;
+        }
+
+        animateInfo = animateFPS(() => {
+          console.log("callback-animate");
+        });
+        console.log("start", animateInfo);
+      }
+
+      function onStop() {
+        cancelAnimationFrame(animateInfo.runningID);
+        animateInfo.runningID = undefined;
+        //runningID = undefined;
+        console.log("stop", animateInfo);
+      }
+    </script>
+  </body>
+</html>

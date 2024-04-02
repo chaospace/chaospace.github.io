@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas></canvas>
+    <script>
+      const canvas = document.querySelector("canvas");
+      const ctx = canvas.getContext("2d");
+      const dpr = devicePixelRatio;
+      const size = 400;
+      const thickness = 2;
+      canvas.width = canvas.height = size * dpr;
+      canvas.style.width = canvas.style.height = `${size}px`;
+      ctx.scale(dpr, dpr);
+
+      const minRadius = 2;
+      const maxRadius = 100;
+      const total = 500;
+      const createCircleAttempts = 500;
+      const circles = [];
+
+      function doesCircleHaveACollision(circle) {
+        if (circle.x - circle.radius <= 0 || circle.x + circle.radius >= size) {
+          return true;
+        }
+
+        if (circle.y - circle.radius <= 0 || circle.y + circle.radius >= size) {
+          return true;
+        }
+        for (let i = 0; i < circles.length; i++) {
+          const other = circles[i];
+          let distance = circle.radius + other.radius;
+          let x = circle.x - other.x;
+          let y = circle.y - other.y;
+          // 반지름보다 크거가 같으면 충돌!
+          if (distance >= Math.sqrt(x * x + y * y)) {
+            return true;
+          }
+        }
+        return false;
+      }
+
+      //let hasDrawCircle=false;
+      function createAndDrawCircle() {
+        let circle;
+        let hasDrawCircle = false;
+        //겹치지 않는 위치 찾기
+        for (let tries = 0; tries < createCircleAttempts; tries++) {
+          circle = {
+            x: ~~(Math.random() * size),
+            y: ~~(Math.random() * size),
+            radius: minRadius,
+          };
+          if (doesCircleHaveACollision(circle)) {
+            continue;
+          } else {
+            hasDrawCircle = true;
+            break;
+          }
+        }
+
+        if (!hasDrawCircle) {
+          return;
+        }
+        //반지름을 키우기
+        for (let radius = minRadius; radius < maxRadius; radius++) {
+          circle.radius = radius;
+          if (doesCircleHaveACollision(circle)) {
+            circle.radius--;
+            break;
+          }
+        }
+
+        circles.push(circle);
+        ctx.beginPath();
+        ctx.arc(circle.x, circle.y, circle.radius, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+
+      for (let i = 0; i < total; i++) {
+        createAndDrawCircle();
+      }
+    </script>
+  </body>
+</html>

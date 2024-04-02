@@ -1,0 +1,1028 @@
+1:HL["/_next/static/media/122c360d7fe6d395-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/media/a15f2fce4b98b461-s.p.woff2",{"as":"font","type":"font/woff2"}]
+3:HL["/_next/static/css/513fe6d1da0f3f41.css",{"as":"style"}]
+4:HL["/_next/static/css/bc95ac79a310f5fe.css",{"as":"style"}]
+0:["KTmOAbpToE8QLnSqzheiN",[[["",{"children":["(pages)",{"children":["posts",{"children":[["slug","2023/nextjs-blog-comments","c"],{"children":["__PAGE__?{\"slug\":[\"2023\",\"nextjs-blog-comments\"]}",{}]}]}]}]},"$undefined","$undefined",true],"$L5",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/513fe6d1da0f3f41.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/bc95ac79a310f5fe.css","precedence":"next"}]],"$L6"]]]]
+7:I{"id":9588,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+8:I{"id":196,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+9:I{"id":2568,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+a:I{"id":3466,"chunks":["272:static/chunks/webpack-b74668436ee6b2a0.js","253:static/chunks/bce60fc1-0247e260c1ca1b9c.js","961:static/chunks/961-90edfa57f01894b3.js"],"name":"default","async":false}
+b:I{"id":372,"chunks":["272:static/chunks/webpack-b74668436ee6b2a0.js","253:static/chunks/bce60fc1-0247e260c1ca1b9c.js","961:static/chunks/961-90edfa57f01894b3.js"],"name":"default","async":false}
+d:I{"id":3245,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","578:static/chunks/578-7478916a970fcb49.js","582:static/chunks/582-a0d280170724f0ec.js","185:static/chunks/app/layout-eacb39e30dc90c6e.js"],"name":"","async":false}
+5:[["$","html",null,{"className":"__variable_21dd0c","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L7",null,{"children":[["$","$L8",null,{"id":"main-content","className":"relative flex flex-col border-l-gray-200 dark:border-l-gray-800","children":[["$","$L9",null,{"id":"content-header","className":"sticky z-10 flex flex-col top-0"}],["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[["$","section",null,{"className":"relative mx-auto w-full max-w-7xl px-5 sm:px-10 mb-20","children":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children","posts","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$La",null,{"parallelRouterKey":"children","segmentPath":["children","(pages)","children","posts","children",["slug","2023/nextjs-blog-comments","c"],"children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$Lb",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$Lc",null],"segment":"__PAGE__?{\"slug\":[\"2023\",\"nextjs-blog-comments\"]}"},"styles":[]}],"segment":["slug","2023/nextjs-blog-comments","c"]},"styles":[]}],"segment":"posts"},"styles":[]}]}],null],"segment":"(pages)"},"styles":[]}],["$","hr",null,{"className":"border-none h-px bg-gray-200 dark:bg-gray-800"}],["$","footer",null,{"className":"w-full px-10 py-8 text-center","children":[["$","p",null,{"className":"text-xs","children":"chaospace • © 2023 All rights reserved • Next.js Blog"}],["$","p",null,{"className":"text-xs","children":["Source code available on ",["$","a",null,{"className":"underline","children":"GitHub"}]]}]]}]]}],["$","$Ld",null,{}]]}]}]}],null]
+6:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Giscus를 이용한 블로그 코멘트 기능 | chaospace's Blog"}],["$","meta","2",{"name":"description","content":"틈틈이 기억나는 내용을 정리하는 공간"}],["$","meta","3",{"name":"keywords","content":"giscus"}],["$","meta","4",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","5",{"name":"creator","content":"chaospace"}],["$","link","6",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"any"}],["$","meta","7",{"name":"next-size-adjust"}]]
+e:I{"id":9378,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+10:I{"id":2375,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+11:I{"id":3781,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+12:I{"id":2092,"chunks":["957:static/chunks/59925f94-96b9832d7377ad60.js","599:static/chunks/599-d959104802c662bd.js","846:static/chunks/846-f9a0044b6873eac4.js","947:static/chunks/947-f23988b27fe3e696.js","863:static/chunks/app/(pages)/posts/[...slug]/page-e8cfd8228ce4caf1.js"],"name":"","async":false}
+f:T979b,/*@jsxRuntime automatic @jsxImportSource react*/
+const {Fragment: _Fragment, jsx: _jsx, jsxs: _jsxs} = arguments[0];
+const {useMDXComponents: _provideComponents} = arguments[0];
+function _createMdxContent(props) {
+  const _components = Object.assign({
+    p: "p",
+    code: "code",
+    br: "br",
+    a: "a",
+    h2: "h2",
+    blockquote: "blockquote",
+    ul: "ul",
+    li: "li",
+    div: "div",
+    pre: "pre",
+    span: "span",
+    h3: "h3"
+  }, _provideComponents(), props.components);
+  return _jsxs(_Fragment, {
+    children: [_jsxs(_components.p, {
+      children: [_jsx(_components.code, {
+        children: "giscus"
+      }), "를 이용한 코멘트처리 내용정리.", _jsx(_components.br, {}), "\n", _jsx(_components.a, {
+        href: "https://giscus.app/ko",
+        children: "저장소"
+      }), "에 핵심만 잘 정리되어 있어 그것만 봐도 충분한다."]
+    }), "\n", _jsx(_components.h2, {
+      id: "giscus",
+      children: "Giscus"
+    }), "\n", _jsxs(_components.blockquote, {
+      children: ["\n", _jsxs(_components.p, {
+        children: ["github Discussions로 작동하는 댓글 시스템", _jsx(_components.br, {}), "\n", _jsx(_components.a, {
+          href: "https://github.com/utterance/utterances",
+          children: "utterances"
+        }), "에 큰 영감을 받아서 제작", _jsx(_components.br, {}), "\n", _jsx(_components.a, {
+          href: "https://github.com/giscus/giscus/blob/main/CONTRIBUTING.md#adding-localizations",
+          children: "여러 언어"
+        }), "를 제공", _jsx(_components.br, {}), "\n", "자동으로 GitHub에서 새로운 코멘트와 수정사항을 반영"]
+      }), "\n"]
+    }), "\n", _jsx(_components.h2, {
+      id: "적용순서",
+      children: "적용순서"
+    }), "\n", _jsxs(_components.ul, {
+      children: ["\n", _jsxs(_components.li, {
+        children: ["giscus에 연결할 ", _jsx(_components.code, {
+          children: "public 저장소 생성"
+        })]
+      }), "\n", _jsx(_components.li, {
+        children: "생성 저장소 setting에 들어가 Discussions기능 활성화"
+      }), "\n", _jsxs(_components.li, {
+        children: [_jsx(_components.a, {
+          href: "https://github.com/apps/giscus",
+          children: "giscus앱"
+        }), "을 설치 후 위에서 생성한 저장소 선택"]
+      }), "\n", _jsxs(_components.li, {
+        children: [_jsx(_components.a, {
+          href: "https://giscus.app/ko",
+          children: "giscus 매뉴얼"
+        }), "순서에 따라 연결방식 및 옵션 적용 후 추가할 스크립트 파일 생성"]
+      }), "\n", _jsx(_components.li, {
+        children: "생성된 스크립트 파일을 이용해 사용 환경에 따른 컴포넌트 구성"
+      }), "\n"]
+    }), "\n", _jsx(_components.div, {
+      className: "remark-code-title",
+      children: "giscus사용_스크립트_템플릿"
+    }), "\n", _jsx(_components.pre, {
+      className: "language-typescript",
+      children: _jsxs(_components.code, {
+        className: "language-typescript code-highlight",
+        children: [_jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token operator",
+            children: "<"
+          }), "script src", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"https://giscus.app/client.js\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        data", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "repo", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"[ENTER REPO HERE]\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        data", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "repo", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "id", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"[ENTER REPO ID HERE]\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        data", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "category", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"[ENTER CATEGORY NAME HERE]\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        data", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "category", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "id", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"[ENTER CATEGORY ID HERE]\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        data", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "mapping", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"pathname\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        data", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "strict", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"0\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        data", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "reactions", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "enabled", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"1\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        data", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "emit", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "metadata", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"0\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        data", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "input", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "position", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"bottom\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        data", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "theme", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"preferred_color_scheme\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        data", _jsx(_components.span, {
+            className: "token operator",
+            children: "-"
+          }), "lang", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"ko\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        crossorigin", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"anonymous\""
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        async", _jsx(_components.span, {
+            className: "token operator",
+            children: ">"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token operator",
+            children: "<"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: "/"
+          }), "script", _jsx(_components.span, {
+            className: "token operator",
+            children: ">"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        })]
+      })
+    }), "\n", _jsx(_components.h3, {
+      id: "react컴포넌트-적용방법",
+      children: "react컴포넌트 적용방법"
+    }), "\n", _jsxs(_components.p, {
+      children: ["위에서 생성된 스크립트 추가역할만 해주면 된다.", _jsx(_components.br, {}), "\n", "코드에 ", _jsx(_components.code, {
+        children: "[]"
+      }), "부분은 ", _jsx(_components.a, {
+        href: "https://giscus.app/ko",
+        children: "giscus 매뉴얼"
+      }), "에서 스크립트를 생성하면 자동으로 결정된다."]
+    }), "\n", _jsx(_components.div, {
+      className: "remark-code-title",
+      children: "Giscus.tsx"
+    }), "\n", _jsx(_components.pre, {
+      className: "language-tsx",
+      children: _jsxs(_components.code, {
+        className: "language-tsx code-highlight",
+        children: [_jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "const"
+          }), " ref ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsxs(_components.span, {
+            className: "token generic-function",
+            children: [_jsx(_components.span, {
+              className: "token function",
+              children: "useRef"
+            }), _jsxs(_components.span, {
+              className: "token generic class-name",
+              children: [_jsx(_components.span, {
+                className: "token operator",
+                children: "<"
+              }), "HTMLElement", _jsx(_components.span, {
+                className: "token operator",
+                children: ">"
+              })]
+            })]
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token keyword",
+            children: "null"
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: "!"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token function",
+            children: "useEffect"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token arrow operator",
+            children: "=>"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "if"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token operator",
+            children: "!"
+          }), "ref", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "current"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "||"
+          }), " ref", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "current"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token method function property-access",
+            children: "hasChildNodes"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "return"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "const"
+          }), " scriptEle ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token dom variable",
+            children: "document"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token method function property-access",
+            children: "createElement"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "\"script\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "src"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "'https://giscus.app/client.js'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "crossOrigin"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "'anonymous'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "dataset"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "loading"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "'lazy'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "dataset"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "theme"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "'preferred_color_scheme'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "dataset"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "inputPosition"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "'bottom'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "dataset"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "emitMetadata"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "'0'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "dataset"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "strict"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "'0'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "dataset"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "mapping"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "'[맵핑방법]'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "dataset"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "category"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "'[적용카테고리]'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "dataset"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "categoryId"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "'[적용 카테고리 ID]'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "dataset"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "repo"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"[생성 저장소]\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "dataset"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "repoId"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"[생성 저장소 ID]\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsx(_components.span, {
+            className: "token comment",
+            children: "// 이모지 사용여부 0, 1"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "dataset"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "reactionsEnabled"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"1\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "dataset"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "lang"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "\"ko\""
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ref", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token property-access",
+            children: "current"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsx(_components.span, {
+            className: "token method function property-access",
+            children: "appendChild"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "scriptEle", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "["
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "]"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "return"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["        ", _jsxs(_components.span, {
+            className: "token tag",
+            children: [_jsxs(_components.span, {
+              className: "token tag",
+              children: [_jsx(_components.span, {
+                className: "token punctuation",
+                children: "<"
+              }), "section"]
+            }), " ", _jsx(_components.span, {
+              className: "token attr-name",
+              children: "ref"
+            }), _jsxs(_components.span, {
+              className: "token script language-javascript",
+              children: [_jsx(_components.span, {
+                className: "token script-punctuation punctuation",
+                children: "="
+              }), _jsx(_components.span, {
+                className: "token punctuation",
+                children: "{"
+              }), " ref ", _jsx(_components.span, {
+                className: "token punctuation",
+                children: "}"
+              })]
+            }), " ", _jsx(_components.span, {
+              className: "token punctuation",
+              children: "/>"
+            })]
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), "\n"]
+        })]
+      })
+    }), "\n", _jsx(_components.h3, {
+      id: "테마적용-시",
+      children: "테마적용 시"
+    }), "\n", _jsx(_components.p, {
+      children: "테마적용을 위해서는 iframe에 postMessage를 통해 현재 테마정보를 넘겨주면 된다."
+    }), "\n", _jsx(_components.pre, {
+      className: "language-typescript",
+      children: _jsxs(_components.code, {
+        className: "language-typescript code-highlight",
+        children: [_jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token comment",
+            children: "//테마 변경 시  메시지 전송."
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token function",
+            children: "useEffect"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), " ", _jsx(_components.span, {
+            className: "token operator",
+            children: "=>"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    ", _jsx(_components.span, {
+            className: "token keyword",
+            children: "const"
+          }), " iframe ", _jsx(_components.span, {
+            className: "token operator",
+            children: "="
+          }), " document", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "."
+          }), _jsxs(_components.span, {
+            className: "token generic-function",
+            children: [_jsx(_components.span, {
+              className: "token function",
+              children: "querySelector"
+            }), _jsxs(_components.span, {
+              className: "token generic class-name",
+              children: [_jsx(_components.span, {
+                className: "token operator",
+                children: "<"
+              }), "HTMLIFrameElement", _jsx(_components.span, {
+                className: "token operator",
+                children: ">"
+              })]
+            })]
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token string",
+            children: "'iframe.giscus-frame'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: ["    iframe", _jsx(_components.span, {
+            className: "token operator",
+            children: "?."
+          }), "contentWindow", _jsx(_components.span, {
+            className: "token operator",
+            children: "?."
+          }), _jsx(_components.span, {
+            className: "token function",
+            children: "postMessage"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "("
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " giscus", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " setConfig", _jsx(_components.span, {
+            className: "token operator",
+            children: ":"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "{"
+          }), " theme ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token string",
+            children: "'https://giscus.app'"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ";"
+          }), "\n"]
+        }), _jsxs(_components.span, {
+          className: "code-line",
+          children: [_jsx(_components.span, {
+            className: "token punctuation",
+            children: "}"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ","
+          }), " ", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "["
+          }), "theme", _jsx(_components.span, {
+            className: "token punctuation",
+            children: "]"
+          }), _jsx(_components.span, {
+            className: "token punctuation",
+            children: ")"
+          }), "\n"]
+        }), _jsx(_components.span, {
+          className: "code-line",
+          children: "\n"
+        })]
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = Object.assign({}, _provideComponents(), props.components);
+  return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {
+    children: _jsx(_createMdxContent, props)
+  })) : _createMdxContent(props);
+}
+return {
+  default: MDXContent
+};
+c:[["$","article",null,{"children":[["$","h1",null,{"className":"font-bold text-3xl","children":"Giscus를 이용한 블로그 코멘트 기능"}],["$","p",null,{"className":"my-1","children":"giscus를 이용한 댓글 기능 제공"}],["$","span",null,{"className":"flex flex-wrap gap-2 items-center text-xs","children":[["$","span",null,{"className":"inline-flex items-center basis-24 flex-grow-0","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"far","data-icon":"calendar","className":"svg-inline--fa fa-calendar fa-xs ","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 448 512","style":{},"children":["$","path",null,{"fill":"currentColor","d":"M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z","style":{}}]}],["$","time",null,{"className":"pl-1","dateTime":"2023-08-28","children":"2023-08-28"}]]}],["$","span",null,{"className":"inline-flex items-center basis-24 flex-grow-0","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","data-prefix":"far","data-icon":"clock","className":"svg-inline--fa fa-clock fa-xs ","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 512 512","style":{},"children":["$","path",null,{"fill":"currentColor","d":"M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z","style":{}}]}],["$","span",null,{"className":"pl-1","children":"3 minutes"}]]}]]}],["$","hr",null,{"className":"border-none h-px bg-gray-200 dark:bg-gray-800 my-10"}]]}],["$","div",null,{"className":"lg:grid lg:grid-cols-[1fr_260px] lg:gap-8","children":[["$","div",null,{"data-content":"post-area","className":"prose max-w-[796px] dark:prose-dark","children":[["$","$Le",null,{"compiledSource":"$f","frontmatter":{"title":"Giscus를 이용한 블로그 코멘트 기능","subtitle":null,"date":"$D2023-08-28T00:00:00.000Z","tags":["giscus"],"draft":false,"summary":"giscus를 이용한 댓글 기능 제공","readTime":2.525},"scope":{"toc":[{"value":"Giscus","url":"#giscus","depth":2},{"value":"적용순서","url":"#적용순서","depth":2},{"value":"react컴포넌트 적용방법","url":"#react컴포넌트-적용방법","depth":3},{"value":"테마적용 시","url":"#테마적용-시","depth":3}]},"toc":[{"value":"Giscus","url":"#giscus","depth":2},{"value":"적용순서","url":"#적용순서","depth":2},{"value":"react컴포넌트 적용방법","url":"#react컴포넌트-적용방법","depth":3},{"value":"테마적용 시","url":"#테마적용-시","depth":3}]}],["$","$L10",null,{}]]}],["$","$L11",null,{"className":"hidden lg:block","toc":[{"value":"Giscus","url":"#giscus","depth":2},{"value":"적용순서","url":"#적용순서","depth":2},{"value":"react컴포넌트 적용방법","url":"#react컴포넌트-적용방법","depth":3},{"value":"테마적용 시","url":"#테마적용-시","depth":3}]}],["$","$L12",null,{"toc":[{"value":"Giscus","url":"#giscus","depth":2},{"value":"적용순서","url":"#적용순서","depth":2},{"value":"react컴포넌트 적용방법","url":"#react컴포넌트-적용방법","depth":3},{"value":"테마적용 시","url":"#테마적용-시","depth":3}]}]]}]]

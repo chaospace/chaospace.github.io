@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas></canvas>
+    <script>
+      const canvas = document.querySelector("canvas");
+      const ctx = canvas.getContext("2d");
+      const dpr = devicePixelRatio;
+      const size = 400;
+      canvas.width = canvas.height = size * dpr;
+      canvas.style.width = canvas.height = `${size}px`;
+      ctx.scale(dpr, dpr);
+    </script>
+  </body>
+</html>

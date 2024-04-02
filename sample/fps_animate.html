@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let lastCall;
+      let time;
+      const fps = 1000 / 30;
+      let count = 0;
+      console.log(fps);
+      function animate(timestamp) {
+        if (!time) {
+          lastCall = time = timestamp;
+        }
+        const current = performance.now();
+        const diff = current - lastCall;
+        if (diff >= fps) {
+          console.log("time", current - lastCall);
+          lastCall = current;
+          count++;
+        }
+        requestAnimationFrame(animate);
+      }
+
+      requestAnimationFrame(animate);
+
+      const animateWithFPS = (callback, frame = 1) => {
+        let lastCall = (startCall = undefined);
+        let animateID;
+        const fps = 1000 / frame;
+        const animate = (timestamp) => {
+          if (lastCall === undefined) {
+            startCall = lastCall = timestamp;
+          }
+          const current = performance.now();
+          const diff = current - lastCall;
+          if (diff >= fps) {
+            console.log("draw", current - lastCall);
+            lastCall = current;
+            callback();
+          }
+          animateID = requestAnimationFrame(animate);
+        };
+
+        const pause = () => {
+          cancelAnimationFrame(animateID);
+          lastCall = startCall = undefined;
+        };
+
+        const start = () => {
+          animateID = requestAnimationFrame(animate);
+        };
+
+        return {
+          start,
+          pause,
+        };
+      };
+    </script>
+  </body>
+</html>
