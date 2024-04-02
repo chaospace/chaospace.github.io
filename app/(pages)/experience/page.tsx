@@ -1,6 +1,5 @@
 
 import { getAllPostFrontMatters } from '@/api/posts';
-import LocationMenu from '@/components/elements/LocationMenu';
 import PageHeader from '@/components/PageHeader';
 import DynamicPostList from '@/components/posts/DynamicPostList';
 
@@ -12,7 +11,7 @@ export const metadata = {
 }
 
 async function getData() {
-  const posts = await getAllPostFrontMatters('projects');
+  const posts = await getAllPostFrontMatters('experience');
   return {
     posts,
     currentPage: 1,
@@ -22,7 +21,7 @@ async function getData() {
 
 async function Posts({ params }: { params: any }) {
   const { posts, currentPage, totalPages } = await getData();
-  const title = `All Projects( ${posts.length} )`;
+  const title = `All Experience( ${posts.length} )`;
 
   return (
     <div className='p-10 min-h-screen'>

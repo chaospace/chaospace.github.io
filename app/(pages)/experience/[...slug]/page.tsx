@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: { params: { slug: string[] } 
 
     const { slug } = params;
     const postTitle = slug.join('/');
-    const posts = await getAllPostFrontMatters("projects");
+    const posts = await getAllPostFrontMatters("experience");
     const currentPost = posts.filter(p => p.slug === postTitle)[0];
     return {
         title: currentPost.title,
@@ -17,13 +17,13 @@ export async function generateMetadata({ params }: { params: { slug: string[] } 
 }
 
 export async function generateStaticParams() {
-    const posts = await getAllPostFrontMatters('projects');
+    const posts = await getAllPostFrontMatters('experience');
     return posts.map(({ slug }) => ({ slug: slug.split('/') }));
 }
 
 async function getData(slug: string[]) {
     const mergePath = slug.join('/');
-    const result = await getPostBySlug('projects', `${mergePath}.${POST_EXTENSION}`);
+    const result = await getPostBySlug('experience', `${mergePath}.${POST_EXTENSION}`);
     return result[0] || undefined;
 }
 
