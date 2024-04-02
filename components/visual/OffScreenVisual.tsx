@@ -1,18 +1,14 @@
 "use client";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { sampleImage } from "@/libs/workerParams";
 import useImageLoad from "@/libs/hooks/useImageLoad";
-import { toLinearGrayColor } from "@/libs/canvasHelper";
 import { WORKER_MESSAGE } from "@/const";
 import useResizeHandler from "@/libs/hooks/useResizeHandler";
 import { deBounce } from "@/libs/utils";
 import { OffScreenWorkerResponseParams } from "@/types";
-import ProgressBar, { ProgressState } from "./ProgressBar";
+import { ProgressState } from "./ProgressBar";
 import classNames from "classnames";
 import CircleProgress from "./CircleProgress";
 import useIsomorphicEffect from "@/libs/hooks/useIsomorphicEffect";
-
-
 
 
 const setter = (current: { progress: number, state: ProgressState }, state: ProgressState, progress: number) => {
@@ -34,7 +30,7 @@ function OffScreenVisual({ className, children, url = '/images/santorini.jpg' }:
     }, []);
 
     const workerRef = useRef<Worker>(null!);
-    const img = useImageLoad(url);
+    // const img = useImageLoad(url);
     const [progressState, setProgressState] = useState({
         state: ProgressState.INIT,
         progress: 0
@@ -67,29 +63,6 @@ function OffScreenVisual({ className, children, url = '/images/santorini.jpg' }:
 
 
 
-    /* useEffect(() => {
-        if (img) {
-            const tempScreen = new OffscreenCanvas(img.width, img.height);
-            const offCtx = tempScreen.getContext('2d', { willReadFrequently: true })!;
-            const { width, height } = img;
-            offCtx.drawImage(img, 0, 0);
-            const imgData = offCtx.getImageData(0, 0, width, height);
-            const grayData = toLinearGrayColor(imgData);
-            workerRef.current.postMessage({
-                colorWeights: grayData.invert,
-                imgData: imgData.data.buffer,
-                width,
-                height,
-                pointNum: (width * height) / (4),
-                iteration: 40,
-                state: WORKER_MESSAGE.IMAGE_CHANGE
-            }, [imgData.data.buffer]);
-            sync();
-        }
-    }, [img]);
-    */
-
-
     const sync = useMemo(() => {
         return deBounce(() => {
             workerRef.current.postMessage({
@@ -102,25 +75,8 @@ function OffScreenVisual({ className, children, url = '/images/santorini.jpg' }:
 
 
 
-    //useResizeHandler(sync);
-
-    // useParallaxHeader(ref.current ? ref.current.parentElement! : ref.current);
-    /* 
-        useEffect(() => {
-    
-            const changeImage = () => {
-                setSelectImage(sampleImage.options[Math.floor(randomFloat(sampleImage.options.length))]);
-            }
-    
-            let intervalID = setInterval(changeImage, 10 * 1000);
-    
-            return () => {
-                clearInterval(intervalID);
-            }
-    
-        }, []); */
-
     useIsomorphicEffect(() => {
+        console.log('import.meta.url', import.meta.url);
         workerRef.current = new Worker(new URL('./offScreenWorker', import.meta.url));
         workerRef.current.onmessage = onMessageHandler;
         workerRef.current.onerror = (e: ErrorEvent) => {
@@ -130,26 +86,14 @@ function OffScreenVisual({ className, children, url = '/images/santorini.jpg' }:
         /* 
          strictMode와 transferControlToOffscreen 충돌방지 처리를 위해 초기는 offScreen에 참조를 설정하고
          이후 호출에서 postMessage로 초기설정 */
-
-        if (process.env.STORY_BOOK) {
+        if (!offScreenRef.current) {
             offScreenRef.current = ref.current.transferControlToOffscreen();
-            workerRef.current.postMessage({
-                state: WORKER_MESSAGE.INITIALIZE,
-                canvas: offScreenRef.current,
-                devicePixelRatio
-            }, [offScreenRef.current]);
-        } else {
-            if (offScreenRef.current) {
-                workerRef.current.postMessage({
-                    state: WORKER_MESSAGE.INITIALIZE,
-                    canvas: offScreenRef.current,
-                    devicePixelRatio
-                }, [offScreenRef.current]);
-            } else {
-                offScreenRef.current = ref.current.transferControlToOffscreen();
-            }
-
         }
+        workerRef.current.postMessage({
+            state: WORKER_MESSAGE.INITIALIZE,
+            canvas: offScreenRef.current,
+            devicePixelRatio
+        }, [offScreenRef.current]);
 
         return () => {
             workerRef.current.terminate();
