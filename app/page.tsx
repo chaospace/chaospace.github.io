@@ -40,7 +40,7 @@ async function Home() {
           <H2>Latest Project</H2>
           <HLine />
         </div>
-        <PostList className="lg:grid-cols-3" posts={ projects } prefix="projects" />
+        <PostList className="lg:grid-cols-3" posts={ projects } prefix="experience" />
       </div>
     </>
   )
